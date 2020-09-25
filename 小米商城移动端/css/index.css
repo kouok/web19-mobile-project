@@ -1,0 +1,334 @@
+body{
+    font-size: 0.16rem;
+    background:  #EDEDED; 
+}
+/* 头部 */
+.heads{
+    background:  #EDEDED;  
+}
+.heads{
+    position: fixed;
+    top:0;
+    z-index:1;
+    width: 100%;
+}
+.tops{
+    padding-top: 0.2rem;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+}
+.head .one span{
+   
+    color:#FF6B00;
+    font-size: 0.30rem;
+    line-height: 0.60rem;
+}
+.two{
+    width: 5.40rem;
+    height: 0.60rem;
+    line-height: 0.60rem;
+    border:0.01rem solid silver;
+    background:white;
+}
+.two span{
+    color:silver;
+    vertical-align: middle;
+    font-size: 0.30rem;
+    margin-left: 0.10rem;
+}
+.two input{
+    color:silver
+}
+.three a{
+    color:silver;
+    font-size: 0.30rem;
+    line-height: 0.60rem;
+}
+/*推荐  */
+.nas{
+    height: 0.72rem;
+    line-height: 0.72rem;
+    display: flex;
+    justify-content: space-around;
+}
+.nas a{
+    color:#747474;
+    font-size: 0.22rem;
+}
+.nas a:nth-child(1){
+    color:#ED5B00;
+    border-bottom: 0.02rem solid #ED5B00;
+}
+.nas a:nth-child(7){
+    color:#D1D1D1;
+    font-weight: 600;
+}
+/* 轮播图 */
+.slideBox{ position:relative; overflow:hidden; margin:0 auto;  max-width:560px;/* 设置焦点图最大宽度 */ 
+margin-top: 1rem;}
+.slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:0; right:0; z-index:1; }
+.slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+.slideBox .hd li.on{ background:#fff;  }
+.slideBox .bd{ position:relative; z-index:0; }
+.slideBox .bd li{ position:relative; text-align:center;  }
+.slideBox .bd li img{ background:url(images/loading.gif) center center no-repeat;  vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+/* 九宫格 */
+.nine{
+    height: 3.16rem; 
+    display: flex;  
+    flex-wrap: wrap;
+  
+}
+.nine a{
+    width: 1.28rem;
+}
+.nine img{
+    width: 100%;
+    height: 100%;
+}
+/* 红米K30、小米手环4、小米电视特惠 */
+.red{
+    height:4.60rem;
+    display: flex;  
+}
+.red img{
+    width: 100%;
+    height: 100%;
+}
+/* 小米10探索秘境之旅 */
+.mi{
+    height: 2.92rem;
+}
+.mi img{
+    width: 100%;
+    height: 100%;
+}
+/* 每日精选 */
+.everyday{
+    height: 4.60rem;
+}
+.everyday img{
+    width: 100%;
+    height: 100%;
+}
+/* 小米手机类型 */
+.types{
+    height: 5.24rem;
+    background:white;
+    display: flex;
+    justify-content: space-around;
+}
+.naps{
+    margin-top: 0.05rem;
+    position: relative;
+}
+.phones{
+    width: 3rem;
+    height: 2.80rem;
+}
+.phones img{
+    width: 100%;
+    height: 100%;
+}
+.yuans{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 1.70rem;
+    right: 0;  
+}
+.yuans img{
+    width: 100%;
+    height: 100%;
+}
+.long{
+    text-align: center;
+}
+.long h3{
+    font-size: 0.26rem;
+    margin-top: 0.20rem;
+}
+.long .xiao{
+    color:#747474;
+    font-size: 0.20rem;
+    margin-top: 0.05rem;
+}
+.long .qi{
+    color:#EA625B;
+    font-size: 0.24rem;
+    margin-top: 0.05rem;
+    margin-bottom: 0.03rem;
+}
+.qi a{
+    color:#777777;
+    font-size: 0.24rem;
+    text-decoration: line-through;
+}
+button{
+    width: 2.08rem;
+    height: 0.62rem;
+    line-height: 0.62rem;
+    border-radius: 0.05rem;
+    color:white;
+    font-size: 0.30rem;
+    font-weight: 600;
+    background:#EA625B;
+}
+.chan{
+    background:white;
+    height: 0.70rem;
+    line-height: 0.70rem;
+    text-align: center;
+}
+.chan a{
+    
+    color:#676767;
+    font-size: 0.30rem;
+}
+/* 小米电视 */
+.tvs{
+    margin-top: 0.20rem;
+}
+.tva{
+    width: 6.40rem;
+    height: 4.57rem;
+}
+.tva img{
+    width: 100%;
+    height: 100%;
+}
+.chans{
+    border-top: 0.01rem solid silver;
+    background:white;
+    height: 0.70rem;
+    line-height: 0.70rem;
+    text-align: center;
+}
+.chans a{
+    
+    color:#676767;
+    font-size: 0.30rem;
+}
+/* 小米专属好物手册 */
+.zhuanshu{
+    margin-top: 0.15rem;
+}
+.shouce{
+    width: 6.40rem;
+    height: 3.20rem;
+}
+.shouce img{
+    width: 100%;
+    height: 100%;
+}
+/* 精选家电 */
+.types-1{
+    background:white;
+    display: flex;
+    justify-content: space-around;
+}
+.long .pin{
+    font-size: 0.26rem;
+    margin-top: 0.20rem;
+}
+/* 米家智能 */
+.types-2{
+    background:white;
+    display: flex;
+    justify-content: space-between
+}
+.types-2 .long{
+    margin-left: 0.20rem;
+    margin-right: 0.4rem;
+    margin-top: 0.40rem;
+}
+.phones-1{
+    width: 3.2rem;
+    height: 2.80rem;
+}
+.phones-1 img{
+    width: 100%;
+    height: 100%;
+}
+.ph{
+    width: 3.2rem;
+    height: 4.5rem;
+}
+.ph img{
+    width: 100%;
+    height: 100%;
+}
+.jie{
+    margin-top: 0.1rem;
+    height: 1rem;
+    line-height: 1rem;
+    background:white;
+    display:flex;
+    justify-content: center;
+}
+.jie a{
+    color:#D1D1D1;
+    font-size: 0.3rem;
+}
+.jie span{
+    color:#D1D1D1;
+    font-size: 0.3rem; 
+}
+.jiu{
+    margin-bottom: 0.20rem;
+}
+/* 底部 */
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.04rem;
+    line-height: 0.40rem;
+    background:white;
+    display: flex;
+    justify-content: space-around;
+}
+.footer div{
+    margin-top: 0.15rem;
+}
+.footer div .iconfont{
+    color:black;
+    font-size: 0.24rem;
+}
+.footer div p{
+    text-align: center;
+    color:#999999;
+}
+.footer div .icon-yemian-copy-copy-copy{
+    color:#FF7010;
+}
+.footer div .my{
+    color:#FF7010;
+}
+/* 悬浮 */
+.fu{
+    position: fixed;
+    right: 0;
+    bottom: 2.2rem;
+}
+.xuan{
+    width: 1.26rem;
+    height: 1.26rem;
+}
+.xuan img{
+    width: 100%;
+    height: 100%;
+}
+.ding{
+    position: fixed;
+    right: 0.2rem;
+    bottom: 1.3rem;
+}
+.ding a .iconfont{ 
+    font-size: 0.7rem;
+    color:white;
+}
