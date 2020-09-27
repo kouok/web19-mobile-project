@@ -1,0 +1,11 @@
+/* 注册页样式 */
+
+.header_t div {
+    margin-right: 0.4rem;
+}
+
+.getImgYzm {
+    background: url(../images/login/yzm.jpeg);
+    vertical-align: middle;
+    margin-top: 0;
+}
