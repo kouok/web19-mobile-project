@@ -1,0 +1,162 @@
+#body {
+	background: #F1F9FC;
+	font-size: 0.12rem;
+}
+
+.he2 {
+	display: flex;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	background: #00ACBB;
+	justify-content: space-between;
+	padding: 0 0.1rem;
+}
+
+.he2 span:nth-child(1) {
+	font-size: 0.2rem;
+	color: #00FFFF;
+}
+
+.he2 span:nth-child(2) {
+	font-size: 0.18rem;
+	color: white;
+}
+
+.he2 span:nth-child(3) {
+	font-size: 0.16rem;
+	color: #00FFFF;
+}
+
+.duan {
+	background: #00ACBB;
+	padding: 0.1rem 0.1rem;
+	display: flex;
+}
+
+.duan button {
+	border: 0.01rem solid white;
+	display: inline-block;
+	width: 1.76rem;
+	height: 0.32rem;
+	text-align: center;
+	line-height: 0.32rem;
+	background: #00ACBB;
+	color: white;
+	font-size: 0.16rem;
+}
+
+.one {
+	background: white;
+	color: #00ACBB;
+}
+
+.tel {
+	width: 100%;
+	border-bottom: 0.01rem solid #E7E7E7;
+	border-top: 0.01rem solid #E7E7E7;
+	padding-left: 0.1rem;
+	font-size: 0.16rem;
+	background: white;
+	margin-top: 0.1rem;
+}
+
+.tel1 {
+	border-bottom: 0.01rem solid #E7E7E7;
+	height: 0.45rem;
+	display: flex;
+	align-items: center;
+}
+
+.tel1 span {
+	width: 0.9rem;
+	color: #19a9ba;
+	display: inline-block;
+}
+
+.tel1 input {
+	border: none;
+	background: none;
+	font-size: 0.16rem;
+	width: 1.6rem;
+}
+
+.tel1 button {
+	width: 1rem;
+	height: 0.3rem;
+	text-align: center;
+	line-height: 0.3rem;
+	color: #d7dce0;
+	border: 0.01rem solid #ccc;
+	border-radius: 0.05rem;
+	margin-right: 0.1rem;
+}
+
+.deng {
+	display: inline-block;
+	background: #85d1db;
+	color: #fff;
+	text-align: center;
+	line-height: 0.5rem;
+	width: 3.5rem;
+	margin: 0.12rem;
+	border-radius: 0.05rem;
+	font-size: 0.18rem;
+}
+
+.ji {
+	width: 100%;
+	text-align: center;
+	font-size: 0.12rem;
+	color: #9e9e9e;
+}
+
+.ji a {
+	color: #9e9e9e;
+	text-decoration: underline;
+}
+
+.guan {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.guan1 {
+	display: flex;
+	padding: 0.1rem 0;
+	border-bottom: 0.01rem solid #ccc;
+	color: #4ebac8;
+	text-align: center;
+}
+.guan1 a{
+	flex-grow: 1;
+	font-size: 0.13rem;
+	color: #25a4bb;
+	display: inline-block;
+}
+.guan2 {
+	color: #d4d9de;
+	text-align: center;
+	font-size: 0.12rem;
+	padding: 0.1rem 0.1rem 0.2rem;
+}
+.he3 {
+	display: flex;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	background: #00ACBB;
+	padding: 0 0.1rem;
+}
+
+.he3 span:nth-child(1) {
+	font-size: 0.2rem;
+	color: #00FFFF;
+	width: 0.4rem;
+}
+
+.he3 span:nth-child(2) {
+	font-size: 0.18rem;
+	color: white;
+	width: 2.55rem;
+	text-align: center;
+}
