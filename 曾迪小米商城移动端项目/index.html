@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+    <!-- <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" /> -->
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <title>Document</title>
+    <script>
+        var width = window.innerWidth;
+        //6.4是根据设计图的大小除以100
+        var bili = width /3.75;
+        document.documentElement.style.fontSize = bili + "px";
+        // 此时  100px=1rem
+        // 将所有在设计图量出的尺寸都除以100即可转为对应的rem
+    </script>
+    <script src="js/TouchSlide.1.1.js"></script>    
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="height">
+        <header class="header">
+            <div class="headerBox clearfix">
+                <span class="iconfont icon-xiaomi fl"></span>
+                <div class="serch fl">
+                    <span class="iconfont icon-sousuo fl"></span>
+                    <span class="fl">搜索商品名称</span>
+                </div>
+            <span class="iconfont icon-renxiang fl"></span>
+            </div>
+            <div class="nav">
+                <div class="nav-arr"><i class="iconfont icon-jiantou2"></i></div>
+                <div class="nav-layer">
+                    <div>全部</div>
+                    <div class="nav-none">
+                        <span class="on">推荐</span>
+                        <span>手机</span>
+                        <span>智能</span>
+                        <span>电视</span>
+                        <span>笔记本</span>
+                        <span>家电</span>
+                        <span>生活周边</span>
+                    </div>
+                </div>
+                <ul class="navlist clearfix">
+                    <li><a href="javascript:;" class="on1">推荐</a></li>
+                    <li><a href="javascript:;">手机</a></li>
+                    <li><a href="javascript:;">智能</a></li>
+                    <li><a href="javascript:;">电视</a></li>
+                    <li><a href="javascript:;">笔记本</a></li>
+                    <li><a href="javascript:;">家电</a></li>
+                </ul>
+            </div>
+        </header>
+    </header>
+    <!--轮播图 -->
+    <section class="section">
+        <div id="slideBox" class="slideBox">
+            <div class="bd">
+                <ul>
+                    <li>
+                        <a class="pic" href="#"><img src="../小米商城移动端项目/img/bab9aa2ba1f841335041cc7b36294a5a.jpg" /></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="../小米商城移动端项目/img/7b30c080c332f51b42d8b91205d2d4e3.jpg"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="../小米商城移动端项目/img/b9c1fa5c24dc1c943ac297d1f5dc2285.jpg"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="../小米商城移动端项目/img/1366a818581bdae94ffe78423a50b249.jpg"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="../小米商城移动端项目//img/03ff022009a635262d53451d532518ed.jpg"/></a>
+                    </li>
+                </ul>
+            </div>
+          
+            <div class="hd">
+                <ul></ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            TouchSlide({ 
+                slideCell:"#slideBox",
+                titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell:".bd ul", 
+                effect:"leftLoop", 
+                autoPage:true,//自动分页
+                autoPlay:true //自动播放
+            });
+        </script>
+    </section>
+    <!-- 活动列表 -->
+    <section class="">
+        <div class="hd">
+            <a href=""><img src="img/cb65daec7ef7b52cc785f88f78efba37.png" alt=""></a>
+            <a href=""><img src="img/eb5024fe-dfe3-6e53-3e18-675bef5fa06e.webp" alt=""></a>
+            <a href=""><img src="img/d436f30612651fffe1d6c5aaa3fdb816.webp" alt=""></a>
+            <a href=""><img src="img/e8bc849a-0a3b-21a0-6810-7da3a3903dee.webp" alt=""></a>
+            <a href=""><img src="img/7dbcbf87-6a58-adb6-2f3f-bb3dae3e9c80.webp" alt=""></a>
+        </div>
+        <div class="hd">
+            <a href=""><img src="img/64f3988b6216e4c1ab62a7f50df3e816.webp" alt=""></a>
+            <a href=""><img src="img/9ea68dee2bfa0e55a82236b0d968e975.png" alt=""></a>
+            <a href=""><img src="img/96c780016ea196743905dc93f9249c39.png" alt=""></a>
+            <a href=""><img src="img/9425031cdd7af22d9a23a5ae16d1f57c.webp" alt=""></a>
+            <a href=""><img src="img/f11f9df6b0b0b428f8c8fc3267131830.png" alt=""></a>
+        </div>
+        <div class="gt"></div>
+    </section>
+    <!-- 内容三 -->
+    <section class="section3 clearfix">
+        <div>
+            <img src="img/d692a30ee3d586c4274575eec255d3c5.webp" alt="">
+        </div>
+        <div>
+            <img src="img/827a686678f39b1bbdc99c6e6b6a13c8.webp" alt="">
+            <img src="img/267e988a99b5cf4e960747e8aa5fa831.webp" alt="" class="mt2">
+        </div>
+    </section>
+    <div class="gt"></div>
+    <!-- 内容四 -->
+    <section class="section4">
+        <img src="img/0c08e3519b4c98ae53734a405143ffee.webp" alt="">
+    </section>
+    <!-- 内容五 -->
+    <section class="section5">
+        <a href="" class="mr5">
+            <div><img src="img/f90791bccff62ad03a0476156e7bb16d.jpg" alt=""></div>
+            <div class="spjs">
+                <h4>小米10 Pro</h4>
+                <p class="xl">晓龙865 / 50倍变焦</p>
+                <p class="price">￥4999起</p>
+                <div>立即购买</div>
+            </div>
+        </a>
+        <a href="">
+            <div><img src="img/9b3b7c52bffab0806c54652ee0872a64.jpg" alt=""></div>
+            <div class="spjs">
+                <h4>小米10 Pro</h4>
+                <p class="xl">晓龙865 / 50倍变焦</p>
+                <p class="price">￥4999起</p>
+                <div>立即购买</div>
+            </div>
+        </a>
+    </section>
+    <section class="section5">
+        <a href="" class="mr5">
+            <div><img src="img/f90791bccff62ad03a0476156e7bb16d.jpg" alt=""></div>
+            <div class="spjs">
+                <h4>小米10 Pro</h4>
+                <p class="xl">晓龙865 / 50倍变焦</p>
+                <p class="price">￥4999起</p>
+                <div>立即购买</div>
+            </div>
+        </a>
+        <a href="">
+            <div><img src="img/9b3b7c52bffab0806c54652ee0872a64.jpg" alt=""></div>
+            <div class="spjs">
+                <h4>小米10 Pro</h4>
+                <p class="xl">晓龙865 / 50倍变焦</p>
+                <p class="price">￥4999起</p>
+                <div>立即购买</div>
+            </div>
+        </a>
+    </section>
+    <section class="section5">
+        <a href="" class="mr5">
+            <div><img src="img/f90791bccff62ad03a0476156e7bb16d.jpg" alt=""></div>
+            <div class="spjs">
+                <h4>小米10 Pro</h4>
+                <p class="xl">晓龙865 / 50倍变焦</p>
+                <p class="price">￥4999起</p>
+                <div>立即购买</div>
+            </div>
+        </a>
+        <a href="">
+            <div><img src="img/9b3b7c52bffab0806c54652ee0872a64.jpg" alt=""></div>
+            <div class="spjs">
+                <h4>小米10 Pro</h4>
+                <p class="xl">晓龙865 / 50倍变焦</p>
+                <p class="price">￥4999起</p>
+                <div>立即购买</div>
+            </div>
+        </a>
+    </section>
+    <!-- 更多 -->
+    <section>
+        <a href=""><div class="xm">更多小米手机产品&nbsp;></div></a>
+    </section>
+    <div class="gt"></div>
+    <!-- 小米电视 -->
+    <section class="xmds">
+        <img src="img/34cc562e-8dd3-61e9-0209-395edb9237a1.webp" alt="">
+    </section>
+    <!-- 电视品类 -->
+    <section class="section5">
+        <a href="" class="mr5">
+            <div><img src="img/82003442-c6b7-3258-cc7a-2a851216ce8a.webp" alt=""></div>
+            <div class="spjs">
+                <h4>小米10 Pro</h4>
+                <p class="xl">晓龙865 / 50倍变焦</p>
+                <p class="price">￥4999起</p>
+                <div>立即购买</div>
+            </div>
+        </a>
+        <a href="">
+            <div><img src="img/82003442-c6b7-3258-cc7a-2a851216ce8a.webp" alt=""></div>
+            <div class="spjs">
+                <h4>小米10 Pro</h4>
+                <p class="xl">晓龙865 / 50倍变焦</p>
+                <p class="price">￥4999起</p>
+                <div>立即购买</div>
+            </div>
+        </a>
+    </section>
+    <section class="section5">
+        <a href="" class="mr5">
+            <div><img src="img/82003442-c6b7-3258-cc7a-2a851216ce8a.webp" alt=""></div>
+            <div class="spjs">
+                <h4>小米10 Pro</h4>
+                <p class="xl">晓龙865 / 50倍变焦</p>
+                <p class="price">￥4999起</p>
+                <div>立即购买</div>
+            </div>
+        </a>
+        <a href="">
+            <div><img src="img/82003442-c6b7-3258-cc7a-2a851216ce8a.webp" alt=""></div>
+            <div class="spjs">
+                <h4>小米10 Pro</h4>
+                <p class="xl">晓龙865 / 50倍变焦</p>
+                <p class="price">￥4999起</p>
+                <div>立即购买</div>
+            </div>
+        </a>
+    </section>
+    <!-- 更多 -->
+    <section>
+        <a href=""><div class="xm bor-top">更多小米电视产品&nbsp;></div></a>
+    </section>
+    <!-- 小米笔记本 -->
+    <section>
+        <section>
+            <img src="img/067047e99bc9517e85bbc5d2d854779a.webp" alt="">
+        </section>
+        <section>
+            <img src="img/c226d76d6036e165523338e63f6d2da4.webp" alt="">
+        </section>
+        <section class="section5">
+            <a href="" class="mr5">
+                <div><img src="img/82003442-c6b7-3258-cc7a-2a851216ce8a.webp" alt=""></div>
+                <div class="spjs">
+                    <h4>小米10 Pro</h4>
+                    <p class="xl">晓龙865 / 50倍变焦</p>
+                    <p class="price">￥4999起</p>
+                    <div>立即购买</div>
+                </div>
+            </a>
+            <a href="">
+                <div><img src="img/82003442-c6b7-3258-cc7a-2a851216ce8a.webp" alt=""></div>
+                <div class="spjs">
+                    <h4>小米10 Pro</h4>
+                    <p class="xl">晓龙865 / 50倍变焦</p>
+                    <p class="price">￥4999起</p>
+                    <div>立即购买</div>
+                </div>
+            </a>
+        </section>
+    </section>
+    <!-- 更多 -->
+    <section>
+        <a href=""><div class="xm">更多小米笔记本产品&nbsp;></div></a>
+    </section>
+    <div class="gt"></div>
+    <!-- 小米家电 -->
+    <section>
+        <section>
+            <img src="img/85ea26a99c704861af8e29bf7f249fed.webp" alt="">
+        </section>
+        <div class="gt"></div>
+        <section>
+            <img src="img/3466df89-e534-a68c-6504-2b6e0a704307.webp" alt="">
+        </section>
+        <section class="xmjd">
+            <a href="">
+                <img src="img/552e42b8706ee8d0bd3e048d2a5c4316.jpg" alt="">
+                <div class="jd">
+                    <h4>变频|米家互联网空调1.5匹</h4>
+                    <p>变频节能，高效制冷热</p>
+                    <div><span class="price">￥2099</span><span class="price-none">￥2699</span></div>
+                </div>
+            </a>
+            <a href="">
+                <img src="img/c585ed38-bee4-2f3c-c413-a1af154a74b3.webp" alt="">
+                <div class="jd">
+                    <h4>变频|米家互联网空调1.5匹</h4>
+                    <p>变频节能，高效制冷热</p>
+                    <div><span class="price">￥2099</span><span class="price-none">￥2699</span></div>
+                </div>
+            </a>
+        </section>
+    </section>
+    <!-- 更多 -->
+    <section>
+        <a href=""><div class="xm bor-top">更多小米家电产品&nbsp;></div></a>
+    </section>
+    <div class="gt"></div>
+    <!-- 小米智能 -->
+    <section>
+        <section>
+            <img src="img/a56394373382e7d98a395b25c709cfcb.jpg" alt="">
+        </section>
+        <div class="gt"></div>
+        <section>
+            <img src="img/df9f0ec1b502e3f7ca36779c7596c7c4.webp" alt="">
+        </section>
+        <section class="xmzn">
+            <a href=""><img src="img/bdeb112cc683ea56dead55806cb78a55.jpg" alt=""></a>
+            <a href=""><img src="img/c33f008a86c151a1500d44d599351256.jpg" alt=""></a>
+        </section>
+    </section>
+    <!-- 更多 -->
+    <section>
+        <a href=""><div class="xm bor-top">更多米家智能产品&nbsp;></div></a>
+    </section>
+    <div class="gt"></div>
+    <!-- 产品 -->
+    <section>
+        <section class="flex">
+            <a href="" class=" mr2"><img src="img/46c44f3e-479d-a999-dd2d-98fb39b51e17.webp" alt=""></a>
+            <a href=""><img src="img/b79cb907-3ae4-2a35-6756-b243b386a95a (1).webp" alt=""></a>
+        </section>
+        <section class="flex mt2">
+            <a href="" class="mr2"><img src="img/46c44f3e-479d-a999-dd2d-98fb39b51e17.webp" alt=""></a>
+            <a href=""><img src="img/b79cb907-3ae4-2a35-6756-b243b386a95a (1).webp" alt=""></a>
+        </section>
+    </section>
+    <div class="gt"></div>
+    <!-- 以旧换新 -->
+    <section>
+         <img src="img/f4c4a11536a720ee0f1b516e53e4d868.webp" alt="">
+    </section>
+    <div class="gt"></div>
+    <section>
+        <img src="img/bbb5bac8089d890338b5bf8ff742cbbc.png" alt="">
+    </section>
+    <div class="gt"></div>
+    <!--底部-->
+    <footer>
+        <footer class="flex ft12">
+            <a href=""><img src="img/icon-home-selected.598ca2c8f9.png" alt=""><p>首页</p></a>
+            <a href=""><img src="img/icon-category.be93273636.png" alt=""><p>分类</p></a>
+            <a href=""><img src="img/icon-star.d051789804.png" alt=""><p>星球</p></a>
+            <a href=""><img src="img/icon-cart.585c3aa4d3.png" alt=""><p>购物车</p></a>
+            <a href="../../我的/我的.html"><img src="img/icon-user.23496a0116.png" alt=""><p>我的</p></a>
+        </footer>
+    </footer>
+    <script src="../小米商城移动端项目/js/index.js"></script>
+</body>
+</html>

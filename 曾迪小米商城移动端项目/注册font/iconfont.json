@@ -1,0 +1,16 @@
+{
+  "id": "2092228",
+  "name": "zc",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5924",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}
