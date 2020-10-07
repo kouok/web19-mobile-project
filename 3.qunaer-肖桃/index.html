@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+  <!-- 禁止将数字转为号码 -->
+  <meta name="format-detection" content="telephone=no" />
+  <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+  <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" />
+  <title>【去哪儿网】机票查询预订，酒店预订，旅游团购，度假搜索，门票预订-去哪儿网Qunar.com</title>
+  <!-- 网站图标 -->
+  <link rel="icon" href="image/web.ico">
+  <!-- 图标字体 -->
+  <link rel="stylesheet" href="css/fa/css/all.css">
+  <!-- 重置样式 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- 本页样式 -->
+  <link rel="stylesheet" href="css/index.css">
+  <!-- serena的API -->
+  <script src="js/serena.js"></script>
+  <!-- 本页JS -->
+  <script src="js/index.js"></script>
+  <!-- 移动端轮播图JS -->
+  <script src="js/TouchSlide.1.1.js"></script>
+  <!-- 将px转rem的公式代码 -->
+  <script>
+    var w = document.documentElement.getBoundingClientRect().width;
+    //7.5是根据设计图的大小除以100，需要按照你的实际设计图换算
+    var bili = w / 3.75;
+    document.documentElement.style.fontSize = bili + "px";
+    // 此时  100px=1rem
+    // 将所有在设计图量出的尺寸都除以100即可转为对应的rem
+  </script>
+</head>
+
+<body>
+  <!-- 页头 -->
+  <div class="header-wrap">
+    <div class="header">
+      <!-- 搜索框 -->
+      <div class="search-box">
+        <i class="fas fa-search vam"></i>
+        <input id="topipt" type="text" value="搜索景点门票">
+      </div>
+      <!-- 下载按钮 -->
+      <div class="down">
+        <img class="vam" src="image/c1a0ff735c013ec79c7fdecb88184bf8.gif" alt="">
+        <div>下载App</div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面主体 -->
+  <div class="main-wrap">
+    <div class="main">
+      <!-- 菜单 -->
+      <div class="menu">
+        <!-- 大图菜单 -->
+        <div class="big">
+          <a href="#" class="inline">
+            <div class="pic">
+              <img src="image/hotel.png" alt="">
+            </div>
+            <p class="title">酒店</p>
+          </a>
+          <a href="#" class="inline">
+            <div class="pic">
+              <img src="image/flight.png" alt="">
+            </div>
+            <p class="title">机票</p>
+          </a>
+          <a href="#" class="inline">
+            <div class="pic">
+              <img src="image/train.png" alt="">
+            </div>
+            <p class="title">火车票</p>
+          </a>
+          <a href="#" class="inline">
+            <div class="pic">
+              <img src="image/package.png" alt="">
+            </div>
+            <p class="title">度假</p>
+          </a>
+          <a href="#" class="inline">
+            <div class="pic">
+              <img src="image/piao.png" alt="">
+            </div>
+            <p class="title">景点门票</p>
+          </a>
+        </div>
+        <!-- 小图菜单 -->
+        <div class="small">
+          <a href="#">
+            <div class="pic">
+              <img src="image/tree.png" alt="">
+            </div>
+            <span>海外酒店</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/fly.png" alt="">
+            </div>
+            <span>低价机票</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/tr.png" alt="">
+            </div>
+            <span>汽车票船票</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/free.png" alt="">
+            </div>
+            <span>自由行</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/star.png" alt="">
+            </div>
+            <span>攻略</span>
+          </a>
+        </div>
+        <!-- 小图菜单-蓝色图标1 -->
+        <div class="small">
+          <a href="#">
+            <div class="pic">
+              <img src="image/1.png" alt="">
+            </div>
+            <span>民宿客栈</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/2.png" alt="">
+            </div>
+            <span>专车自驾</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/3.png" alt="">
+            </div>
+            <span>赚钱·信用卡</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/4.png" alt="">
+            </div>
+            <span>旅游团购</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/5.png" alt="">
+            </div>
+            <span>一日游</span>
+          </a>
+        </div>
+        <!-- 小图菜单-蓝色图标2 -->
+        <div class="small">
+          <a href="#">
+            <div class="pic">
+              <img src="image/6.png" alt="">
+            </div>
+            <span>特惠酒店</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/7.png" alt="">
+            </div>
+            <span>借钱</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/8.png" alt="">
+            </div>
+            <span>白金卡</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/9.png" alt="">
+            </div>
+            <span>行程设计</span>
+          </a>
+          <a href="#">
+            <div class="pic">
+              <img src="image/10.png" alt="">
+            </div>
+            <span>周边短途</span>
+          </a>
+        </div>
+      </div>
+      <!-- 特惠度假 -->
+      <div class="holiday">
+        <h2>特惠度假</h2>
+        <div class="btn" id="btn">
+          <a class="on" href="javascript:;">当季热门度假</a>
+          <a class="" href="javascript:;">今日特惠度假</a>
+        </div>
+        <div class="pals" id="pals">
+          <div class="pal">
+            <div class="content">
+              <div>
+                <a href="detail.html">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/01.jpg" alt="">
+                    </div>
+                    <div class="title-in">
+                      <p class="loca">洛阳-三亚</p>
+                      <p class="time">6天跟团游</p>
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">含往返飞机票(含税)+5晚住宿</p>
+                    <p class="pri">￥ 3708</p>
+                  </div>
+                </a>
+                <a href="detail.html">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/02.jpg" alt="">
+                    </div>
+                    <div class="title-in">
+                      <p class="loca">洛阳-丽江</p>
+                      <p class="time">10天跟团游</p>
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">含往返飞机票+9晚住宿</p>
+                    <p class="pri">￥ 4296</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="detail.html">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/03.jpg" alt="">
+                    </div>
+                    <div class="title-in">
+                      <p class="loca">洛阳-张家界</p>
+                      <p class="time">5天跟团游</p>
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">含往返火车票+4晚住宿</p>
+                    <p class="pri">￥ 2940</p>
+                  </div>
+                </a>
+                <a href="detail.html">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/04.jpg" alt="">
+                    </div>
+                    <div class="title-in">
+                      <p class="loca">洛阳-西安</p>
+                      <p class="time">6天跟团游</p>
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">含往返火车票+4晚住宿</p>
+                    <p class="pri">￥ 2475</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="more">
+              <a href="detail.html">更多特惠度假 <span>&gt;</span></a>
+            </div>
+          </div>
+          <div class="pal none">
+            <div class="content">
+              <div>
+                <a href="detail.html">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/001.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">
+                      洛阳-大理 8天跟团游
+                    </p>
+                    <p class="name name2">
+                      高端4环飞🔥昆大丽西双版纳！温泉+VIP游艇+敞篷车环海+原始森林+野象谷
+                    </p>
+                    <p class="pri">￥ 3708 <span class="from">起</span></p>
+                  </div>
+                </a>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/002.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">
+                      洛阳-大理 8天跟团游
+                    </p>
+                    <p class="name name2">
+                      全程无购物-香格里拉 丽江 大理 雪山观景 豪华土司宴 游轮游洱海 歌舞演艺
+                    </p>
+                    <p class="pri">￥ 2909 <span class="from">起</span></p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/003.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">
+                      洛阳-大理 6天跟团游
+                    </p>
+                    <p class="name name2">
+                      国庆定制高端游<昆大丽9重赠送+满减>0自费0差评丨敞篷兜风+温泉+特色美食
+                    </p>
+                    <p class="pri">￥ 1660 <span class="from">起</span></p>
+                  </div>
+                </a>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/004.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">
+                      洛阳-丽江 8天跟团游
+                    </p>
+                    <p class="name name2">
+                      0购物 香格里拉 泸沽湖 丽江 大理 游轮游洱海 雪山赏景 划船 篝火晚会
+                    </p>
+                    <p class="pri">￥ 2849 <span class="from">起</span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="more">
+              <a href="javascript:;">更多特惠度假 <span>&gt;</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 特惠门票 -->
+      <div class="holiday">
+        <h2>特惠门票</h2>
+        <div class="btn" id="btn2">
+          <a class="on" href="javascript:;">当季景点门票</a>
+          <a class="" href="javascript:;">特惠门票</a>
+        </div>
+        <div class="pals" id="pals2">
+          <div class="pal">
+            <div class="content">
+              <div>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/0001.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">凤凰古城</p>
+                    <p class="name name2">邂逅数个人，偶遇一座城</p>
+                    <p class="pri">￥44.2</p>
+                  </div>
+                </a>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/0002.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">
+                      张家界国家森林公园
+                    </p>
+                    <p class="name name2">三千奇峰，八百秀水</p>
+                    <p class="pri">￥115</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/0003.png" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">天门山国家森林公园</p>
+                    <p class="name name2">穿越云霄的旅行</p>
+                    <p class="pri">￥278</p>
+                  </div>
+                </a>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/0004.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">东江湖</p>
+                    <p class="name name2">急流险滩，龙景峡谷</p>
+                    <p class="pri">￥80</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="more">
+              <a href="javascript:;">更多特惠门票 <span>&gt;</span></a>
+            </div>
+          </div>
+          <div class="pal none">
+            <div class="content">
+              <div>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/41.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">
+                      湖南出发一日游
+                    </p>
+                    <p class="name name2">
+                      [北京]【五环内接】八达岭一日游丨7-10-12点三班发车丨随买随用
+                    </p>
+                    <p class="pri">￥68 <span class="from">起</span></p>
+                  </div>
+                </a>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/42.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">
+                      湖南出发一日游
+                    </p>
+                    <p class="name name2">
+                      [北京]超值特卖丨7-10-12点八达岭长城丨可升级颐和园或十三陵
+                    </p>
+                    <p class="pri">￥108 <span class="from">起</span></p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/43.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">
+                      湖南出发一日游
+                    </p>
+                    <p class="name name2">
+                      [北京]【五环内接+双园联票】北京天坛+颐和园圆明园+清华北大一日游
+                    </p>
+                    <p class="pri">￥68 <span class="from">起</span></p>
+                  </div>
+                </a>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/44.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name">
+                      湖南出发一日游
+                    </p>
+                    <p class="name name2">
+                      [北京]慕田峪长城直通车+门票一日游【赞巴士®休息区+热水+摆渡车】
+                    </p>
+                    <p class="pri">￥40 <span class="from">起</span></p>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+            <div class="more">
+              <a href="javascript:;">更多特惠门票 <span>&gt;</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 小编推荐 -->
+      <div id="slideBox" class="slideBox">
+        <div class="bd">
+            <ul>
+                    <li>
+                        <a class="pic" href="#"><img src="image/s1.jpeg" /></a>
+                        <!-- <a class="tit" href="#">墨西哥教师罢工 与警察激烈冲突</a> -->
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="image/s2.jpeg"/></a>
+                        <!-- <a class="tit" href="#">日右翼游行纪念钓岛"国有化"周年</a> -->
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="image/s3.jpeg"/></a>
+                        <!-- <a class="tit" href="#">女兵竞选美国小姐鼓励女性自强</a> -->
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="image/s4.jpeg"/></a>
+                        <!-- <a class="tit" href="#">济南现“最窄人行道” 仅0.2米宽</a> -->
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="image/s5.jpeg"/></a>
+                        <!-- <a class="tit" href="#">济南现“最窄人行道” 仅0.2米宽</a> -->
+                    </li>
+            </ul>
+        </div>
+        <!-- 小圆点指示器 -->
+        <div class="hd">
+            <ul></ul>
+        </div>
+        <!-- 广告 -->
+        <div class="ad">
+          <div class="ad-title">
+            <img src="image/ad_camel.png" alt="">
+          </div>
+          <div class="ad-text">广告</div>
+        </div>
+      </div>
+      <script type="text/javascript">
+          TouchSlide({ 
+              slideCell:"#slideBox",
+              titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+              mainCell:".bd ul", 
+              effect:"leftLoop", 
+              autoPage:true,//自动分页
+              autoPlay:true //自动播放
+          });
+      </script>
+      <!-- 旅游攻略 -->
+      <div class="holiday">
+        <h2><i class="fas fa-book-open"></i> 旅游攻略</h2>
+        <div class="btn" id="btn3">
+          <a class="on" href="javascript:;">趣味亲子游</a>
+          <a class="" href="javascript:;">旅拍也要拍出大片</a>
+        </div>
+        <div class="pals" id="pals3">
+          <div class="pal">
+            <div class="content">
+              <div>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/51.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name3">不负嵊夏好时光，泗乎太安逸</p>
+                  </div>
+                </a>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/53.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name3">探访日本，一部家庭旅行画册</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/54.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name3">厦门，带娃出行与幸福同行</p>
+                  </div>
+                </a>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/51.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name3">驾一叶扁舟，寻瓯江往事</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="more">
+              <a href="javascript:;">更多精彩攻略 <span>&gt;</span></a>
+            </div>
+          </div>
+          <div class="pal none">
+            <div class="content">
+              <div>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/61.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name3">美帝的美，留在图里也要藏在心底</p>
+                  </div>
+                </a>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/62.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name3">在秘密花园，领略意大利风情</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/53.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name3">带着相机去旅行，圆一场青海梦</p>
+                  </div>
+                </a>
+                <a href="javascript:;">
+                  <div class="pic">
+                    <div class="img">
+                      <img src="image/64.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="title">
+                    <p class="name3">陪你去三亚，陪你去天涯海角</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="more">
+              <a href="javascript:;">更多精彩攻略 <span>&gt;</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页尾 -->
+  <div class="footer-wrap">
+    <div class="footer">
+      <div class="foot-top">
+        <span>Copyright ©2020 Qunar.com&nbsp;</span>
+        <a href="#">京公网安备11010802030542&nbsp;</a>
+        <a href="#">京ICP证060856号&nbsp;</a>
+        <a href="#">京ICP证060856号&nbsp;</a>
+        <a href="#">营业执照信息&nbsp;</a>
+        <a href="#">(京)-非经营性-2016-0110&nbsp;</a>
+        <span class="s24">去哪儿网客服电话95117&nbsp;</span>
+      </div>
+      <div class="foot-bom">
+        <span>违法和不良信息举报电话：010-59606977&nbsp;</span>
+        <span>违法和不良信息举报邮箱：tousu@qunar.com</span>
+      </div>
+    </div>
+  </div>
+  <!-- 底部固定菜单 -->
+  <ul class="fixed">
+    <li class="on">
+      <a href="#">
+        <i id="top" class="fas fa-snowman"></i>
+        <span>回顶部</span>
+      </a>
+    </li>
+    <li>
+      <a href="#"><i class="fas fa-shopping-bag"></i>
+        <span>订单</span></a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fas fa-headphones"></i>
+        <span>客服</span>
+      </a>
+    </li>
+    <li>
+      <a href="mine.html">
+        <i class="fas fa-smile"></i>
+        <span>我的</span>
+      </a>
+    </li>
+  </ul>
+  <!-- 搜索的遮罩层 -->
+  <div class="mask none" id="mask">
+    <div class="maskbox">
+      <div class="icon">
+        <i class="fas fa-angle-left" id="left"></i>
+      </div>
+      <div class="input">
+        <i class="fas fa-search vam"></i>
+        <input id="ipt2" type="text" placeholder="搜索景点门票">
+      </div>
+      <i class="fas fa-remove" id="fal">&#xf00d;</i>
+      <div class="close" id="close">取消</div>
+    </div>
+  </div>
+</body>
+
+</html>

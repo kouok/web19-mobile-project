@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+    <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" />
+    <title>我的</title>
+    <!-- 网站图标 -->
+    <link rel="icon" href="image/web.ico">
+    <!-- 图标字体 -->
+    <link rel="stylesheet" href="css/fa/css/all.min.css">
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 本页样式 -->
+    <link rel="stylesheet" href="css/mine.css">
+    <!-- senara -->
+    <script src="js/serena.js"></script>
+    <!-- 本页JS -->
+    <script src="js/mine.js"></script>
+    <!-- 将px转rem的公式代码 -->
+    <script>
+        var w=document.documentElement.getBoundingClientRect().width;
+        //7.5是根据设计图的大小除以100，需要按照你的实际设计图换算
+        var bili=w/3.75;
+        document.documentElement.style.fontSize=bili+"px";
+        // 此时  100px=1rem
+        // 将所有在设计图量出的尺寸都除以100即可转为对应的rem
+    </script>
+</head>
+<body>
+    <!-- 页头 -->
+    <div class="header">
+        <img src="image/mybgnew-20161111.jpg" alt="">
+        <div class="tou-wrap">
+            <a href="login.html">
+                <div class="tou">
+                    <img src="image/tou.png" alt="">
+                </div>
+                <p class="text"> 登录/注册</p>
+            </a>
+        </div>
+        <a href="index.html">
+            <div class="back">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+        </a>
+    </div>
+    <!-- 页面主体 -->
+    <div class="main">
+        <div class="my">
+            <div class="top">
+                <span class="icon">
+                    <i class="fas fa-wallet"></i>
+                </span>
+                <span class="text">我的钱包</span>
+            </div>
+            <div class="bom">
+                <div class="item">
+                    <p>0.00</p>
+                    <p>账户余额</p>
+                </div>
+                <div class="item">
+                    <p>0</p>
+                    <p>星券</p>
+                </div>
+                <div class="item">
+                    <p>0张</p>
+                    <p>银行卡</p>
+                </div>
+            </div>
+        </div>
+        <div class="my">
+            <div class="top">
+                <span class="icon blue">
+                    <i class="fab fa-jedi-order"></i>
+                </span>
+                <span class="text">我的订单</span>
+                <i class="fas fa-chevron-right right"></i>
+            </div>
+            <div class="top">
+                <span class="icon orange">
+                    <i class="fas fa-money-bill"></i>
+                </span>
+                <span class="text">我的退款</span>
+                <i class="fas fa-chevron-right right"></i>
+            </div>
+            <div class="top">
+                <span class="icon orange">
+                    <i class="fas fa-list"></i>
+                </span>
+                <span class="text">我的发票</span>
+                <i class="fas fa-chevron-right right"></i>
+            </div>
+            <div class="top">
+                <span class="icon orange">
+                    <i class="fas fa-book-open"></i>
+                </span>
+                <span class="text">我的攻略</span>
+                <i class="fas fa-chevron-right right"></i>
+            </div>
+        </div>
+        <div class="my">
+            <div class="top">
+                <span class="icon gray">
+                    <i class="fas fa-comment-dots"></i>
+                </span>
+                <span class="text">意见反馈</span>
+                <i class="fas fa-chevron-right right"></i>
+            </div>
+            <div class="top">
+                <span class="icon gray">
+                    <i class="fab fa-linkedin-in"></i>
+                </span>
+                <span class="text">关于去哪儿网</span>
+                <i class="fas fa-chevron-right right"></i>
+            </div>
+        </div>
+    </div>
+    <!-- 页尾 -->
+    <div class="footer">
+        <div class="copy">
+            <span>Qunar京ICP备05021087</span>
+            <a href="#">电脑版</a>
+        </div>
+    </div>
+</body>
+</html>
