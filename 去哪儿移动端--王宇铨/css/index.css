@@ -1,0 +1,457 @@
+/*通用*/
+.sprite{
+	background: url(../image/index/);
+}
+
+
+/*顶部搜索栏*/
+header{
+	padding:0.15rem;
+}
+	/*搜索按钮*/
+header .searchBtn{
+	width: 2.82rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	background-color: #eee;
+	color: #a5a5a5;
+
+}
+header .searchBtn span{
+	vertical-align: top;
+}
+header .searchBtn i{
+	display: inline-block;
+	width: 0.36rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	/*background-position: -270px -73px;*/
+	text-align: center;
+	font-size: 0.22rem;
+
+}
+	/*搜索表单*/
+header .searchForm{
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 90;
+	display: none;
+}
+header .searchForm .formPart{
+	height: 0.54rem;
+	display: flex;
+	align-items: center;
+
+}
+header .searchForm .formPart>div{
+	width: 0.52rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	text-align: center;
+	color: #3f4548;
+}
+header .searchForm .formPart>div:nth-of-type(1){
+	color: #9fa2a3;
+	transform: rotate(180deg);
+}
+header .searchForm .formPart form{
+	height: 0.28rem;
+	background-color: #f4f4f4;
+	color: #3f4548;
+	font-size: 0.14rem;
+	border:none;
+	outline: none;
+	flex-grow: 1;
+	display: flex;
+}
+header .searchForm .formPart form input{
+	height: 100%;
+	flex-grow: 1;
+	font-size: 0.14rem;
+	background-color: #f4f4f4;
+	padding:0;
+}
+header .searchForm .formPart form label,.formPart form i{
+	display: inline-block;
+	height: 100%;
+	line-height: 0.28rem;
+	width: 0.28rem;
+	text-align:center;
+	color: #d4d4d4;
+	font-size: 0.14rem;
+}
+header .searchForm .icoBG{
+	background:url(../image/index/ticket.png) no-repeat;
+	background-size: 0.22rem 0.22rem;
+}
+header .searchForm ul{
+	padding:0 0.15rem;
+	/*display: none;*/
+}
+header .searchForm ul li{
+	padding:0.1rem 0;
+	display: flex;
+}
+header .searchForm ul li .icoBG{
+	display: inline-block;
+	width: 0.22rem;
+	height: 0.22rem;
+}
+header .searchForm ul li a{
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-around;
+	color: #3f4548; 
+    word-break: break-all;
+}
+header .searchForm ul li a :first-child{
+	width: 2.35rem;
+	font-size: .14rem;
+    font-weight: bold;
+}
+header .searchForm ul li a>:last-child{
+	color: #ff8300;
+    font-size: .16rem;
+    font-weight: 550;
+}
+header .searchForm ul li a i{
+	font-size: 0.12rem;
+	font-weight: normal;
+	color: #9fa2a3;
+}
+header aside a{
+	display: inline-block;
+	/*width: 0.45rem;*/	
+	text-align: center;
+	line-height: 0.15rem;
+}
+header aside img{
+	width: 0.24rem;
+}
+header aside p{
+	width: 100%;
+	font-size: 0.12rem;
+	color: #616161;
+}
+
+/*导航按钮*/
+	/*第一行大分类*/
+
+nav:nth-of-type(1) section{
+	height: 0.88rem;
+	display: flex;
+	align-items: center;
+	padding:0 0.1rem;
+}
+nav:nth-of-type(1) section a{
+	display: inline-block;
+	width: 0;
+	flex-grow: 1;
+	text-align: center;
+}
+nav:nth-of-type(1) section:nth-of-type(1) a img{
+	width: 0.5rem;
+}
+nav:nth-of-type(1) section a p{
+	font-size: 0.12rem;
+	color: #333;
+
+}
+nav:nth-of-type(1) section:nth-of-type(2) a img{
+	width: 0.3rem;
+}
+nav:nth-of-type(1) section:nth-of-type(3){
+	flex-wrap: wrap;
+	height: auto;
+}
+nav:nth-of-type(1) section:nth-of-type(3) a{
+	width: 20%;
+	flex-grow: 0;
+	margin:0.07rem 0;
+}
+nav:nth-of-type(1) section:nth-of-type(3) a img{
+	width: 0.3rem;
+}
+
+/*产品列表*/
+.main{
+	padding:0 0.1rem;
+}
+.main h4{
+	height: 0.44rem;
+	line-height: 0.44rem;
+	color: #26282a;
+    font-weight: 700;
+    font-size: 0.18rem;
+    padding:0 0.1rem;
+}
+.main>article span{
+	display: inline-block;
+	width: 1rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+	font-size: 0.12rem;
+	color:#666;
+	border:1px solid #d7d7d7;
+	border-radius: 3px;
+}
+.main>article .btnsChecked{
+	background-color: #17c0c8;
+	border:none;
+	color: #fff;
+}
+
+.main ul li{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/*padding:0.05rem 0;*/
+	display: none;
+}
+.main ul li a{
+	display: inline-block;
+	width: 1.74rem;
+	margin:0.05rem 0;
+}
+.main ul li a>div{
+	position: relative;
+	height: 1.08rem;
+}
+.main ul li a>div .bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*line-height: 0.2rem;*/
+	text-align: center;
+	/*height: 0.4rem;
+	overflow: hidden;*/
+	display: flex;
+	justify-content: center;
+}
+.main ul li a>div .bottom p{
+	/*display: inline-block;*/
+	width: 1.04rem;
+	height: 0.4rem;
+	line-height: 0.20rem;
+	background-color: rgba(0,0,0,.5);
+	text-align:center;
+}
+.main ul li a>div .bottom p span:nth-of-type(1){
+	color: #fff;
+	font-size: 0.14rem;
+}
+.main ul li a>div .bottom p span:nth-of-type(2){
+	color: #ffde00;
+	font-size: 0.12rem;
+}
+.main ul li a img{
+	width: 100%;
+	border-radius: 0.1rem;
+}
+.main ul li a h6{
+	width: 100%;
+	height: 0.2rem;
+	font-size: 0.14rem;
+	color: #333;
+	font-weight: 400;
+	margin-top:0.05rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.main ul li a>p{
+	font-size: 0.12rem;
+	color: #999;
+}
+.main ul li a>p:last-child{
+	font-size: 0.18rem;
+	color: #ff7400;
+	font-weight: 550;
+	line-height: 0.2rem;
+	margin-top:0.05rem;
+}
+
+.main .tabsfooter{
+	padding:0.16rem 0.05rem;
+	margin-top: 0.1rem;
+}
+.main .tabsfooter a{
+	display: inline-block;
+	width: 100%;
+	height:0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	border:1px solid #00d0d4;
+	border-radius: 0.05rem;
+	font-size: 0.14rem;
+	color: #00d0d4;
+}
+/*轮播图*/
+.banner{
+	border-radius: 0.1rem;
+	width: 3.55rem;
+	margin:0.1rem auto;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0.08rem;
+}
+.banner .bannerList{
+	overflow: hidden;
+	height: 1.08rem;
+}
+.banner .bannerList a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	/*float: left;*/
+
+}
+.banner .bannerList a img{
+	width: 100%;
+	
+}
+.banner .navBtns{
+	position: absolute;
+	bottom: 0.08rem;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+/*.banner .navBtns span{
+	display: inline-block;
+	width: 0.18rem;
+	height: 0.18rem;
+	line-height: 0.18rem;
+	text-align: center;
+}
+.banner .navBtns span i{
+	display: inline-block;
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 100%;
+	background-color: #999;
+}*/
+.banner .navBtns li{ 
+	display:inline-block; width: 0.18rem;
+	height: 0.18rem;
+	line-height: 0.18rem; 
+	text-indent:-9999px; 
+	overflow:hidden; 
+	margin:0 6px;  
+	/*float: left; */
+	position: relative;
+}
+.banner .navBtns li:before{
+	content: " ";
+	display: inline-block;
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 100%;
+	background-color: #999;
+	position: absolute;
+	top: 0.04rem;
+	left: 0.04rem;
+}
+/*.banner .navBtns li.on{ background:#fff;  }*/
+.banner .navBtns .on:before{
+	background-color: #ff4500;
+}
+.banner .bannerIco{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/*width: 0.49rem;*/
+	height: 0.16rem;
+	line-height: 0.16rem;
+	opacity: 0.7;
+	background-color: #2d5f72;
+	color:#c4d0d6;
+}
+.banner .bannerIco span{
+	font-size: 0.12rem;
+	padding:0 0.04rem;
+}
+
+/*旅行攻略*/
+.book{
+	padding-bottom: 0.2rem;
+}
+.book h4 i{
+	font-size: 0.14rem;
+	color: #17c0c8;
+	margin-right: 0.08rem;
+}
+.book ul li a{
+	vertical-align: top;
+	margin-bottom: 0.15rem;
+}
+.book ul li a h5{
+	/*height: auto;*/
+	line-height: 0.2rem;
+	width: 100%;
+	font-size: 0.14rem;
+	color: #333;
+	font-weight: 400;
+	margin-top:0.05rem;
+}
+
+/*底部*/
+footer{
+	padding-bottom: 0.5rem;
+}
+footer p{
+	text-align: center;
+	color: #999;
+	padding:0.1rem;
+}
+footer p img{
+	width: 0.14rem;
+	vertical-align: middle;
+	margin-right: 0.04rem;
+}
+footer p span{
+	font-size: 0.12rem;
+}
+footer p a{
+	font-size: 0.12rem;
+	color: #999;
+}
+
+/*底部导航*/
+.menuBtn{
+	position: fixed;
+	bottom:0;
+	left:0;
+	right: 0;
+	height: 0.5rem;
+	border-top: 1px solid #e0e0e0;
+	display: flex;
+	justify-content: space-around;
+	background-color: #fff;
+}
+.menuBtn article{
+	width: 0.5rem;
+	height: 100%;
+	text-align: center;
+	/*line-height: 0.24rem;*/
+	padding-top: 0.06rem;	
+}
+.menuBtn article i,.menuBtn article a i{
+	font-size: 0.22rem;
+	line-height: 0.22rem;
+	color: #616161;
+}
+.menuBtn article p,.menuBtn article a p{
+	font-size: 0.12rem;
+	line-height: 0.1rem;
+	color: #616161;
+}
+.menuBtn .menuChecked i,.menuBtn .menuChecked p{
+	color: #18c0c8;
+}

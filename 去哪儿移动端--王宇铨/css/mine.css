@@ -1,0 +1,144 @@
+x/*通用*/
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+body{
+	background-color: #eee;
+}
+
+/*头部*/
+header{
+	height: 1.7rem;
+	background: url(../image/mine/mybgnew-20161111.jpg) no-repeat;
+	background-size: 100%;
+	background-position: right bottom;
+}
+header .arrBox{
+	height: 0.44rem;
+	line-height: 0.44rem;
+}
+header .arrBox span{
+	display: inline-block;
+	width: 0.6rem;
+	height: 100%;
+	color: #fff;
+	font-size: 0.2rem;
+	transform: rotate(180deg);
+	text-align: center;
+}
+header .picBox{
+	height: 1rem;
+	text-align: center;
+}
+header .picBox div img{
+	width: 0.65rem;
+}
+header .picBox p{
+	font-size: 0.14rem;
+	color: #fff;
+	line-height: 0.22rem;
+}
+
+/*钱包*/
+.money{
+	background-color: #fff;
+	margin-top: 0.1rem;
+}
+.money h4{
+	height: 0.45rem;
+	line-height: 0.45rem;
+	padding:0 0.12rem;
+}
+.money h4 i{
+	display: inline-block;
+	width: 0.3rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+	margin-right: 0.1rem;
+	color: #fff;
+	border-radius: 0.13rem;
+	font-size: 0.18rem;
+}
+.money h4 i:nth-of-type(1){
+	background-color: #ff7043;
+}
+.money article{
+	height: 0.8rem;
+	border-top: 1px solid #eee;
+	display: flex;
+	padding:0 0.12rem;
+}
+.money article a{
+	display: inline-block;
+	width: 0;
+	height: 0.8rem;
+	flex-grow: 1;
+}
+.money article a h5{
+	color: #4d4d4d;
+	line-height: 0.24rem;
+	font-size: 0.16rem;
+	text-align: center;
+	margin-top: 0.15rem;
+}
+.money article a p{
+	color: #888;
+	line-height: 0.18rem;
+	font-size: 0.12rem;
+	text-align: center;
+	margin-top: 0.05rem;
+}
+
+/*我的 列表*/
+.links{
+	background-color: #fff;
+	margin-top: 0.1rem;
+}
+.links li a{
+	display: flex;
+	height: 0.45rem;
+	padding:0 0.12rem;
+	align-items: center;
+}
+.links li a>i{
+	display: inline-block;
+	width: 0.3rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+	margin-right: 0.1rem;
+	color: #fff;
+	border-radius: 0.13rem;
+	background-color: #ffa21f;
+	font-size: 0.18rem;
+}
+.links li:nth-of-type(1) a>i{
+	background-color: #4fc3f7;
+}
+.links li a>section{
+	flex-grow: 1;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #eee;
+}
+.links li a>section :first-child{
+	font-size: 0.16rem;
+	color: #4d4d4d;
+}
+.links li a>section :last-child{
+	color: #c7c7cc;
+	font-size: 0.12rem;
+}
+
+
+/*关于 列表*/
+.others li a>i{
+	background-color: #90a4ae;
+}
+.others li:nth-of-type(1) a>i{
+	background-color: #90a4ae;
+}
+
