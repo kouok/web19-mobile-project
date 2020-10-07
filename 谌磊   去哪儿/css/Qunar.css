@@ -1,0 +1,155 @@
+*{
+	font-size: 0.12rem;
+}
+.header1{
+	width: 100%;
+	height: 6.2rem;
+	background: url(../images/Qunar/mybgnew-20161111.jpg)no-repeat;
+	background-size: 100%;
+	margin-top: -4.6rem;
+	position: relative;
+}
+.he{
+	width: 100%;
+	height: 1.6rem;
+	position: absolute;
+	bottom: 0;
+}
+.he span{
+	display: inline-block;
+	padding-left: 0.2rem;
+	color: white;
+	font-size: 0.2rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+}
+.he-1{
+	/* vertical-align: middle; */
+	margin: auto;
+	width: 0.65rem;
+	height: 0.9rem;
+	color: white;
+}
+.he-1 img{
+	width: 0.65rem;
+}
+.he-2{
+	font-size: 0.14rem;
+}
+.he-2 a{
+	font-size: 0.14rem;
+	color: white;
+}
+a{
+	display: inline-block;
+}
+#bo{
+	background: #EBECED;
+}
+.sev{
+	width: 100%;
+	height: 100%;
+	padding-top: 0.2rem;
+}
+.sev1{
+	width: 100%;
+	height: 0.45rem;
+	border-bottom: 0.01rem solid #EBECED;
+	border-top: 0.01rem solid #EBECED;
+	display: flex;
+	align-items: center;
+	background: white;
+	padding: 0 0.12rem;
+}
+.sev1 span{
+	background: #FF652F;
+	display: inline-block;
+	width: 0.29rem;
+	height: 0.29rem;
+	text-align: center;
+	line-height: 0.29rem;
+	color: white;
+	border-radius: 0.1rem;
+}
+.sev1 p{
+	margin-left: 0.1rem;
+	font-size: 0.16rem;
+}
+.eig{
+	height: 0.8rem;
+	border-bottom: 0.01rem solid #EBECED;
+	background: white;
+	display: flex;
+	padding: 0 0.12rem;
+	align-items: center;
+	margin-bottom: 0.1rem;
+}
+.eig div{
+	flex-grow: 1;
+	text-align: center;
+}
+.eig div:first-child{
+	font-size: 0.16rem;
+}
+.nine{
+	width: 100%;
+	height: 0.45rem;
+	border-bottom: 0.01rem solid #EBECED;
+	display: flex;
+	align-items: center;
+	background: white;
+	padding: 0 0.12rem;
+	justify-content: space-between;
+}
+.nine div{
+	display: flex;
+}
+.nine span:first-child{
+	display: inline-block;
+	width: 0.29rem;
+	height: 0.29rem;
+	text-align: center;
+	line-height: 0.29rem;
+	color: white;
+	border-radius: 0.1rem;
+}
+.nine span:last-child{
+	float: right;
+	color: #D8D8DC;
+}
+.nine p{
+	margin-left: 0.1rem;
+	font-size: 0.16rem;
+	line-height: 0.29rem;
+}
+.ba{
+	background: #00C6F8;
+}
+.ba1{
+	background: #FF9D00;
+}
+.ba2{
+	background: #8AA5AE;
+}
+.sev a:nth-child(6){
+	margin-bottom: 0.1rem;
+}
+.ten{
+	width: 100%;
+	position: relative;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.ten span{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	color: #BFBFBF;
+	margin-top: 0.1rem;
+}
+.ten a{
+	position: absolute;
+	right: 0.12rem;
+	top: 0.1rem;
+	color: #3dadc1;
+}

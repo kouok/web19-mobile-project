@@ -1,0 +1,379 @@
+#body {
+	background: #F1F9FC;
+	font-size: 0.12rem;
+}
+
+.he3 {
+	position: fixed;
+	top: 0;
+	display: flex;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	background: #00ACBB;
+	padding: 0 0.1rem;
+}
+
+.he3 span:nth-child(1) {
+	font-size: 0.2rem;
+	color: #00FFFF;
+	width: 0.4rem;
+}
+
+.he3 span:nth-child(2) {
+	font-size: 0.18rem;
+	color: white;
+	width: 2.55rem;
+	text-align: center;
+}
+
+.he4 {
+	width: 100%;
+	height: 2.06rem;
+	background: url(../images/门票预订/5847560fd55ff6f590.water.jpg_600x330_31cca50c.jpg);
+	background-size: 100%;
+	position: relative;
+}
+
+.le {
+	font-size: 0.18rem;
+	color: white;
+	display: inline-block;
+	width: 0.36rem;
+	height: 0.36rem;
+	text-align: center;
+	line-height: 0.36rem;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 50%;
+	margin: 0.1rem;
+}
+
+.feng {
+	position: absolute;
+	left: 0.1rem;
+	bottom: 0.35rem;
+	color: white;
+	font-size: 0.12rem;
+	width: 0.6rem;
+	height: 0.2rem;
+	text-align: center;
+	line-height: 0.2rem;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 0.2rem;
+}
+
+.hu {
+	position: absolute;
+	left: 0.1rem;
+	bottom: 0.1rem;
+	color: white;
+	font-size: 0.18rem;
+}
+
+.hen {
+	background: white;
+	border-radius: 0.1rem 0.1rem 0 0;
+	padding: 0.1rem 0.1rem 0 0.1rem;
+	/* margin-top: -0.1rem; */
+}
+
+.hen1 {
+	display: flex;
+}
+
+.hen2 {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	position: relative;
+}
+
+.hen3 {}
+
+.hen3 .fir {
+	font-size: 0.20rem;
+	color: #ff8300;
+	line-height: 0.20rem;
+}
+
+.hen3 .sec {
+	margin-left: 0.1rem;
+	color: #ff8300;
+}
+
+.hen3 .th {
+	color: gray;
+	line-height: 0.2rem;
+}
+
+.hen3 .fou {
+	margin-left: 0.1rem;
+}
+
+.rigg {
+	position: absolute;
+	right: 0;
+}
+
+.ma {
+	margin-left: 0.1rem;
+}
+
+.ma-t {
+	margin-top: 0.1rem;
+}
+
+.br {
+	border-right: 0.01rem solid grey;
+}
+
+.br-t {
+	border-top: 0.01rem solid grey;
+}
+
+.padd {
+	padding: 0.1rem 0;
+}
+
+.hen2 .iconfont {
+	font-size: 0.12rem;
+}
+
+.fon {
+	font-size: 0.14rem;
+}
+
+.qu {
+	margin: 0.1rem 0;
+	width: 100%;
+	background: white;
+	padding: 0 0.08rem 0.16rem 0.08rem;
+}
+
+.qu1 {
+	background: #fff;
+	color: #212121;
+	font-size: 0.2rem;
+	font-weight: bold;
+	padding: 0.16rem 0 0 0.02rem;
+	display: inline-block;
+}
+
+.qu2 {
+	background: #f8f8f8;
+	padding: 0 0.16rem;
+	margin: 0.16rem 0 0.1rem 0;
+	border-radius: 0.16rem;
+}
+
+.qu3 {
+	padding: 0.16rem 0;
+	display: flex;
+}
+.grey{
+	padding: 0.16rem;
+	display: flex;
+	background: #F8F8F8;
+	margin: 0 0.08rem;
+	border-radius: 0.08rem;
+}
+.qu4 {
+	width: 2.43rem;
+}
+
+.qu4 img {
+	width: 0.1rem;
+}
+
+.qu5 {
+	width: 0.83rem;
+	text-align: center;
+}
+
+.que {
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+}
+
+.que1 {
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+	color: #00afc7;
+}
+
+.que2 {
+	font-size: 0.2rem;
+	color: #ff8300;
+}
+
+.qu5 button {
+	width: 0.83rem;
+	border-radius: 0.1rem;
+	background: #ff8300;
+	line-height: 0.25rem;
+	color: white;
+}
+
+.jing {
+	margin: 0.1rem 0;
+	width: 100%;
+	background: white;
+	padding: 0 0.08rem 0.16rem 0.08rem;
+}
+
+.jing-1 {
+	background: #fff;
+	color: #212121;
+	font-size: 0.2rem;
+	font-weight: bold;
+	padding: 0.16rem 0 0 0.02rem;
+	display: inline-block;
+}
+
+.jing-2 {
+	background: #00bfd4;
+	border-radius: .06rem;
+	
+	height: 0.12rem;
+	width: 0.04rem;
+	margin-right: 0.06rem;
+	display: inline-block;
+}
+.jing-3{
+	background: #fff;
+	color: #212121;
+	font-size: 0.16rem;
+	font-weight: bold;
+	padding: 0.08rem 0 0 0.02rem;
+	display: inline-block;
+}
+.jins {
+	border:0.01rem solid #f8f8f8;
+	margin: 0.16rem 0 0.1rem 0;
+	border-radius: 0.16rem;
+}
+.jins1{
+	margin: 0 0.1rem;
+	padding: 0.16rem 0;
+	align-items: center;
+}
+.jins2{
+	display: inline-block;
+	width: 2.49rem;
+	font-size: 0.15rem;
+}
+.jins3{
+	font-size: 0.2rem;
+	color: #FF9800;
+}
+.jins4{
+	text-align: center;
+	line-height: 0.4rem;
+	font-size: 0.12rem;
+}
+.yong{
+	padding: 0.1rem 0;
+}
+.yong img{
+	width: 1.11rem;
+}
+.yong1{
+	text-align: center;
+	line-height: 0.4rem;
+	font-size: 0.12rem;
+	border-top: 0.01rem dashed gainsboro;
+}
+
+.kan {
+	margin: 0.1rem 0;
+	width: 100%;
+	background: white;
+	
+}
+.kan-1{
+	padding: 0 0.08rem 0 0.08rem;
+}
+.kan-2 {
+	background: #00bfd4;
+	border-radius: 0.06rem;
+	height: 0.12rem;
+	width: 0.04rem;
+	margin-right: 0.06rem;
+	display: inline-block;
+}
+.kan-3{
+	background: #fff;
+	color: #212121;
+	font-size: 0.16rem;
+	font-weight: bold;
+	padding: 0.08rem 0 0 0.02rem;
+	display: inline-block;
+}
+.kan1{
+	border-top: 0.01rem solid gainsboro;
+	border-bottom: 0.01rem solid gainsboro;
+}
+.kan2{
+	display: flex;
+}
+.kan2 img{
+	width: 0.81rem;
+	height: 0.81rem;
+	margin: 0.1rem;
+}
+.kan3{
+	padding-top: 0.1rem;
+	border-bottom: 0.01rem solid gainsboro;
+}
+.kan4{
+	width: 2.74rem;
+}
+.kan4 span:first-child{
+	font-size: 0.15rem;
+}
+.kan4 span:last-child{
+	font-size: 0.18rem;
+	float: right;
+	margin-right: 0.1rem;
+	color: #FF9800;
+}
+.kan4 span:last-child span{
+	font-size: 0.12rem;
+	color: gainsboro;
+	line-height: 0.3rem;
+	padding-left: 0.05rem;
+}
+.kan4 span:last-child span:first-child{
+	color: #FF9800;
+}
+.kan5{
+	margin-top: 0.2rem;
+}
+.kan6{
+	margin-top: 0.05rem;
+}
+.lu{
+	border-bottom: 0.01rem solid gainsboro;
+}
+.lu a{
+	display: inline-block;
+	line-height: 0.4rem;
+	padding-left: 0.2rem;
+	color: #25a4bb;
+}
+.lue{
+	padding-top: 0.1rem;
+	text-align: center;
+}
+.lue span{
+	padding: 0 0.1rem;
+	font-size: 0.14rem;
+}
+.lue span:last-child{
+	color: #25a4bb;
+}
+
+.lues{
+	padding: 0.1rem;
+	text-align: center;
+	color: gainsboro;
+}
