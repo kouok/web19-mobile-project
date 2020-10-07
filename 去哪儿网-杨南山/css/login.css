@@ -1,0 +1,166 @@
+.header,.toggle{
+    display: flex;
+    width: 100%;
+    background: #19a9ba;
+    height: 0.45rem;
+    padding: 0 0.1rem;
+    box-sizing: border-box;
+}
+.top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top .icon-zuojiantou,.zhuce{
+    width: 0.6rem;
+    height: 0.45rem;
+    line-height: 0.45rem;
+}
+.top .icon-zuojiantou{
+    color: #fff;
+}
+.top h1{
+    text-align: center;
+    font-size: 0.18rem;
+    line-height: 0.45rem;
+    color: #fff;
+    font-weight: 400;
+}
+.top .zhuce{
+   color: #a8dce2;
+   text-align: right;
+}
+.toggle .duanxing,.zhanghao{
+    flex: 1;
+    height: 0.39rem;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height:  0.39rem;
+    color: #fff;
+}
+.toggle .duanxing{
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+}
+.toggle .zhanghao{
+    border-radius: 0 8px 8px 0;
+    border-left: none;
+}
+/* 切换注册登录开关 */
+.toggle a.current{
+    background: #fff;
+    color: #25a4bb;;
+}
+
+.form{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0.1rem;
+    background: #fff;
+}
+.phone{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.18rem;
+    height: 0.45rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+.phone .telnum{
+    flex: 1;
+}
+.phone .tel{
+    flex: 3;
+    height: 100%;
+    font-size: 0.18rem;
+}
+.yzm{
+    box-sizing: border-box;
+    width: 100%;
+}
+.yzm .text{
+    margin-right: 0.35rem;
+}
+.yzm .yanzheng{
+    font-size: 0.14rem;
+    text-align: center;
+    width: 1rem;
+    height: 0.3rem;
+    line-height: 0.32rem;
+    border: 1px solid #ccc;
+    color: #d7dce0;
+    border-radius: 0.05rem;
+    flex: 1.2;
+}
+.yzm .password{
+    width: 1.5rem;
+    font-size: 0.18rem;
+}
+.logon{
+    position: absolute;
+    width: 100%;
+    left: -0.01rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    padding: 0 0.1rem;
+   
+}
+.logon .denglu{
+    display: block;
+    width: 100%;
+    background: #85d1db;
+    line-height: .5rem;
+    color: #fff;
+    border-radius: 0.04rem;
+    font-size: 0.18rem;
+}
+.xieyi a{
+    text-decoration: underline;
+    color: #666;
+}
+.xieyi{
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    top: 3rem;
+    text-align: center;
+    font-size: 0.12rem;
+    margin-top: 0.14rem;
+    color: #666;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    
+}
+.about a{
+    flex: 1;
+    text-align: center;
+    font-size: 0.14rem;
+    color: #19a9ba;
+}
+.beian{
+    padding: 0.1rem 0 0.2rem 0;
+    color: #d4d9de;
+}
+.findPwd{
+    text-align: right;
+    margin-right: 0.1rem;
+    font-size: 0.13rem;
+    margin-top: 0.1rem;
+
+}
+
