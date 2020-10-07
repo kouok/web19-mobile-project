@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>小米移动端开发</title>
+    <!-- 重置样式 -->
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 首页样式 -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 导入轮播图的css代码 -->
+    <link rel="stylesheet" href="css/index copy.css">
+    <!-- 导入jq的代码 -->
+    <script src="js/zepto.min.js"></script>
+    <!-- 导入轮播图的js代码 -->
+    <script src="js/index copy.js"></script>
+    <!-- js代码 -->
+    <script src="js/index.js"></script>
+
+    <body>
+        <!-- 头部搜索框 -->
+        <header class="clearfix">
+            <div class="mr20 mt5 fl">
+                <img src="images/shou.png" alt="">
+            </div>
+            <div class="bgw fl">
+                <span class="span"></span>
+                <input type="text" placeholder="搜索商品名称">
+            </div>
+            <a href="wodeyamian.html" target="get" class="ml10 span fl">
+                <img src="images/icon-user.23496a0116.png" alt="">
+            </a>
+        </header>
+        <!-- 导航与箭头部分 -->
+        <div class="posir">
+            <!-- 导航部分 -->
+            <div class="navLis df">
+                <div>
+                    <span class="orange">推荐</span>
+                </div>
+                <div>
+                    <span>手机</span>
+                </div>
+                <div>
+                    <span>智能</span>
+                </div>
+                <div>
+                    <span>电视</span>
+                </div>
+                <div>
+                    <span>笔记本</span>
+                </div>
+                <div>
+                    <span>家电</span>
+                </div>
+                <div>
+                    <span class="xiajian"></span>
+                </div>
+
+            </div>
+            <!-- 下箭头的部分 -->
+            <div class="nav" style="display: none;">
+                <p class="posir">
+                    <span class="font16">全部</span> <span class="span shang"></span>
+                    <div class="quan mt10 font14 tc clearfix color333">
+                        <ul>
+                            <li class="mr10 cur bgw"><span>推荐</span></li>
+                            <li class="mr10 bgw">手机</li>
+                            <li class="mr10 bgw">智能</li>
+                            <li class="mr10 bgw">电视</li>
+                            <li class="mr10 bgw">笔记本</li>
+                            <li class="mr10 bgw">家电</li>
+                            <li class="mr10 bgw">生活周边</li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <!-- 轮播图部分 -->
+        <div class="jd_container">
+            <!-- 顶部的 轮播图 -->
+            <div class="jd_banner">
+                <ul class="banner_images clearfix">
+                    <li>
+                        <a href="detail.html" target="get"><img src="images/bab9aa2ba1f841335041cc7b36294a5a.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="detail.html" target="get"><img src="images/14879bffb504952d1d92b20d6e5f8e26.jpeg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="detail.html" target="get"><img src="images/7b30c080c332f51b42d8b91205d2d4e3.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="detail.html" target="get"><img src="images/03ff022009a635262d53451d532518ed.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="detail.html" target="get"><img src="images/bab9aa2ba1f841335041cc7b36294a5a.jpg" alt=""></a>
+                    </li>
+                </ul>
+                <ul class="banner_index clearfix">
+                    <li class='current'></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- 轮播图下的两排 -->
+        <div class="daohang">
+            <div>
+                <a href="#" class="img">
+                    <img src="images/5cbe4c18-4274-406d-ac0a-157558ab46e0.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#" class="img">
+                    <img src="images/e1284656-ceb4-4499-8517-4ab43e860cc4.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#" class="img">
+                    <img src="images/3b94b3f7-b596-44bb-a771-db222b95fc0e.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#" class="img">
+                    <img src="images/2584e54e-f851-4615-af91-d5ee8d423b96.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#" class="img">
+                    <img src="images/5b7d6d6e-66e0-48d8-8ed9-0ce7079a4b66.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#" class="img">
+                    <img src="images/a245251f-b5ab-40d2-98a0-7685d1b3baf8.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#" class="img">
+                    <img src="images/49f45f32-5b13-47c9-b3e2-ae6e636958ab.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#" class="img">
+                    <img src="images/14e6903e-4700-445e-a56a-6a2bdb99fcc3.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#" class="img">
+                    <img src="images/fdd24a04-15a9-46fc-a5da-5e1267980d27.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#" class="img">
+                    <img src="images/5c8a148c-261a-43b8-b608-de4362079301.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- 下面的主体内容 -->
+        <section class="mt10 clearfix">
+            <!-- 主体的第一部分 -->
+            <div class="clearfix redmi df">
+                <div class="fl">
+                    <a href="detail.html" target="get">
+                        <img src="images/6231f769-89b4-4a09-8dd6-0de5a2275bc1.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="detail.html" target="get">
+                        <img src="images/a2bf6aa3-508a-4866-a986-3d2040cec728.png" alt="">
+                    </a>
+                    <a href="detail.html" target="get">
+                        <img src="images/733ebeec-c20c-463f-925c-aeb50c453e92.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- 主体的第二部分探索秘境之旅 -->
+            <div class="mt10 xiaomi10">
+                <a href="detail.html" target="get">
+                    <img src="images/c9a1a4b7-2b5b-445e-8b1d-a97dccd11b59.png" alt="">
+                </a>
+            </div>
+            <!-- 主体的第三部分每日精选 -->
+            <div class="mt10 bgw meiri xiaomi10">
+                <a href="detail.html" target="get">
+                    <img src="images/c4d86640-6285-4557-9ce2-b57363f63d11.png" alt="">
+                </a>
+                <div class="jieshao bgw">
+                    <div class="df zuo">
+                        <div class="tc">
+                            <a href="detail.html" target="get">
+                                <img src="images/879f4ac3-68de-4ab8-8088-2ee55ede8893.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                小米10 Pro
+                            </p>
+                            <p class="gray font16">骁龙865 / 50倍变焦</p>
+                            <p class="pink font16">￥4999起</p>
+                            <p class="gou"><a href="detail.html" target="get" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                        <div class="tc">
+                            <a href="detail.html" target="get">
+                                <img src="images/3333df54-8acc-4015-a801-878295c6f1f1.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                小米10
+                            </p>
+                            <p class="gray font16">骁龙865 / 1亿像素相机</p>
+                            <p class="font16"><span class="pink ml5">￥3799起</span><span class="gray hua">￥3999</span> </p>
+                            <p class="gou"><a href="detail.html" target="get" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                    </div>
+                    <div class="df mt20 zuo">
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/c3a8e4e6-72b9-4b0d-b707-ad866f3269d0.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                Redmi K30 4G
+                            </p>
+                            <p class="gray font16">120Hz流速屏，全速热爱</p>
+                            <p class="font16"><span class="pink ml5">￥1399起</span><span class="gray hua">￥1699</span> </p>
+                            <p class="gou"><a href="detail.html" target="get" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/8fa04b5e-afee-4fa7-82fe-c1d8cae38928.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                Redmi K30 5G
+                            </p>
+                            <p class="gray font16">双模5G，120Hz流速屏</p>
+                            <p class="font16"><span class="pink ml5">￥1599起</span><span class="gray hua">￥2299</span> </p>
+                            <p class="gou"><a href="detail.html" target="get" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                    </div>
+                    <div class="df mt20 zuo">
+                        <div class="tc">
+                            <a href="detail.html" target="get">
+                                <img src="images/f9511577-cc4c-4325-b452-80a64025e4a7.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                Redmi Note 8 Pro
+                            </p>
+                            <p class="gray font16">6400万全场景四摄</p>
+                            <p class="font16"><span class="pink ml5">￥1099起</span><span class="gray hua">￥1399</span> </p>
+                            <p class="gou"><a href="detail.html" target="get" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/d1595155-01e9-4c68-9d60-7e3e48460c60.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                Redmi Note 8
+                            </p>
+                            <p class="gray font16">千元4800万四摄</p>
+                            <p class="font16"><span class="pink ml5">￥899起</span><span class="gray hua">￥999</span> </p>
+                            <p class="gou"><a href="#" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                    </div>
+                    <div class="tc mt20">
+                        <p>
+                            <a href="#" class="font20 brown">
+                                更多小米手机产品>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--主体的第四部分小米电视  -->
+            <div class="mt10 bgw xiaomi10">
+                <a href="#">
+                    <img src="images/dea94808-85c4-45a8-9b73-3b5a93525ce8.png" alt="">
+                </a>
+                <div class="jieshao bgw">
+                    <div class="df zuo">
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/780a8393-7a14-47d7-92a2-9e2d3e6112d3.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                小米电视4A 65英寸
+                            </p>
+                            <p class="gray font16">4K HDR，人工智能语音系统</p>
+                            <p class="font16"><span class="pink ml5">￥2699起</span><span class="gray hua">￥2999</span> </p>
+                            <p class="gou"><a href="#" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/57abfe93-4ec0-4254-a240-09e7d5416ccb.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                小米电视4X 43英寸
+                            </p>
+                            <p class="gray font16">FHD全高清屏，人工智能语音</p>
+                            <p class="font16"><span class="pink ml5">￥1299起</span><span class="gray hua">￥1399</span> </p>
+                            <p class="gou"><a href="#" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                    </div>
+                    <div class="df mt20 zuo">
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/68b8a5c1-e985-4b9d-8805-4450b7886350.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                小米电视4C 50英寸
+                            </p>
+                            <p class="gray font16">4K HDR，钢琴烤漆</p>
+                            <p class="pink font16">￥1699起</p>
+                            <p class="gou"><a href="#" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/3f0445b7-3bcd-40d6-8609-c83efa6877cd.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                小米电视4C 50英寸
+                            </p>
+                            <p class="gray font16">4K HDR，人工智能系统</p>
+                            <p class="pink font16">￥1999起</p>
+                            <p class="gou"><a href="#" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                    </div>
+                    <div class="df mt20 zuo pb10 bog">
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/90b18f73-7106-4ae3-86c2-861e09c0519c.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                小米电视4A 32英寸
+                            </p>
+                            <p class="gray font16">人工智能系统，高清液晶屏</p>
+                            <p class="pink font16">￥899起</p>
+                            <p class="gou"><a href="#" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/7e4ded64-04e8-42ff-8b15-5498852deb05.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                小米电视4A 50英寸
+                            </p>
+                            <p class="gray font16">4K HDR，人工智能语音系统</p>
+                            <p class="pink font16">￥1699起</p>
+                            <p class="gou"><a href="#" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                    </div>
+                    <div class="tc mt20">
+                        <p>
+                            <a href="#" class="font20 brown">
+                                更多小米手机产品>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 主体的第五部分 小米专属-->
+            <div class="mt10 xiaomi10">
+                <a href="#">
+                    <img src="images/1a1d6aa9-04fc-4b26-935d-8d06f4f385cf.png" alt="">
+                </a>
+            </div>
+            <!--主体的第六部分 小米笔记本 -->
+            <div class="mt10 bgw xiaomi10">
+                <a href="#">
+                    <img src="images/ebf6670b-aed9-4176-89cb-9141a656a099.png" alt="">
+                </a>
+                <div class="jieshao bgw">
+                    <div class="df zuo">
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/159c82c0-bfce-4739-b273-cdc676b8679a.png" alt="">
+                            </a>
+                            <p class=" font18 color333">
+                                Air 13.3" 2019款
+                            </p>
+                            <p class="gray font16">新一代独立显卡</p>
+                            <p class="font16"><span class="pink ml5">￥5499起</span><span class="gray hua">￥5999</span> </p>
+                            <p class="gou"><a href="#" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                        <div class="tc">
+                            <a href="#">
+                                <img src="images/e1a1ec59-a1a0-4246-8487-c231df31e7a4.png" alt="">
+                            </a>
+                            <p class=" font18 color333 cutFont">
+                                小米笔记本15.6" MX110 独显版
+                            </p>
+                            <p class="gray font16">全面均衡的国民轻薄本</p>
+                            <p class="font16"><span class="pink ml5">￥3799起</span><span class="gray hua">￥4299</span> </p>
+                            <p class="gou"><a href="#" class="white">
+                                立即购买
+                            </a></p>
+                        </div>
+                    </div>
+                    <div class="tc mt20">
+                        <p class="pb10">
+                            <a href="#" class="font20 brown">
+                                更多小米手机产品>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 主体的第七部分 智能好物-->
+            <div class="mt10 xiaomi10">
+                <a href="#">
+                    <img src="images/8e335c68-afbd-4a83-b2b6-d0be281d77dd.png" alt="">
+                </a>
+            </div>
+            <!-- 主体的第八部分 米家智能-->
+            <div class="mt10 bgw xiaomi10">
+                <a href="#">
+                    <img src="images/c14ef07c-6a4f-4d3d-b740-d9dd1ea6dd92.png" alt="">
+                </a>
+                <div class="mijia">
+                    <div class="df zhin">
+                        <div>
+                            <a href="#">
+                                <img src="images/efd99b22-4c69-463c-9720-33d207a446d9.png" alt="">
+                            </a>
+                        </div>
+                        <div class="bgw ge">
+                            <a href="#">
+                                <p class="font16 color333">米家直流变频落地扇1X</p>
+                                <p class="gray font14">模拟自然风算法 支持AI语音</p>
+                                <p class="pink font14 mt10">￥299起</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="df zhin">
+                        <div class="bgw ge">
+                            <a href="#">
+                                <p class="font16 color333">小爱音箱万能遥控版</p>
+                                <p class="gray font14">传统家电秒变智能</p>
+                                <p class="font14 mt10"><span class="pink">￥299起</span>
+                                    <span class="hua gray">￥199</span></p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/189b573a-fe73-4df2-bae4-d13de34dd8eb.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="df bog zhin">
+                        <div>
+                            <a href="#">
+                                <img src="images/71ace6a2-948d-4b1d-8fbd-c7fe1666c790.png" alt="">
+                            </a>
+                        </div>
+                        <div class="bgw ge">
+                            <a href="#">
+                                <p class="font16 color333">米家照片打印机</p>
+                                <p class="gray font14">手机即拍即印</p>
+                                <p class="pink font14 mt10">￥499起</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tc geng">
+                        <p class="pb20 pt20">
+                            <a href="#" class="font20 brown">
+                                更多米家智能产品>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 主体的第九部分 推片 -->
+            <div class="mt10 bgw xiaomi10">
+                <div class="df tupian">
+                    <div>
+                        <a href="#">
+                            <img src="images/4e83eb8a-d67a-485e-963d-a63e1573c927.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/7c8ce0f5-7b99-4a24-ba5c-8cecb756fb05.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="df tupian">
+                    <div>
+                        <a href="#">
+                            <img src="images/5f34ff80-b895-4e6d-b65e-1505ba61049c.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/5d65b496-4e4c-4a73-89c3-d2a2e3d63ae2.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="df tupian">
+                    <div>
+                        <a href="#">
+                            <img src="images/4f2979ed-0a1a-4354-990f-a49c19eacbf9.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/b56fe980-57cd-4f94-829d-75c7b6310eaa.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 主体的第十部分 小米以旧换新-->
+            <div class="mt10 xiaomi10">
+                <a href="#">
+                    <img src="images/4bcfdcb2-5658-4f5c-a7fd-7e6ef9abc9ba.png" alt="">
+                </a>
+                <div class="tc geng bgw">
+                    <p class="pb20 pt20">
+                        <a href="#" class="font20 brown">
+                            了解小米>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- 底部 -->
+        <!-- 底部 -->
+        <footer class="df">
+            <div>
+                <span></span>
+                <span>首页</span>
+            </div>
+            <div>
+                <span></span>
+                <span>分类</span>
+            </div>
+            <div>
+                <span></span>
+                <span>星球</span>
+            </div>
+            <div>
+                <span></span>
+                <span>购物车</span>
+            </div>
+            <div>
+                <span></span>
+                <a href="wodeyamian.html" target="get">我的</a>
+            </div>
+        </footer>
+        <!-- 固定定位 -->
+        <div class="ding" style="display: none;">
+            <a href="#" class="span">
+                <img src="images/21678bb7-989a-4cd0-9ec2-c40065b0991e.png" alt="">
+            </a>
+            <a href="#" class="span huidao ml10">
+                <img src="images/006be074-1377-4936-aab0-10a12a8cac4d.png" alt="">
+            </a>
+        </div>
+        <!-- 头部吸附 -->
+        <div class="hea" style="display: none;">
+            <header class="clearfix">
+                <div class="mr20 mt5 fl">
+                    <img src="images/shou.png" alt="">
+                </div>
+                <div class="bgw fl">
+                    <span class="span"></span>
+                    <input type="text" placeholder="搜索商品名称">
+                </div>
+                <a href="#" class="ml10 span fl">
+                    <img src="images/icon-user.23496a0116.png" alt="">
+                </a>
+            </header>
+            <!-- 导航与箭头部分 -->
+            <div class="posir">
+                <!-- 导航部分 -->
+                <div class="navLis df">
+                    <div>
+                        <span class="orange">推荐</span>
+                    </div>
+                    <div>
+                        <span>手机</span>
+                    </div>
+                    <div>
+                        <span>智能</span>
+                    </div>
+                    <div>
+                        <span>电视</span>
+                    </div>
+                    <div>
+                        <span>笔记本</span>
+                    </div>
+                    <div>
+                        <span>家电</span>
+                    </div>
+                    <div>
+                        <span class="xiajian"></span>
+                    </div>
+
+                </div>
+                <!-- 下箭头的部分 -->
+                <div class="nav" style="display: none;">
+                    <p class="posir">
+                        <span class="font16">全部</span> <span class="span shang"></span>
+                        <div class="quan mt10 font14 tc clearfix color333">
+                            <ul>
+                                <li class="mr10 cur bgw"><span>推荐</span></li>
+                                <li class="mr10 bgw">手机</li>
+                                <li class="mr10 bgw">智能</li>
+                                <li class="mr10 bgw">电视</li>
+                                <li class="mr10 bgw">笔记本</li>
+                                <li class="mr10 bgw">家电</li>
+                                <li class="mr10 bgw">生活周边</li>
+                            </ul>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
