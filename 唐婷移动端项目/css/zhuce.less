@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  /*所有的盒子都使用怪异模型*/
+  box-sizing: border-box;
+}
+body{
+    height: 100%;
+     background: #F3F9FC !important;
+     overflow-x: hidden;
+}
+html {
+   
+  font-family: "PingFangSC-Regular" !important;
+  min-width: 320px !important;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+@min3:3.75rem;
+.header{
+    width: @min3;
+    position: relative;
+    height: .44rem;
+    background: #18a9b9;
+    line-height: .44rem;
+    display: flex;
+ border-bottom: #75ffff 1px solid;
+}
+.header>div:nth-child(3){
+      position: absolute;
+    top: 0;
+    width: .6rem;
+    height: .44rem;
+    cursor: pointer;
+    right: 0;
+    padding-right: .1rem;
+    text-align: right;
+    font-size: .16rem;
+    color: #75ffff;
+    
+}
+.header>div:nth-child(2){
+    flex-grow: 1;
+    margin: 0 .6rem;
+    text-align: center;
+    line-height: .44rem;
+    color: #fff;
+    font-size: .18rem;
+}
+.header>div:nth-child(1){
+    
+    left: 0;
+    padding-left: .1rem;
+    text-align: left;
+    
+    font-size: .2rem;
+    font-weight: bold;
+    vertical-align: middle;
+      position: absolute;
+    top: 0;
+    width: .6rem;
+    height: .44rem;
+    cursor: pointer;
+    color: #fff;
+}
+// 注册表
+.zhuce{
+    width: @min3;
+    height: 1.38rem;
+    border-top: .01rem solid #ccc;
+    border-bottom: .01rem solid #ccc;
+    margin-top: .1rem;
+    padding-left: .1rem;
+    background: #fff;
+    font-size: .16rem;
+}
+
+.biaodan>div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: .01rem solid #ddd;
+    line-height: .45rem;
+    span{
+        margin-right: 0.3rem;
+         color: #76b8b8;
+    width: 0.9rem;
+    height: 0.44rem;
+    }
+    input{
+        width: 1.62rem;
+       margin-top: 0.06rem;
+    border: none;
+    outline: none;
+    height: 0.35rem;
+   flex-grow: 1;
+    }
+   
+}
+.mr3{margin-right: 0.2rem;}
+.teite{
+     display: block;
+    margin: .07rem .1rem;
+    width: 1rem;
+    height: .3rem;
+}
+.tuxingma{
+     border: .01rem solid #ccc;
+   display: block;
+    margin: .07rem .1rem;
+    width: 1rem;
+    height: .3rem;
+    border-radius: .03rem;
+     font-size: .14rem;
+    text-align: center;
+    line-height: .3rem;
+}
+.yanzhengma{
+    display: block;
+    margin: .07rem .1rem;
+   color: #d7dce0;
+    border: .01rem solid #ccc;
+    font-size: .14rem;
+    text-align: center;
+    line-height: .3rem;
+    cursor: pointer;
+    width: 1rem;
+    height: .3rem;
+}
+// 底部
+.tt{
+    position: fixed;
+    bottom: 0.1rem  ;
+}
+.footer{
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid #D1D1D2;
+    width: @min3;
+    display: flex;
+    a{
+        flex: 1;
+        text-align: center;
+        font-size: 0.12rem;
+        color: #76b8b8;
+    }
+}
+.footer-2{
+    
+    text-align: center;
+    width: @min3;
+    font-size: 0.1rem;
+    color: #D6DBE0;
+}
+.denglu-anniu{
+    margin-top: 0.1rem;
+    width: @min3;
+    height: 0.55rem;
+    // display: flex;
+   margin-top: 0.1rem;
+ 
+    input{
+        width: 3.55rem;
+        height: 0.5rem;
+        color: #fff;
+    text-align: center;
+    line-height: .5rem;
+    display: block;
+    background: #19a9ba;
+    border-radius: .03rem;
+    border: none;
+    outline: none;
+    }
+}
+.xieyi{
+    color: #ccc;
+    margin-top: 0.8rem;
+    width: @min3;
+    text-align: center;
+    font-size: 0.12rem;
+    a{
+        color: #ccc;
+        text-decoration: underline;
+    }
+}
+.bornone{
+    border-bottom: none !important;
+}
+
+
+.icon-fanhui{
+    color:#fff
+}
