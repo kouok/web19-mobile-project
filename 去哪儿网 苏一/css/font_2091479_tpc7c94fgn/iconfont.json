@@ -1,0 +1,30 @@
+{
+  "id": "2091479",
+  "name": "9.24 去哪儿 detail",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "763830",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "4601138",
+      "name": "店铺",
+      "font_class": "dianpu",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "15022539",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}
