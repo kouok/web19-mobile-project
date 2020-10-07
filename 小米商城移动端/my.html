@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+    <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" />
+    <title>我的页面</title>
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <!-- 外部样式 -->
+    <link rel="stylesheet" href="css/my.css"/>
+    <!-- 字体图标样式 -->
+    <link rel="stylesheet" type="text/css"  href="font/iconfont.css">
+    <!-- 将px转rem的公式代码 -->
+    <script>
+        //昨天的
+        // var w=window.innnerWidth;
+        // 今天：
+        var w=document.documentElement.getBoundingClientRect().width;
+        //7.5是根据设计图的大小除以100，需要按照你的实际设计图换算
+        var bili=w/6.4;
+        document.documentElement.style.fontSize=bili+"px";
+
+        // 此时  100px=1rem
+        // 将所有在设计图量出的尺寸都除以100即可转为对应的rem
+    </script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="header ">
+        <div class="photo">
+            <img src="image/17.png">
+        </div>
+        <a href="login.html">登录/</a>
+        <a href="register.html">注册</a>
+    </header>
+    <!-- 导航 -->
+    <div class="lis">
+        <div>
+            <a href="#">我的订单</a>
+        </div>
+        <div>
+            <a href="#">全部订单</a>
+            <span class="iconfont icon-fanhui-copy-copy"></span>
+        </div>
+    </div>
+    <!-- 待付款、待收货、退换修 -->
+    <div class="money">
+        <div class="moon">
+            <span class="iconfont icon-daifukuan"></span>
+            <p><a href="#">待付款</a></p>
+        </div>
+        <div class="moon">
+            <span class="iconfont icon-daishouhuo"></span>
+            <p><a href="#">待收货</a></p>
+        </div>
+        <div class="moon">
+            <span class="iconfont icon-xiuli"></span>
+            <p><a href="#">退换修</a></p>
+        </div>
+    </div>
+    <!-- 会员中心、我的优惠 -->
+    <div class="vip">
+        <div class="vips">
+            <span class="iconfont icon-huiyuanzhongxin"></span>
+            <div class="centers">
+                <a href="#">会员中心</a>
+                <span class="iconfont icon-fanhui-copy-copy"></span>
+            </div>  
+        </div>
+        <div class="vips">
+            <span class="iconfont icon-huiyuanzhongxin"></span>
+            <div class="center">
+                <a href="#">我的优惠</a>
+                <span class="iconfont icon-fanhui-copy-copy"></span>
+            </div>  
+        </div>
+    </div>
+    <!-- 服务之家、小米之家 -->
+    <div class="vip">
+        <div class="vips">
+            <span class="iconfont icon-fuwu"></span>
+            <div class="centers">
+                <a href="#">服务之家</a>
+                <span class="iconfont icon-fanhui-copy-copy"></span>
+            </div>  
+        </div>
+        <div class="vips">
+            <span class="iconfont icon-xiaomi"></span>
+            <div class="center">
+                <a href="#">小米之家</a>
+                <span class="iconfont icon-fanhui-copy-copy"></span>
+            </div>  
+        </div>
+    </div>
+    <!-- 我的F码、礼物码兑换 -->
+    <div class="vip">
+        <div class="vips">
+            <span class="iconfont icon-fmashangpin"></span>
+            <div class="centers">
+                <a href="#">我的F码</a>
+                <span class="iconfont icon-fanhui-copy-copy"></span>
+            </div>  
+        </div>
+        <div class="vips">
+            <span class="iconfont icon-liwu"></span>
+            <div class="center">
+                <a href="#">礼物码兑换</a>
+                <span class="iconfont icon-fanhui-copy-copy"></span>
+            </div>  
+        </div>
+    </div>
+    <!-- 设置 -->
+    <div class="vipes">
+        <span class="iconfont icon-settings"></span>
+        <div class="center">
+            <a href="#">设置</a>
+            <span class="iconfont icon-fanhui-copy-copy"></span>
+        </div>  
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div>
+            <span class="iconfont icon-yemian-copy-copy-copy"></span>
+            <p>首页</p>
+        </div>
+        <div>
+            <span class="iconfont icon-leimupinleifenleileibie"></span>
+            <p>分类</p>
+        </div>
+        <div>
+            <span class="iconfont icon-iconset0456"></span>
+            <p>星球</p>
+        </div>
+        <div>
+            <span class="iconfont icon-gouwuche"></span>
+            <p>购物车</p>
+        </div>
+        <div>
+            <span class="iconfont icon-Icon_wode"></span>
+            <p class="my">我的</p>
+        </div>
+    </div>
+</body>
+</html>

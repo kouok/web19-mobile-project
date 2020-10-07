@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+    <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" />
+    <title>小米移动端首页</title>
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <!-- 外部样式 -->
+    <link rel="stylesheet" href="css/index.css"/>
+    <!-- 字体图标样式 -->
+    <link rel="stylesheet" type="text/css"  href="font/iconfont.css">
+    <!-- 轮播图样式 -->
+    <script src="js/TouchSlide.1.1.js"></script>
+    <!-- 将px转rem的公式代码 -->
+    <script>
+        //昨天的
+        // var w=window.innnerWidth;
+        // 今天：
+        var w=document.documentElement.getBoundingClientRect().width;
+        //7.5是根据设计图的大小除以100，需要按照你的实际设计图换算
+        var bili=w/6.4;
+        document.documentElement.style.fontSize=bili+"px";
+
+        // 此时  100px=1rem
+        // 将所有在设计图量出的尺寸都除以100即可转为对应的rem
+    </script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="heads">
+        <div class="tops">
+            <div class="head"> 
+                <div class="one">
+                    <span class="iconfont icon-xiaomi"></span>
+                </div>
+                <div class="two">
+                    <span class="iconfont icon-sousuo"></span>
+                    <input type="text" value="搜索商品名称">
+                </div>
+                <div class="three">
+                    <a href="my.html"><span class="iconfont icon-Icon_wode"></span></a>
+                </div>
+            </div>
+            <!-- 推荐 -->
+            <div class="nas">
+                <a href="#">推荐</a>
+                <a href="#">手机</a>
+                <a href="#">智能</a>
+                <a href="#">电视</a>
+                <a href="#">笔记本</a>
+                <a href="#">家电</a>
+                <a href="#"><span class="iconfont icon-arrow-down"></span></a>
+            </div>
+        </div>
+    </header>  
+    <!-- 轮播图 -->
+    <!-- 清除默认的外观 -->
+    <!-- 本例主要代码 Start ================================ -->
+    <div id="slideBox" class="slideBox">
+        <div class="bd">
+            <ul>
+                <li>
+                    <a class="pic" href="#"><img src="image/18ed.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="image/b249.jpg"/></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="image/d4e3.jpg"/></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="image/f8e26.jpeg"/></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 小圆点指示器 -->
+        <div class="hd">
+            <ul></ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        TouchSlide({ 
+            slideCell:"#slideBox",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul", 
+            effect:"leftLoop", 
+            autoPage:true,//自动分页
+            autoPlay:true //自动播放
+        });
+    </script>
+    <!-- 九宫格 -->
+    <div class="nine">
+        <a href=""><img src="image/1.png"></a>
+        <a href=""><img src="image/2.webp"></a>
+        <a href=""><img src="image/3.webp"></a>
+        <a href=""><img src="image/4.webp"></a>
+        <a href=""><img src="image/5.webp"></a>
+        <a href=""><img src="image/6.webp"></a>
+        <a href=""><img src="image/7.png"></a>
+        <a href=""><img src="image/8.webp"></a>
+        <a href=""><img src="image/9.png"></a>
+        <a href=""><img src="image/10.png"></a>
+    </div>
+    <!-- 红米K30、小米手环4、小米电视特惠 -->
+    <div class="red">
+        <div>
+            <img src="image/5d3c5.webp">
+        </div>
+        <div>
+            <div><img src="image/a13c8.webp"></div>
+            <div><img src="image/a831.webp"></div>
+        </div>
+    </div>
+    <!-- 小米10探索秘境之旅 -->
+    <div class="mi"> 
+        <img src="image/1958.webp"
+    </div>
+    <!-- 每日精选 -->
+    <div class="everyday">
+        <img src="image/3ffee.webp">
+    </div>
+    <!-- 小米手机类型 -->
+    <div class="types">
+        <div class="naps">
+            <div class="phones">
+                <img src="image/b16d.jpg">
+            </div>
+            <div class="long">
+                <h3>小米10 Pro</h3>
+                <p class="xiao">骁龙865 / 50倍变焦</p>
+                <p class="qi">￥4999起</p>
+                <button>立即购买</button>
+            </div>
+        </div>
+        <div class="naps">
+            <div class="phones">
+                <img src="image/2a64.jpg">
+            </div>
+            <div class="long">
+                <h3>小米10 Pro</h3>
+                <p class="xiao">骁龙865 / 50倍变焦</p>
+                <p class="qi">￥3799起<a href="#">￥3999</a></p>
+                <button>立即购买</button>
+            </div>
+        </div>
+    </div>
+    <div class="types">
+        <div class="naps">
+            <div class="phones">
+                <img src="image/0d98.jpg">
+            </div>
+            <div class="long">
+                <h3>Redmi K30 4G</h3>
+                <p class="xiao">120Hz,全速热爱</p>
+                <p class="qi">￥1399起<a href="#">￥1699</a></p>
+                <button>立即购买</button>
+            </div>
+        </div>
+        <div class="naps">
+            <div class="phones">
+                <img src="image/392b.jpg">
+            </div>
+            <div class="long">
+                <h3>Redmi K30 5G</h3>
+                <p class="xiao">双模5G，120Hz流速屏</p>
+                <p class="qi">￥1399起<a href="#">￥1999</a></p>
+                <button>立即购买</button>
+            </div>
+        </div>
+    </div>
+    <div class="types">
+        <div class="naps">
+            <div class="phones">
+                <img src="image/553a7.jpg">
+            </div>
+            <div class="long">
+                <h3>Redmi Note 8 Pro</h3>
+                <p class="xiao">6400万全场景四摄</p>
+                <p class="qi">￥1099起<a href="#">￥1399</a></p>
+                <button>立即购买</button>
+            </div>
+        </div>
+        <div class="naps">
+            <div class="phones">
+                <img src="image/ea38.jpg">
+            </div>
+            <div class="long">
+                <h3>Redmi Note 8</h3>
+                <p class="xiao">千元4800万四摄</p>
+                <p class="qi">￥899起<a href="#">￥999</a></p>
+                <button>立即购买</button>
+            </div>
+        </div>
+    </div>
+    <div class="chan">
+       <a href="#">更多小米手机产品<span class="iconfont icon-fanhui-copy-copy"></span></a> 
+    </div>
+    <!-- 小米电视 -->
+    <div class="tvs">
+        <div class="tva">
+            <img src="image/237a1.webp">
+        </div>
+        <div class="types">
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/6ce8a.webp">
+                </div>
+                <div class="yuans">
+                    <img src="image/fcef.png">
+                </div>
+                <div class="long">
+                    <h3>小米电视4A 65英寸</h3>
+                    <p class="xiao">4K HDR,人工智能语音系统</p>
+                    <p class="qi">￥2699<a href="#">￥2999</a></p>
+                    <button>立即购买</button>
+                </div>
+            </div>
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/e5343.jpg">
+                </div>
+                <div class="long">
+                    <h3>小米电视4X 43英寸</h3>
+                    <p class="xiao">FHD全高清屏，人工智能语音</p>
+                    <p class="qi">￥1299<a href="#">￥1399</a></p>
+                    <button>立即购买</button>
+                </div>
+            </div>
+        </div>
+        <div class="types">
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/8417a.jpg">
+                </div>
+                <div class="long">
+                    <h3>小米电视4C 50英寸</h3>
+                    <p class="xiao">4K HDR,钢琴烤漆</p>
+                    <p class="qi">￥1699</p>
+                    <button>立即购买</button>
+                </div>
+            </div>
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/fa89b.jpg">
+                </div>
+                <div class="long">
+                    <h3>小米电视4C 55英寸</h3>
+                    <p class="xiao">4K HDR，人工智能系统</p>
+                    <p class="qi">￥1999</p>
+                    <button>立即购买</button>
+                </div>
+            </div>
+        </div>
+        <div class="types">
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/32b0e.jpg">
+                </div>
+                <div class="long">
+                    <h3>小米电视4A 32英寸</h3>
+                    <p class="xiao">人工智能系统，高清液晶屏</p>
+                    <p class="qi">￥899</p>
+                    <button>立即购买</button>
+                </div>
+            </div>
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/9d74.png">
+                </div>
+                <div class="long">
+                    <h3>小米电视4A 50英寸</h3>
+                    <p class="xiao">4K HDR，人工智能系统</p>
+                    <p class="qi">￥1699</p>
+                    <button>立即购买</button>
+                </div>
+            </div>
+        </div>
+        <div class="chans">
+            <a href="#">更多小米电视产品<span class="iconfont icon-fanhui-copy-copy"></span></a>
+        </div>
+    </div>
+    <!-- 小米专属好物手册 -->
+    <div class="zhuanshu">
+        <div class="shouce">
+            <img src="image/54779a.webp">
+        </div>
+    </div>
+    <!-- 小米笔记本 -->
+    <div class="tvs">
+        <div class="tva">
+            <img src="image/d2da4.webp">
+        </div>
+        <div class="types">
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/bdd4.jpg">
+                </div>
+                <div class="long">
+                    <h3>Air 13.3" 2019款</h3>
+                    <p class="xiao">新一代独立显卡</p>
+                    <p class="qi">￥5699起<a href="#">￥5999</a></p>
+                    <button>立即购买</button>
+                </div>
+            </div>
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/8d53.jpg">
+                </div>
+                <div class="long">
+                    <h3>小米笔记本15.6"MX...</h3>
+                    <p class="xiao">全面均衡的国民轻薄本</p>
+                    <p class="qi">￥3799<a href="#">￥4299</a></p>
+                    <button>立即购买</button>
+                </div>
+            </div>
+        </div>
+        <div class="chan">
+            <a href="#">更多小米电视产品<span class="iconfont icon-fanhui-copy-copy"></span></a>
+        </div>
+    </div>
+    <!-- 米家互联网空调 -->
+    <div class="zhuanshu">
+        <div class="shouce">
+            <img src="image/9fed.webp">
+        </div>
+    </div>
+    <!-- 精选家电 -->
+    <div class="tvs">
+        <div class="tva">
+            <img src="image/4307.webp">
+        </div>
+        <div class="types-1">
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/74b3.webp">
+                </div>
+                <div class="long">
+                    <p class="pin">变频|米家互联网空调...</p>
+                    <p class="xiao">变频节能，高效制冷热</p>
+                    <p class="qi">￥2099<a href="#">￥2699</a></p>
+                </div>
+            </div>
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/4316.jpg">
+                </div>
+                <div class="long">
+                    <p class="pin">米家洗烘一体机Pro</p>
+                    <p class="xiao">智能洗烘，省心省力</p>
+                    <p class="qi">￥2999<a href="#">￥3299</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="types-1">
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/0469.webp">
+                </div>
+                <div class="long">
+                    <p class="pin">定频|米家空调 大1匹</p>
+                    <p class="xiao">出众静音，快速制冷热</p>
+                    <p class="qi">￥1499<a href="#">￥1799</a></p>
+                </div>
+            </div>
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/9acde.webp">
+                </div>
+                <div class="long">
+                    <p class="pin">米家互联网洗烘一体机...</p>
+                    <p class="xiao">烘干除菌率99.9%</p>
+                    <p class="qi">￥1999<a href="#">￥2299</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="types-1">
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/6e20.webp">
+                </div>
+                <div class="long">
+                    <p class="pin">自清洁|米家互联网空...</p>
+                    <p class="xiao">变频节能省电，自清洁</p>
+                    <p class="qi">￥2099<a href="#">￥2699</a></p>
+                </div>
+            </div>
+            <div class="naps">
+                <div class="phones">
+                    <img src="image/9b6c.webp">
+                </div>
+                <div class="yuans">
+                    <img src="image/ea5e4.png">
+                </div>
+                <div class="long">
+                    <p>Redmi全自动波轮洗衣...</p>
+                    <p class="xiao">一间操作，父母爱用</p>
+                    <p class="qi">￥799<a href="#">￥899</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="chans">
+            <a href="#">更多小米电视产品<span class="iconfont icon-fanhui-copy-copy"></span></a>
+        </div>
+    </div>
+    <!-- 智能新品好物 -->
+    <div class="zhuanshu">
+        <div class="shouce">
+            <img src="image/9cfcb.jpg">
+        </div>
+    </div>
+    <!-- 米家智能 -->
+    <div class="tvs">
+        <div class="tva">
+            <img src="image/c7c4.webp">
+        </div>
+        <div class="types-2">
+            <div class="naps">
+                <div class="phones-1">
+                    <img src="image/8a55.jpg">
+                </div>
+            </div>
+             <div class="long">
+                <p class="pin">米家直流变频落地扇</p>
+                <p class="xiao">模拟自然风算法 支持AI语音</p>
+                <p class="qi">￥299</p>
+            </div>
+        </div>
+        <div class="types-2">
+            <div class="long">
+                <p class="pin">米家照片打印机</p>
+                <p class="xiao">手机即拍即印</p>
+                <p class="qi">￥499</p>
+            </div>
+            <div class="naps">
+                <div class="phones-1">
+                    <img src="image/9c4d4.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="types-2">
+            <div class="naps">
+                <div class="phones-1">
+                    <img src="image/51256.jpg">
+                </div>
+            </div>
+             <div class="long">
+                <p class="pin">小爱音箱万能遥控版</p>
+                <p class="xiao">传统家电变智能</p>
+                <p class="qi">￥149<a href="">￥199</a></p>
+            </div>
+        </div>
+        <div class="chans">
+            <a href="#">更多米家智能产品<span class="iconfont icon-fanhui-copy-copy"></span></a>
+        </div>
+    </div>
+    <!-- 学习办公、智能家电 -->
+    <div class="tvs">
+        <div class="types-1">
+            <div class="nap">
+                <div class="ph">
+                    <img src="image/51e17.webp">
+                </div>
+            </div>
+            <div class="nap">
+                <div class="ph">
+                    <img src="image/a95a.webp">
+                </div>
+            </div>
+        </div>
+        <div class="types-1">
+            <div class="nap">
+                <div class="ph">
+                    <img src="image/ee0a7.webp">
+                </div>
+            </div>
+            <div>
+                <div class="ph">
+                    <img src="image/be8e8.webp">
+                </div>
+            </div>
+        </div>
+        <div class="types-1">
+            <div>
+                <div class="ph">
+                    <img src="image/7b8ff.webp">
+                </div>
+            </div>
+            <div class="nap">
+                <div class="ph">
+                    <img src="image/43b4.webp">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小米以旧换新 -->
+    <div class="jiu">
+        <div class="zhuanshu">
+            <div class="shouce">
+                <img src="image/d868.webp">
+            </div>
+        </div>
+        <div class="jie">
+            <a href="#">了解小米</a>
+            <span class="iconfont icon-fanhui-copy-copy"></span>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div>
+            <span class="iconfont icon-yemian-copy-copy-copy"></span>
+            <p class="my">首页</p>
+        </div>
+        <div>
+            <span class="iconfont icon-leimupinleifenleileibie"></span>
+            <p>分类</p>
+        </div>
+        <div>
+            <span class="iconfont icon-iconset0456"></span>
+            <p>星球</p>
+        </div>
+        <div>
+            <span class="iconfont icon-gouwuche"></span>
+            <p>购物车</p>
+        </div>
+        <div>
+            <span class="iconfont icon-Icon_wode"></span>
+            <p>我的</p>
+        </div>
+    </div>
+    <!-- 悬浮 -->
+    <div class="fu">
+        <div class="xuan">
+            <img src="image/894cd.gif">
+        </div>
+    </div>
+    <!-- 返回顶部 -->
+    <div class="ding">
+        <a href="#" title="返回顶部"><span class="iconfont icon-huidingbu"></span></a>
+    </div>
+</body>
+</html>

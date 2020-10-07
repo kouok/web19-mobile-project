@@ -1,0 +1,88 @@
+/*顶部  */
+.na{
+    margin-left:0.1rem;
+}
+.na .iconfont{
+    font-size:0.5rem;
+    margin-right: 0.3rem;
+}
+/* 小米LOGO */
+.logo{
+    margin-left: 3rem;
+}
+/* 输入框 */
+.sr input{
+    width: 5.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom:0.01rem solid silver;
+    color:silver;
+    margin-left: 0.45rem;
+    font-size: 0.3rem;
+}
+/* 登录 */
+.dl{
+    width: 5.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius:0.5rem;
+    background:orangered;
+    color:white;
+    font-size: 0.30rem;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 0.45rem;
+    margin-top: 0.30rem;
+}
+/* 手机短信登录/注册 */
+.dx{
+    width: 5.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius:0.5rem;
+    background:silver;
+    color:black;
+    font-size: 0.30rem;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 0.45rem;
+    margin-top: 0.30rem;
+}
+/* 立即注册，忘记密码 */
+.zc{
+    color:silver;
+    font-size: 0.28rem;
+    text-align: center;
+    margin-top: 0.30rem;
+}
+.zt{
+    text-align: center;
+}
+.zt span:nth-child(1){
+    color:#ED9090;
+    font-size: 0.6rem;
+}
+.zt span:nth-child(2){
+    color:#00BE00;
+    font-size: 0.6rem;
+}
+
+.zt span:nth-child(3){
+    color:#6BB6EA;
+    font-size: 0.6rem;
+}
+
+.zt span:nth-child(4){
+    color:black;
+    font-size: 0.6rem;
+}
+/* 底部 */
+.dibu{
+    text-align: center;
+}
+.dibu a{
+    color:silver;
+    font-size: 0.25rem;
+}
+
+
