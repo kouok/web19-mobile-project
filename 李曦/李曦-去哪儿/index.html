@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+    <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" />
+    <title>去哪儿首页</title>
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- 引入首页css -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 字体图标样式 -->
+    <link rel="stylesheet" href="font/iconfont.css">
+    <!-- 引入首页js -->
+    <script src="js/index.js"></script>
+    <!-- 引入zepto -->
+    <script src="js/zepto.min.js"></script>
+    <!-- 轮播图js -->
+    <script src="js/TouchSlide.1.1.js"></script>
+    <!-- 百度api -->
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=HHaqWgGhc63DUjAUQWpK6erpTdPQGDry"></script>
+    <style>
+        #l-map {
+            height: 5rem;
+            width: 100%;
+        }
+    </style>
+
+    <body>
+        <!-- 禁用了自动识别电话号码后，如何手动添加拨号识别功能 -->
+        <!-- <a href="tel:15084990417">给我打电话</a> -->
+        <!-- 头部搜索区 -->
+        <div class="header">
+            <div class="search fl">
+                <i class="iconfont icon-fangdajing"></i>
+                <span class="search_span">搜索景点门票</span>
+            </div>
+            <div class="download fr">
+                <img src="images/index/pin1.gif" alt="">
+                <div>下载App</div>
+            </div>
+        </div>
+        <!-- 搜索区2 -->
+        <div class="search2">
+            <div class="search2_wrap">
+                <a href="index.html" class="search_back fl">
+                    <i class="iconfont icon-jiantou4"></i>
+                </a>
+                <div class="search_ipt fl">
+                    <i class="iconfont icon-fangdajing"></i>
+                    <input type="text" placeholder="搜索景点门票" id="searchIpt">
+                    <i class="iconfont icon-quxiao "></i>
+                </div>
+                <a href="index.html" class="search_cancel fr">
+                    取消
+                </a>
+            </div>
+            <div id="searchResultPanel" style="border:1px solid #C0C0C0;widows: 2.8rem;;height:auto; display:none;"></div>
+            <div id="l-map"></div>
+        </div>
+        <!--  页面主体内容 -->
+        <div class="main">
+            <!-- 九宫格 -->
+            <div class="touch">
+                <!-- 1 -->
+                <div class="touch_first">
+                    <a href="#" class="hotel">
+                        <img src="images/index/hotel.png" alt="">
+                        <span>酒店</span>
+                    </a>
+                    <a href="#" class="hotel">
+                        <img src="images/index/flight.png" alt="">
+                        <span>机票</span>
+                    </a>
+                    <a href="#" class="hotel">
+                        <img src="images/index/train.png" alt="">
+                        <span>火车票</span>
+                    </a>
+                    <a href="#" class="hotel">
+                        <img src="images/index/package.png" alt="">
+                        <span>度假</span>
+                    </a>
+                    <a href="#" class="hotel">
+                        <img src="images/index/piao.png" alt="">
+                        <span>景点门票</span>
+                    </a>
+                </div>
+                <!-- 2 -->
+                <div class="touch_second">
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/effiel.png" alt="">
+                        </div>
+                        <span>海外酒店</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic2.png" alt="">
+                        </div>
+                        <span>低价机票</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic3.png" alt="">
+                        </div>
+                        <span>汽车票·船票</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic4.png" alt="">
+                        </div>
+                        <span>自由行</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic5.png" alt="">
+                        </div>
+                        <span>攻略</span>
+                    </a>
+                </div>
+                <!-- 3 -->
+                <div class="touch_second">
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic6.png" alt="">
+                        </div>
+                        <span>民宿客栈</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic7.png" alt="">
+                        </div>
+                        <span>专车自驾</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic8.png" alt="">
+                        </div>
+                        <span>赚钱·信用卡</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic9.png" alt="">
+                        </div>
+                        <span>旅游团购</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic10.png" alt="">
+                        </div>
+                        <span>一日游</span>
+                    </a>
+                </div>
+                <!-- 4 -->
+                <div class="touch_second">
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic11.png" alt="">
+                        </div>
+                        <span>特惠酒店</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic12.png" alt="">
+                        </div>
+                        <span>借钱</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic13.png" alt="">
+                        </div>
+                        <span>白金卡</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic14.png" alt="">
+                        </div>
+                        <span>行程设计</span>
+                    </a>
+                    <a href="#" class="effiel">
+                        <div>
+                            <img src="images/index/pic15.png" alt="">
+                        </div>
+                        <span>周边短途</span>
+                    </a>
+                </div>
+            </div>
+            <!-- 特惠度假 -->
+            <div class="vacation">
+                <h4>特惠度假</h4>
+                <div class="vacation_tab">
+                    <a href="###" class="vacationCurTab">当季热门度假</a>
+                    <a href="###">今日特惠度假</a>
+                </div>
+                <div class="vacation_bd">
+                    <div>
+                        <a href="detail.html">
+                            <img src="images/index/v1.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v1.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v1.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v1.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                    </div>
+                    <div class="vacation_bd_r">
+                        <a href="# ">
+                            <img src="images/index/v2.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v2.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v2.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v2.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                    </div>
+                </div>
+                <a href="###" class="vacation_more">
+                  更多特惠度假<i class="iconfont icon-jiantou"></i>
+                </a>
+            </div>
+            <!-- 特惠门票 -->
+            <div class="vacation">
+                <h4>特惠门票</h4>
+                <div class="vacation_tab vacation_tab2">
+                    <a href="###" class="vacationCurTab">当季景点门票</a>
+                    <a href="###">特惠门票</a>
+                </div>
+                <div class="vacation_bd vacation_bd2">
+                    <div>
+                        <a href="# ">
+                            <img src="images/index/v3.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v3.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v3.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v3.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                    </div>
+                    <div class="vacation_bd_r">
+                        <a href="# ">
+                            <img src="images/index/v5.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v5.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v5.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v5.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="vacation_more">
+                更多特惠门票<i class="iconfont icon-jiantou"></i>
+              </a>
+            </div>
+            <!-- 轮播图 -->
+            <div id="slideBox" class="slideBox">
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <a class="pic" href="#"><img src="images/index/l1.jpeg" /></a>
+                            <a class="tit" href="#"><i class="iconfont icon-qunaer">广告</i></a>
+                        </li>
+                        <li>
+                            <a class="pic" href="#"><img src="images/index/l2.jpeg" /></a>
+                            <a class="tit" href="#"><i class="iconfont icon-qunaer">广告</i></a>
+                        </li>
+                        <li>
+                            <a class="pic" href="#"><img src="images/index/l3.jpeg" /></a>
+                            <a class="tit" href="#"><i class="iconfont icon-qunaer">广告</i></a>
+                        </li>
+                        <li>
+                            <a class="pic" href="#"><img src="images/index/l4.jpeg" /></a>
+                            <a class="tit" href="#"><i class="iconfont icon-qunaer">广告</i></a>
+                        </li>
+                        <li>
+                            <a class="pic" href="#"><img src="images/index/l5.jpeg" /></a>
+                            <a class="tit" href="#"><i class="iconfont icon-qunaer">广告</i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 小圆点指示器 -->
+                <div class="hd">
+                    <ul></ul>
+                </div>
+            </div>
+            <!-- 旅行攻略 -->
+            <div class="vacation tripSuggestions">
+                <h4><i class="iconfont icon-shu1"></i> 旅行攻略</h4>
+                <div class="vacation_tab vacation_tab3">
+                    <a href="###" class="vacationCurTab">趣味亲子游</a>
+                    <a href="###">旅拍也要出大片</a>
+                </div>
+                <div class="vacation_bd vacation_bd3">
+                    <div>
+                        <a href="# ">
+                            <img src="images/index/v1.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v1.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v1.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v1.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                    </div>
+                    <div class="vacation_bd_r">
+                        <a href="# ">
+                            <img src="images/index/v2.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v2.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v2.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                        <a href="# ">
+                            <img src="images/index/v2.jpg " alt=" ">
+                            <div class="trip_info ">
+                                <p>长沙-三亚</p>
+                                <p>5天自由行</p>
+                            </div>
+                            <p class="trip_info_p ">含往返机票+3晚住宿</p>
+                            <p class="price ">¥<span>2590</span></p>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="vacation_more">
+                更多精彩攻略<i class="iconfont icon-jiantou"></i>
+              </a>
+            </div>
+            <!-- 版权信息 -->
+            <div class="footer">
+                <div>
+                    <p>
+                        <span>Copyright ©2020 Qunar.com</span>
+                        <a href="#">京公网安备11010802030542</a>
+                        <a href="#">京ICP备05021087号</a>
+                        <a href="#">京ICP证060856号</a>
+                        <a href="#">营业执照信息</a>
+                        <a href="#">(京)-非经营性-2016-0110</a>
+                        <span class="s24">去哪儿网客服电话95117</span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <span>违法和不良信息举报电话：010-59606977</span>
+                        <span>违法和不良信息举报邮箱：tousu@qunar.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部菜单 -->
+        <div class="bottom_nav">
+            <a href="#top" class="bottomNavCur">
+                <i class="iconfont icon-maotouying" id="huojian"></i>
+                <span>回顶部</span>
+            </a>
+            <a href="login.html">
+                <i class="iconfont icon-rili"></i>
+                <span>订单</span>
+            </a>
+            <a href="login.html">
+                <i class="iconfont icon-kefu"></i>
+                <span>客服</span>
+            </a>
+            <a href="my.html">
+                <i class="iconfont icon-xiaolian1"></i>
+                <span>我的</span>
+            </a>
+        </div>
+    </body>
+
+</html>

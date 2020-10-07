@@ -1,0 +1,174 @@
+body {
+    background: #f3f9fc;
+}
+
+.header {
+    /* margin: 0 .6rem; */
+    text-align: center;
+    color: #fff;
+    font-size: .18rem;
+    background: #18a9b9;
+    padding-bottom: 0.01rem;
+}
+
+.header_t {
+    height: .44rem;
+    line-height: .44rem;
+    display: flex;
+    padding-right: 0.1rem;
+}
+
+.header_t a {
+    display: inline-block;
+    width: 0.6rem;
+    cursor: pointer;
+    color: #75ffff;
+}
+
+.header_t div {
+    width: 100%;
+    color: #fff;
+    font-size: .18rem;
+    font-weight: 700;
+}
+
+.header_b {
+    display: flex;
+    background: #18a9b9;
+    color: #fff;
+    height: .32rem;
+    line-height: .32rem;
+    border: 1px solid #fff;
+    border-radius: 0.04rem;
+    margin: 0 0.1rem 0.05rem 0.1rem;
+}
+
+.header_b div {
+    font-size: .16rem;
+    text-align: center;
+    width: 50%;
+    font-weight: 700;
+}
+
+.cur {
+    background: #fff;
+    color: #25a4bb;
+}
+
+
+/* 登录面板 */
+
+.main_bd_r {
+    display: none;
+}
+
+.main_bd_l,
+.main_bd_r {
+    border-top: .01rem solid #ccc;
+    border-bottom: .01rem solid #ccc;
+    margin-top: .1rem;
+    padding-left: .1rem;
+    background: #fff;
+    font-size: .16rem;
+    font-weight: 700;
+}
+
+.main_bd_l div,
+.main_bd_r div {
+    line-height: .45rem;
+    border-bottom: .01rem solid #ccc;
+    margin-bottom: -0.01rem;
+}
+
+.main_bd_l div label,
+.main_bd_r div label {
+    width: .9rem;
+    color: #19a9ba;
+    display: inline-block;
+}
+
+.main_bd_l div input,
+.main_bd_r div input {
+    color: #000!important;
+}
+
+.getYzm {
+    color: #d7dce0;
+    border: .01rem solid #ccc;
+    display: inline-block;
+    margin-top: 0.07rem;
+    width: 1rem;
+    height: .3rem;
+    line-height: .3rem;
+    border-radius: .03rem;
+    text-align: center;
+}
+
+.login_btn {
+    color: #fff;
+    width: 3.55rem;
+    text-align: center;
+    line-height: .5rem;
+    display: block;
+    background: #85d1db;
+    border-radius: .03rem;
+    font-size: .18rem;
+    font-weight: 700;
+    margin: 0.1rem auto;
+}
+
+.getPswd {
+    color: #00afc7;
+    font-size: .13rem;
+    margin-right: 0.1rem;
+    font-weight: 700;
+    display: none;
+}
+
+.protocal {
+    clear: both;
+    padding-top: .12rem;
+    text-align: center;
+    font-size: .12rem;
+    color: #9e9e9e;
+}
+
+.protocal a {
+    text-decoration: underline;
+    color: #9e9e9e;
+}
+
+
+/* 底部 */
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.aboutUs {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: .1rem 0;
+    border-bottom: .01rem solid #ccc;
+    color: #4ebac8;
+    text-align: center;
+}
+
+.aboutUs a {
+    width: 50%;
+    font-size: .13rem;
+    color: #25a4bb;
+    font-weight: 700;
+}
+
+.copyright {
+    padding: .1rem .1rem .2rem;
+    color: #d4d9de;
+    text-align: center;
+    font-size: .12rem;
+}
