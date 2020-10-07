@@ -1,0 +1,1588 @@
+@import "reset";
+
+body {
+    background-color: #f5f5f5;
+    color: #212121;
+}
+
+.header {
+    width: 100%;
+    height: 2.5rem;
+    background-image: url(../img/detail-img/bg.jpg);
+    overflow: hidden;
+
+    ul {
+        height: 100%;
+        display: flex;
+        position: relative;
+
+        img {
+            height: 100%;
+            width: 3.75rem
+        }
+    }
+
+    .bianhao {
+        position: absolute;
+        z-index: 1;
+        bottom: -0.1rem;
+        width: 100%;
+        height: 0.6rem;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0.1rem 0.12rem 0.28rem 0.15rem;
+        font-size: 0.12rem;
+        color: #fff;
+        background-image: -webkit-linear-gradient(transparent 0, rgba(0, 0, 0, 0.8) 85%);
+
+        .chanp {
+            flex: 1;
+
+        }
+
+        .xuhao .iconfont {
+            font-size: 0.12rem;
+        }
+    }
+}
+
+.suspension {
+    position: fixed;
+    top: 0;
+    height: 0.44rem;
+    box-sizing: border-box;
+    padding-top: 0.04rem;
+    color: #fff;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    z-index: 2000;
+
+    span {
+        font-size: 0.20rem;
+    }
+}
+.fanhui {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    height: 0.36rem;
+    width: 0.36rem;
+    text-align: center;
+    line-height: 0.36rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.headbg {
+    background: #00bcd4;
+}
+
+.fanhui1 {
+    left: 0.05rem;
+}
+
+.fanhui2 {
+    right: 0.5rem;
+}
+
+.fanhui3 {
+    right: 0.05rem;
+}
+
+.shushi div {
+    margin-right: 0.1rem;
+}
+
+.tishi {
+    width: 3.45rem;
+    height: 0.52rem;
+    padding: 0.1rem 0.15rem;
+    background-color: #fefaeb;
+    color: #f4660a;
+    font-size: 0.12rem;
+    line-height: 1.4;
+
+    .iconfont {
+        font-size: 0.12rem;
+    }
+}
+
+.juti {
+    width: 100%;
+    height: 2.49rem;
+    box-sizing: border-box;
+    z-index: 2;
+    margin: -0.1rem 0 0.1rem;
+    padding: 0.15rem 0.15rem 0;
+    background-color: #fff;
+
+}
+
+.bgff5 {
+    background-color: #ff5800 !important
+}
+
+.corff8 {
+    color: #ff8300;
+    font-size: 0.12rem
+}
+
+.price span:nth-child(2) {
+    padding-right: 1px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.cor9e9 {
+    color: #9e9e9e;
+    font-size: 0.12rem
+}
+
+.messege {
+    margin-bottom: 0.05rem;
+    font-size: 0.18rem;
+}
+
+.cz-item {
+    font-size: 0.1rem;
+    line-height: 0.16rem;
+    color: #9e9e9e;
+    overflow: hidden;
+    padding-bottom: 0.1rem;
+}
+
+.corfe5,
+.corfe5 span {
+    font-size: 0.1rem !important;
+    color: #fe5655;
+}
+
+.corfe5 span {
+    position: relative;
+    right: 0.05rem;
+}
+
+.hongbao {
+    color: #9e9e9e;
+    padding: 1px 0.1rem 1px 0.15rem;
+    display: flex;
+    margin-right: -0.15rem;
+    margin-left: -0.15rem;
+    height: 0.35rem;
+    box-sizing: border-box;
+    line-height: 0.35rem;
+
+    div {
+        flex: 1;
+
+        span {
+            display: inline-block;
+            margin-right: 0.08rem;
+            text-align: center;
+            width: 0.54rem;
+            height: 0.15rem;
+            line-height: 1;
+
+            color: #ff8300;
+            box-sizing: border-box;
+            border-radius: 0.02rem;
+            font-size: 0.12rem;
+            border: 1px solid #ff8300;
+        }
+    }
+}
+
+.mt10 {
+    margin-top: 0.1rem
+}
+
+.shushi {
+    color: #9e9e9e;
+    padding: 1px 0.1rem 1px 0.15rem;
+    display: flex;
+    margin-right: -0.15rem;
+    margin-left: -0.15rem;
+    height: 0.35rem;
+    box-sizing: border-box;
+    line-height: 0.35rem;
+
+    div {
+        flex: 1;
+    }
+
+    .icon-dui {
+        font-size: 16px;
+        color: #00bcd4;
+        margin-right: 1px;
+    }
+}
+
+.container:first-child {
+    margin-left: 0.15rem;
+}
+
+.m-date {
+    margin-bottom: 0.1rem;
+    background-color: #fff;
+    padding-bottom: 0.14rem;
+    width: 100%;
+
+    .g-flexbox-start {
+        display: flex;
+
+        .n-date {
+            flex: 1;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+
+            .container {
+                transform: translateZ(0);
+                padding-top: 0.12rem;
+                position: relative;
+                font-size: 0;
+                overflow-x: scroll;
+                white-space: nowrap;
+                display: flex;
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    /*隐藏滚轮*/
+    display: none;
+}
+
+.item {
+
+    padding: 0.06rem 0.09rem;
+    text-align: center;
+    font-size: 0.12rem;
+    line-height: 0.17rem;
+    width: 0.8rem;
+    margin-right: 0.08rem;
+    position: relative;
+    border-radius: 0.04rem;
+    border: 1px solid #e0e0e0;
+
+    h5 {
+        margin-top: 1px;
+        font-weight: 400;
+        font-size: 0.12rem;
+        color: #616161;
+    }
+
+    p {
+        color: #ff8300;
+    }
+
+
+}
+
+.item-on {
+    background-color: #ff8300;
+    color: #fff !important;
+}
+
+.ico-date {
+    width: 0.64rem;
+    height: 0.54rem;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 0.14rem;
+    font-size: 0.16rem;
+    color: #616161;
+    z-index: 10;
+    line-height: 0.22rem;
+
+    div {
+        font-size: 0.1rem;
+    }
+}
+
+.m-point {
+    padding-bottom: 0.16rem;
+    margin-bottom: 0.1rem;
+    padding: 0.1rem 0.12rem 0.1rem 0.16rem;
+    background-color: #fff;
+
+    ul li {
+        padding-top: 0.1rem;
+        line-height: 17px;
+        font-size: 0.12rem;
+        color: #616161;
+
+        img {
+            height: 13px;
+            margin-right: 4px;
+            display: inline-block;
+            font-size: 0;
+            vertical-align: middle;
+        }
+
+        .lable {
+            color: #212121;
+            margin-right: 6px;
+            font-weight: 500;
+        }
+    }
+}
+
+.m-title {
+    width: 1.83rem;
+    height: 0.33rem;
+    display: block;
+    margin: 0 auto 0.05rem
+}
+
+.m-rating {
+    margin-bottom: 0.1rem;
+    padding: 0.16rem 0 0.2rem 0;
+    background-color: #fff;
+
+    .m-comment {
+        font-size: 0.17rem;
+        color: #212121;
+        font-weight: 700;
+        margin-top: 0.02rem;
+        margin-left: 0.18rem;
+        margin-bottom: 0.15rem;
+    }
+
+    .g-flexbox {
+        padding: 0 0.08rem 0 0.18rem;
+        display: flex;
+
+        .score {
+            width: .67rem;
+            text-align: center;
+            margin-right: 16px;
+            background: rgba(21, 229, 255, 0.05);
+            border-radius: 4px;
+            color: #00bcd4;
+            height: 0.5rem;
+            box-sizing: border-box;
+            padding-top: 0.05rem;
+            line-height: 0.15rem;
+
+            .score-hd {
+                font-size: 0;
+
+                .num {
+                    display: inline-block;
+                    font-size: 0.24rem;
+                    font-weight: 700;
+                }
+
+                .sent {
+                    font-size: 0.13rem;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .flex {
+            flex: 1;
+
+            .total {
+                padding: 0 0 0.08rem;
+                line-height: 0.17rem;
+                font-size: 0.13rem;
+                color: #212121;
+
+
+            }
+        }
+
+        .rating-tag .item {
+            margin-right: 0.1rem;
+            margin-bottom: 0.1rem;
+            display: inline-block;
+            padding: 0 0.06rem;
+            vertical-align: middle;
+            line-height: 0.22rem;
+            font-size: 0.13rem;
+            color: #212121;
+            background: #f5f5f5;
+            border-radius: 0.11rem;
+        }
+
+        .next {
+            width: 0.24rem;
+            height: 0.24rem;
+            position: relative;
+            top: 0.08rem;
+            line-height: 1;
+            color: #616161;
+        }
+    }
+}
+
+.total span {
+    margin-right: 0.21rem;
+}
+
+.total span:not(:last-child):after {
+    content: '';
+    position: absolute;
+    height: 0.12rem;
+    width: 1px;
+    background: #bdbdbd;
+    top: 50%;
+    right: -0.1rem;
+    transform: translateY(-50%);
+}
+
+.m-summary {
+    background-color: #fff;
+    margin-bottom: 0.1rem;
+    padding: 0.05rem 0.1rem 0.05rem 0.15rem;
+    line-height: 2;
+
+    .t {
+        margin-right: 0.1rem;
+        font-size: 0.12rem;
+        color: #666;
+
+        .iconfont {
+            position: relative;
+            top: 0.02rem;
+            margin-right: 0.05rem;
+        }
+    }
+
+    .g-flexbox-start {
+        display: flex;
+        line-height: 0.32rem;
+
+        .flex {
+            flex: 1;
+            width: 100%;
+            height: auto;
+            display: block;
+            color: #333
+        }
+    }
+}
+
+.m-summary .items::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+#font13 {
+    font-size: 0.13rem;
+}
+
+.m-tab {
+    display: flex;
+    padding: 0 0.15rem;
+    overflow: hidden;
+    z-index: 1;
+    height: 0.4rem;
+    background-color: #fff;
+
+    li {
+        flex: 1;
+        height: 100%;
+        line-height: 0.4rem;
+        text-align: center;
+        font-size: 0.14rem
+    }
+}
+
+.tab-on {
+    color: #00bcd4;
+    font-size: 0.16rem !important
+}
+
+.m-route {
+    padding: 0 0.2rem 0;
+    background-color: #fff;
+    color: #616161;
+    margin-bottom: 0.1rem;
+
+    .title {
+        padding: 0.25rem 13% 0.15rem;
+        margin: 0 auto;
+        font-size: 0.2rem;
+        text-align: center;
+        font-weight: bold;
+        color: #212121;
+    }
+
+    .m-richtext {
+        line-height: 0.2rem;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.jiaotong {
+    margin-bottom: 0.1rem;
+
+    h3 {
+        width: 100%;
+        text-align: center;
+        margin: 0.05rem 0 0.03rem;
+        font-size: 0.18rem;
+        font-weight: 400
+    }
+
+    .tips {
+        font-size: 0.1rem;
+        color: #9e9e9e;
+        margin-bottom: 0.1rem;
+        text-align: center;
+    }
+
+    .single {
+        margin: 0 0.1rem;
+        overflow: hidden;
+        background-color: #fff;
+        margin-top: 0.1rem;
+        border-radius: 0.04rem;
+        box-sizing: border-box;
+    }
+
+    .single li {
+        font-size: 0.14rem;
+        padding: 0.1rem 0.15rem;
+    }
+
+    .single .iconfont {
+        font-size: 0.2rem;
+        color: #00afc7;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        margin-top: -0.02rem;
+        margin-right: 0.05rem;
+    }
+}
+
+
+.g-flexbox {
+    font-size: 0.14rem;
+    display: flex;
+
+    .bd {
+        padding: 0 0.1rem;
+        margin-bottom: 0.05rem;
+        display: flex;
+        box-sizing: border-box;
+
+        .dd {
+            font-size: 0.18rem;
+            font-weight: 500;
+        }
+
+        .date {
+            box-sizing: border-box;
+            width: 1.79rem;
+            height: 0.2rem;
+            line-height: 0.2rem;
+            border-radius: 0.1rem;
+            color: #616161;
+            font-size: 0.1rem;
+            margin-left: 0.2rem;
+            margin-top: 0.03rem;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+    }
+
+    .flex {
+        flex: 1;
+        text-align: center
+    }
+}
+
+.g-flexboxs {
+    padding: 0 0.1rem;
+    font-size: 0.1rem;
+    color: #616161;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+
+    .ta-r {
+        flex: 1;
+        text-align: right;
+    }
+}
+
+
+.tag {
+    display: inline-block;
+    width: 0.15rem;
+    height: 0.15rem;
+    box-sizing: border-box;
+    border: 1px solid #ff8300;
+    border-radius: 0.02rem;
+    color: #ff8300;
+    text-align: center;
+    line-height: 0.15rem;
+    margin-right: 0.04rem;
+    margin-top: 0.1rem;
+}
+
+.m-route {
+    margin-bottom: 0.1rem;
+    overflow: hidden;
+
+    .title2 {
+        margin: 0.2rem auto;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        background-color: #fff;
+        color: #212121;
+    }
+
+    .yuan {
+        display: inline-block;
+        width: 0.20rem;
+        height: 0.20rem;
+        border-radius: 50%;
+        position: relative;
+        top: 0.03rem;
+        border: 1px solid #ff9800;
+    }
+
+    .icon-feiji-back {
+        color: #ff8300;
+        position: relative;
+        bottom: 0.04rem;
+        font-size: 0.14rem
+    }
+
+    .route-list {
+
+        margin-top: 0.1rem;
+
+        li {
+            padding: 0 0 0.3rem 0px;
+            position: relative;
+            display: flex;
+
+            .sub-tit {
+                margin-bottom: 0.05rem;
+                font-size: 0.16rem;
+                font-weight: 500;
+                color: #212121;
+
+                .txt {
+                    margin-right: 0.05rem;
+                }
+            }
+
+            .txt-box {
+                font-size: 0.14rem;
+                padding-top: 0.03rem;
+                margin-bottom: 0.05rem;
+                color: #616161;
+
+                .richtext-format {
+                    margin-bottom: 0.03rem;
+                    font-size: 0.14rem;
+                    color: #212121;
+
+                    div {
+                        line-height: 0.18rem;
+
+                    }
+                }
+
+                .sub-txt {
+                    display: inline-block;
+                    font-size: 0.12rem;
+                    color: #9e9e9e;
+                    height: 0.25rem;
+                    overflow: hidden;
+                }
+
+                .zili {
+                    position: relative;
+                    bottom: 0.07rem
+                }
+            }
+
+            .g-flexbox {
+                box-sizing: border-box;
+                border-radius: 2px;
+                overflow: hidden;
+                background-color: #fafafa;
+                padding-right: 0.1rem;
+                margin-bottom: 0.1rem;
+                align-items: center;
+                display: flex;
+                width: 3rem;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                    margin-right: 0.1rem;
+                }
+
+                .cont {
+                    flex: 1;
+
+                    .tit {
+                        font-size: 16px;
+                        margin-bottom: 1px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        color: #212121;
+                        font-weight: 400;
+
+
+                        .ellipsis1 {
+                            font-size: 0.12rem;
+                            color: #9e9e9e;
+                        }
+                    }
+
+                    .tag-list .txt {
+                        height: 0.15rem;
+                        line-height: 1;
+                        display: inline-block;
+                        margin-right: 8px;
+                        padding: 2px 3px 1px;
+                        text-align: center;
+                        border: 1px solid #ff8300;
+                        color: #ff8300;
+                        font-weight: 500;
+                        position: relative;
+                        font-size: 0.12rem;
+                        border-radius: 2px;
+                    }
+
+                    .ellipsis1 span {
+                        font-size: 0.12rem;
+                    }
+
+                    .icon-next {
+                        font-size: 0.14rem;
+                        color: #9e9e9e;
+                        position: absolute;
+                        right: 0.1rem;
+                        top: 30.5%
+                    }
+                }
+            }
+        }
+
+        .icon {
+            width: 0.2rem;
+            height: 100%;
+            margin-right: 0.25rem;
+            margin-top: 0.02rem;
+            color: #bdbdbd;
+
+            .icon-daocha {
+                font-size: 0.21rem;
+            }
+        }
+    }
+}
+
+.preline {
+    white-space: pre-line;
+    color: #616161;
+}
+
+.mt10 {
+    margin-top: 0.1rem;
+}
+
+.yincang {
+    z-index: 20;
+    width: 3.75rem;
+    height: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding: 0.6rem 0.3rem;
+    top: 0;
+
+    .inner {
+        width: 3.15rem;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        .m-hdimg {
+            width: 3.15rem;
+            height: 2.10rem;
+            background-image: url(../img/detail-img/0f5d9ec9-086a-46ae-8a46-38d8665b57cd.jpg_r_640x420x95_1f805d33.jpg);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            border-top-left-radius: 0.12rem;
+            border-top-right-radius: 0.12rem;
+
+            .bianhao {
+                position: absolute;
+                z-index: 1;
+                bottom: -0.1rem;
+                width: 100%;
+                height: 0.6rem;
+                display: flex;
+                box-sizing: border-box;
+                padding: 0.1rem 0.12rem 0.28rem 0.15rem;
+                font-size: 0.12rem;
+                color: #fff;
+                background-size: cover;
+                background-image: -webkit-linear-gradient(transparent 0, rgba(0, 0, 0, 0.8) 85%);
+
+                .chanp {
+                    flex: 1;
+
+                }
+
+                .xuhao .iconfont {
+                    font-size: 0.12rem;
+                }
+            }
+        }
+
+        .cont {
+            position: relative;
+            height: 3rem;
+            padding: 0.15rem 0.15rem 0.1rem;
+            background-color: #fff;
+            border-bottom-left-radius: 0.12rem;
+            border-bottom-right-radius: 0.12rem;
+            box-sizing: border-box;
+
+            .v-scroll {
+                overflow: auto;
+                font-size: 0.12rem;
+                line-height: 1.4;
+                color: #212121;
+            }
+        }
+
+        .ft {
+            background: rgba(0, 0, 0, 0);
+            height: 0.5rem;
+            line-height: 0.5rem;
+            text-align: center;
+
+            .iconfont {
+                font-size: 0.32rem;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+
+.table-list .item:not(:last-child)::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    content: " ";
+    border-color: #e0e0e0;
+    border-style: solid;
+    border-width: 0 0 1px;
+    transform-origin: 0 0;
+}
+
+.tab_cost .title {
+    padding: 25px 13% 15px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
+    color: #212121;
+}
+
+.tab_cost {
+    padding: 0 15px 20px;
+    background-color: #fff;
+    margin-bottom: 0.1rem;
+
+    .table-t {
+        .item {
+            width: 3.47rem;
+            box-sizing: border-box;
+            background-color: #e9e9e9;
+            border-radius: 0.04rem;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            font-size: 0.14rem;
+            color: #888;
+
+            .type {
+                width: 0.75rem;
+            }
+
+            .desc {
+                flex: 1;
+            }
+        }
+    }
+
+    .box {
+        box-sizing: border-box;
+
+        .items {
+            display: flex;
+            width: 3.45rem;
+            box-sizing: border-box;
+
+            .t {
+                width: 0.75rem;
+                text-align: center;
+                font-weight: bold;
+                font-size: 0.14rem;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .d {
+                flex: 1;
+                padding: 0.15rem 0.1rem;
+                background-color: #fff;
+                line-height: 1.4;
+                font-size: 0.14rem;
+                color: #212121;
+            }
+        }
+    }
+}
+
+.box .items::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    content: " ";
+    border-color: #e0e0e0;
+    border-style: solid;
+    border-width: 0 0 1px;
+    transform-origin: 0 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+}
+
+.box::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    content: " ";
+    border-color: #e0e0e0;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+}
+
+.d::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    content: " ";
+    border-color: #e0e0e0;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.m-shop {
+    padding: 15px;
+    background-color: #fff;
+
+    .g-flexbox-start {
+        display: flex;
+
+        .head {
+            margin-right: 8px;
+            width: 44px;
+            height: 44px;
+            background-color: #f5f5f5;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(../img/detail-img/北海道景点/e0c4fb51b181d102.jpg);
+        }
+
+        .flex {
+            flex: 1;
+
+            .tit {
+                font-size: 16px;
+
+                .tags {
+                    margin-left: 5px;
+                    padding: 0 3px;
+                    height: 15px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 15px;
+                    border-radius: 2px;
+                    background-color: #8d6e63;
+                    color: #fff;
+                    font-size: 0.1rem;
+
+                    .iconfont {
+                        font-size: 0.1rem;
+                    }
+                }
+            }
+
+            .cont {
+                margin-bottom: 12px;
+                font-size: 12px;
+                color: #9e9e9e;
+            }
+        }
+    }
+}
+
+.list {
+    align-items: center;
+    display: flex;
+
+    .iteme {
+        flex: 1;
+        text-align: center;
+
+        .num {
+            margin-bottom: 3px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .cont {
+            margin-bottom: 12px;
+            font-size: 12px;
+            color: #9e9e9e;
+            text-align: center;
+        }
+
+        .degree {
+            color: #ff8300;
+
+            .txt {
+                font-size: 13px;
+            }
+
+            .iconfont {
+                position: relative;
+                bottom: 0.02rem;
+                right: 0.05rem;
+                width: 0.12rem;
+                display: inline-block;
+                margin-left: 2px;
+                height: 14px;
+                line-height: 14px;
+                font-size: 10px;
+                background-color: #ff8300;
+                border-radius: 2px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.btn-stacked {
+    display: block;
+    margin: 20px auto 0;
+    width: 113px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    position: relative;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #00bcd4;
+    border: 1px solid #00bcd4;
+}
+
+.tab_order_tips {
+    background-color: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px 0;
+    text-align: center;
+    color: #616161;
+
+    .title {
+        width: 223px;
+        height: 25px;
+        margin: 0 auto 12px;
+        background-position: 0 -31px;
+        background-image: url(../img/detail-img/北海道景点/bg.png);
+        background-size: 223px 115px;
+    }
+
+    .list {
+        padding: 0 15px;
+
+        .itemss {
+            text-align: center;
+            flex: 1;
+
+            .circle {
+                margin: 0 auto 3px;
+                width: 0.35rem;
+                height: 0.35rem;
+                border-radius: 50%;
+                border: 1px solid #e0e0e0;
+                box-sizing: border-box;
+                text-align: center;
+                line-height: 0.35rem;
+            }
+
+            p {
+                color: #616161;
+            }
+
+            .icon-shuangfanhui2 {
+                color: #e0e0e0;
+                position: absolute;
+                right: -12px;
+                top: 8px;
+                font-size: 0.24rem;
+            }
+        }
+    }
+}
+
+.m-fold {
+    padding: 0 15px;
+    background-color: #fff;
+    margin-bottom: 10px;
+
+    .itemd {
+        width: 100%;
+    }
+
+    .row {
+        padding: 15px 0 9px;
+        font-size: 16px;
+        display: flex;
+        width: 100%;
+
+        .flex {
+            flex: 1;
+            color: #212121;
+        }
+
+        .iconfont {
+            color: #9e9e9e;
+        }
+
+    }
+
+    .cont {
+        background-color: #fff;
+        position: absolute;
+        padding: 10px 0 15px;
+        color: #616161;
+        line-height: 1.4;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+}
+
+.m-c2b {
+    height: 0.9rem;
+    background: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    line-height: 1.4;
+    font-size: 14px;
+    color: #212121;
+    margin-bottom: 0.88rem;
+
+    .flex {
+        flex: 1;
+        width: 23.5rem;
+
+        h2 {
+            height: .2rem;
+            line-height: .2rem;
+            color: #ff9800;
+            font-size: 18px;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        p {
+            display: -webkit-box;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            font-weight: 300;
+            font-size: 12px;
+        }
+    }
+
+    a {
+        display: block;
+        margin: .1rem 0;
+        font-weight: 300;
+        width: 95px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        position: relative;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        color: #ff9800;
+        border: 1px solid #ff9800;
+    }
+}
+
+.right {
+    position: fixed;
+    right: 0.1rem;
+    bottom: 0.6rem;
+    z-index: 100;
+
+    div {
+        width: 0.4rem;
+        color: #fff;
+        border-radius: 50%;
+        height: 0.4rem;
+        background-color: #00bcd4;
+        text-align: center;
+        margin-top: 0.1rem;
+
+        .jiandan {
+            display: inline-block;
+            line-height: 0.11rem;
+            width: 0.24rem;
+            margin-top: 0.08rem
+        }
+
+        .iconfont {
+            display: inline-block;
+            font-size: 0.23rem;
+            margin-top: 0.08rem
+        }
+    }
+
+}
+
+.xingchengxuan {
+    position: fixed;
+    width: 3.75rem;
+    height: 100%;
+    z-index: 2500;
+    bottom: 0;
+    padding-left: 55px;
+    background: rgba(0, 0, 0, 0.5);
+
+    .container {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 80px 0 0 20px;
+        font-size: 16px;
+        overflow: auto;
+    }
+}
+
+.container .itemms::after {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 6px;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border: 2px solid #ff9800;
+    border-radius: 100%;
+}
+
+.container .itemm::before {
+    border-left: 1px solid #ff9800;
+    height: calc(100% - 9px);
+    left: -1px;
+    top: 17px;
+    content: '';
+    position: absolute;
+}
+
+.container .itemm::after {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 6px;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border: 2px solid #ff9800;
+    border-radius: 100%;
+}
+
+.container .itemm {
+    position: relative;
+    padding: 0 0 35px 13px;
+    display: flex;
+
+    .day {
+        padding-right: 10px;
+        color: #ff9800;
+    }
+
+    .txt {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        color: #fff;
+    }
+}
+
+
+.container .itemms {
+    position: relative;
+    padding: 0 0 35px 13px;
+    display: flex;
+
+    .day {
+        padding-right: 10px;
+        color: #ff9800;
+    }
+
+    .txt {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        color: #fff;
+    }
+}
+
+.cor61 {
+    color: #616161;
+}
+
+.line1 {
+    line-height: 0.13rem;
+    margin-left: 0.15rem;
+}
+.mt7{
+    margin-top:0.07rem
+}
+.sub-tit {
+    margin-bottom: 15px;
+    position: relative;
+    right:0.2rem;
+    .day {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        margin-right: 5px;
+        width: 50px;
+        line-height: 23px;
+        background-color: #ff9800;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .g-middle {
+        font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.aixin{
+    width:3rem;
+    height:0.3rem;
+    background: rgba(0, 0, 0,0.2);
+    position: fixed;
+    z-index: 400;
+    color:#fff;
+    text-align: center;
+    line-height: 0.3rem;
+    bottom: 1rem;
+    left:0.3rem
+}
+// 底部
+.dibu {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    justify-content: center;
+    z-index: 1000;
+    text-align: center;
+    height: 0.49rem;
+    line-height: 0.49rem;
+    display: flex;
+}
+
+.dibu-1 {
+    text-align: center;
+    border-right: #9e9e9e 1px solid;
+    margin: 0.06rem 0;
+    padding: 0.03rem 0.1rem 0.15rem 0.15rem;
+    line-height: 1;
+
+    span {
+        color: #00afc7;
+    }
+
+    div {
+        margin-top: 0.04rem;
+    }
+}
+
+.border-none {
+    border-right: none !important;
+}
+
+.dibu-2 {
+
+    text-align: center;
+    border-right: #9e9e9e 1px solid;
+    margin: 0.06rem 0;
+    padding: 0.03rem 0.1rem 0.15rem 0.15rem;
+    line-height: 1;
+
+    div {
+        margin-top: 0.04rem;
+    }
+}
+
+.jiarugouwuche {
+    width: 0.99rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    background: #ff9800;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 0.05rem;
+    border-radius: 4px;
+    margin-top: 0.05rem;
+    margin-left: 0.02rem;
+}
+
+.fixd{
+    position: fixed;
+    top: 0.44rem;
+    z-index: 1002;
+    display: flex;
+    padding: 0 0.15rem;
+    overflow: hidden;
+    z-index: 1;
+    height: 0.4rem;
+    width:100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.daxue{
+    background: url(../img/detail-img/北海道景点/b83f47cc-1dc4-435b-953d-2f342c7a46c2.jpg) no-repeat !important;
+}
+.cengyun{
+      background: url(../img/detail-img/7ea9ddce-1617-46de-93de-635eeb1991fa.jpg_r_640x420x95_e37d391c.jpg) no-repeat !important;
+       height: 2.10rem !important;
+    width: 3.15rem !important;
+}
+.hu{
+    background: url(../img/detail-img/5c1e47dd-2ec6-45e4-b0d1-726dd8da6a33.jpg_r_640x420x95_1a153724.jpg) no-repeat !important;
+    height: 2.10rem !important;
+    width: 3.15rem !important;
+}
+.kongzhi{
+width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+     z-index: 1003;
+    background-color: #fff;
+}
+.huodong{
+    align-items: center;
+    display: flex;
+}
+.hudong-dibu{
+    width: 0.36rem;
+    height: 0.44rem;
+    text-align: center;
+    font-weight: 400;
+        font-size: 0.18rem;
+        display: flex;
+        align-items: center;
+        span{
+            margin-top: 0.03rem;
+            margin-left: 0.1rem;
+        }
+}
+.huodong>div:nth-child(2){
+    padding-right: 0.6rem;
+    text-align: center;
+    flex: 1;
+     font-size: 0.18rem;
+}
+.guize{
+    padding: 0.1rem;
+    width: 100%;
+    height: 2.54rem;
+}
+.guize-1{
+    display: inline-block;
+    padding: 1px 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    height: 20px;
+    position: relative;
+    font-weight: 500;
+    border: #BCBCBC 1px solid;
+}
+.guize-2{
+    width: 3.45rem;
+    height: 0.62rem;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
