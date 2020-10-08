@@ -1,0 +1,79 @@
+{
+  "id": "2068308",
+  "name": "icons",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "210521",
+      "name": "F码商品",
+      "font_class": "fmashangpin",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "4612468",
+      "name": "待付款",
+      "font_class": "daifukuan",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "4783676",
+      "name": "待收货",
+      "font_class": "shoucangtubiao-",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "5109472",
+      "name": "店铺",
+      "font_class": "dianpu",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "7987384",
+      "name": "维修",
+      "font_class": "weixiu",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "11406196",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "11435298",
+      "name": "设 置",
+      "font_class": "shezhi",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "14811069",
+      "name": "待付 款",
+      "font_class": "arrears-ac",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "15841780",
+      "name": "会 员1-01",
+      "font_class": "huiyuan1-01",
+      "unicode": "e757",
+      "unicode_decimal": 59223
+    },
+    {
+      "icon_id": "17061010",
+      "name": "服务中心",
+      "font_class": "fuwuzhongxin",
+      "unicode": "e6e3",
+      "unicode_decimal": 59107
+    }
+  ]
+}
