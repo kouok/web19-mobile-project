@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/sy.css" />
+		<!-- 轮播 -->
+		<script src="js/TouchSlide.1.1.js"></script>
+	</head>
+	<script type="text/javascript">
+		var width = window.innerWidth;
+		//4.14是根据设计图的大小除以100
+		var bili = width / 4.14;
+		document.documentElement.style.fontSize = bili + "px";
+		// 此时  100px=1rem
+		// 将所有在设计图量出的尺寸都除以100即可转为对应的rem
+	</script>
+	<body>
+		<!-- 顶部固定 -->
+		<div class="din">
+			<div class="din1">
+				<div><img src="img/1.png"></div>
+				<div>
+					<input type="" name="" id="" value="" placeholder="搜索商品名称" />
+				</div>
+				<div><img src="img/2.png"></div>
+			</div>
+			<div class="nav">
+				<div class="nav-arr">↓</div>
+				<div class="nav-layer">
+					<div>全部</div>
+					<div class="nav-none">
+						<span class="on">推荐</span>
+						<span>手机</span>
+						<span>智能</span>
+						<span>电视</span>
+						<span>笔记本</span>
+						<span>家电</span>
+						<span>生活周边</span>
+					</div>
+				</div>
+				<ul class="navlist clearfix">
+					<li><a href="javascript:;" class="on1">推荐</a></li>
+					<li><a href="javascript:;">手机</a></li>
+					<li><a href="javascript:;">智能</a></li>
+					<li><a href="javascript:;">电视</a></li>
+					<li><a href="javascript:;">笔记本</a></li>
+					<li><a href="javascript:;">家电</a></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function fun() {
+				var arr = document.getElementsByClassName("nav-arr")[0];
+				// var i=document.getElementsByClassName("iconfont")[0]
+				var layer = document.getElementsByClassName("nav-layer")[0];
+				var navlist = document.getElementsByClassName("navlist")[0];
+				arr.onclick = function() {
+					if (layer.style.display == "none") {
+						layer.style.display = "block"
+						navlist.style.display = "none"
+					} else {
+						layer.style.display = "none"
+						navlist.style.display = "block"
+					}
+				}
+			}
+			fun()
+		</script>
+		<!-- 底部固定 -->
+		<div class="dib">
+			<a>
+				<img src="img/u1.png">
+				<p>首页</p>
+			</a>
+			<a>
+				<img src="img/u2.png">
+				<p>分类</p>
+			</a>
+			<a>
+				<img src="img/u3.png">
+				<p>星球</p>
+			</a>
+
+			<a>
+				<img src="img/u4.png">
+				<p>购物车</p>
+			</a>
+			<a href="../我的/我的.html">
+				<img src="img/2.png">
+				<p style="color: #747474;">我的</p>
+			</a>
+		</div>
+		<!-- 返回顶部 -->
+		<a class="fh">
+			<img src="img/fh.png">
+		</a>
+		<div class="dd">
+			
+		</div>
+		<!-- 轮播 -->
+		<div id="slideBox" class="slideBox">
+
+			<div class="bd">
+				<ul>
+					<li><a class="pic" href="#"><img src="img/lun1.jpg"></a></li>
+					<li><a class="pic" href="#"><img src="img/lun2.jpg"></a></li>
+					<li><a class="pic" href="#"><img src="img/lun3.jpg"></a></li>
+				</ul>
+			</div>
+			<!-- 小圆点指示器 -->
+			<div class="hd">
+				<ul></ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			TouchSlide({
+				slideCell: "#slideBox",
+				titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+				mainCell: ".bd ul",
+				effect: "leftLoop",
+				autoPage: true, //自动分页
+				autoPlay: true //自动播放
+			});
+		</script>
+		<div class="kua2">
+			<div><img src="img/j1.png"></div>
+			<div><img src="img/j2.png"></div>
+			<div><img src="img/j3.png"></div>
+			<div><img src="img/j4.png"></div>
+			<div><img src="img/j5.png"></div>
+			<div><img src="img/j6.png"></div>
+			<div><img src="img/j7.png"></div>
+			<div><img src="img/j8.png"></div>
+			<div><img src="img/j9.png"></div>
+			<div><img src="img/j10.png"></div>
+		</div>
+		<div class="kua3">
+			<div><img src="img/b1.jpg"></div>
+			<div>
+				<img src="img/b2.jpg">
+				<img src="img/b3.png">
+			</div>
+		</div>
+		<div class="kua4">
+			<div><img src="img/c1.png"></div>
+			<div><img src="img/c2.png"></div>
+		</div>
+		<div class="kua5">
+			<div class="kua5-1">
+				<div><img src="img/d1.jpg"></div>
+				<div>
+					<h4 class="z1">小米10Pro</h4>
+					<p class="z2">晓龙865/50倍变焦</p>
+					<div class="z3">￥4999</div>
+					<div class="z4">立即购买</div>	
+				</div>
+			</div>
+			<div class="kua5-1">
+				<div><img src="img/d2.jpg"></div>
+				<div>
+					<h4 class="z1">小米10</h4>
+					<p class="z2">晓龙865/一亿像素</p>
+					<div class="z3">￥3799</div>
+					<div class="z4">立即购买</div>
+				</div>
+			</div>
+		</div>
+		<div class="kua5">
+			<div class="kua5-1">
+				<div><img src="img/d3.jpg"></div>
+				<div>
+					<h4 class="z1">Redmi K30 4G</h4>
+					<p class="z2">120Hz流速屏，全速热爱/p>
+						<div class="z3">￥1399</div>
+						<div class="z4">立即购买</div>
+				</div>
+			</div>
+			<div class="kua5-1">
+				<div><img src="img/d4.jpg"></div>
+				<div>
+					<h4 class="z1">Redmi K30 5G</h4>
+					<p class="z2">双模5G 120Hz流速屏</p>
+					<div class="z3">￥1399</div>
+					<div class="z4">立即购买</div>
+				</div>
+			</div>
+		</div>
+		<div class="kua5">
+			<div class="kua5-1">
+				<div><img src="img/d5.jpg"></div>
+				<div>
+					<h4 class="z1">Redmi Note8Pro</h4>
+					<p class="z2">6400万全场景四摄</p>
+					<div class="z3">￥1099</div>
+					<div class="z4">立即购买</div>
+				</div>
+			</div>
+			<div class="kua5-1">
+				<div><img src="img/d6.jpg"></div>
+				<div>
+					<h4 class="z1">Redmi Note8o</h4>
+					<p class="z2">千元4800万四摄</p>
+					<div class="z3">￥899</div>
+					<div class="z4">立即购买</div>
+				</div>
+			</div>
+		</div>
+		<div class="xi1">
+			更多小米手机产品>
+		</div>
+		<div class="kua4" style="margin-top: 0.1rem;height: 2.53rem;">
+			<div><img src="img/e1.jpg"></div>
+		</div>
+		<div class="kua5">
+			<div class="kua5-1">
+				<div><img src="img/f1.png"></div>
+				<div>
+					<h4 class="z1">小米电视4A 65英寸</h4>
+					<p class="z2">人工智能语言系统</p>
+					<div class="z3">￥2699</div>
+					<div class="z4"><a href="../详情/详情页.html" style="color: #FFFFFF; text-decoration: none;">立即购买</a></div>
+				</div>
+			</div>
+			<div class="kua5-1">
+				<div><img src="img/f2.png"></div>
+				<div>
+					<h4 class="z1">小米电视4X 43英寸</h4>
+					<p class="z2">FHD全屏高清</p>
+					<div class="z3">￥1299</div>
+					<div class="z4">立即购买</div>
+				</div>
+			</div>
+		</div>
+		<div class="kua5">
+			<div class="kua5-1">
+				<div><img src="img/f3.png"></div>
+				<div>
+					<h4 class="z1">小米电视4C 50英寸</h4>
+					<p class="z2">钢琴烤漆</p>
+					<div class="z3">￥1699</div>
+					<div class="z4">立即购买</div>
+				</div>
+			</div>
+			<div class="kua5-1">
+				<div><img src="img/f4.png"></div>
+				<div>
+					<h4 class="z1">小米电视4C 50英寸</h4>
+					<p class="z2">人工智能/p>
+						<div class="z3">￥1999</div>
+						<div class="z4">立即购买</div>
+				</div>
+			</div>
+		</div>
+		<div class="kua5">
+			<div class="kua5-1">
+				<div><img src="img/f5.png"></div>
+				<div>
+					<h4 class="z1">小米电视4A 32英寸</h4>
+					<p class="z2">高清液晶屏</p>
+					<div class="z3">￥899</div>
+					<div class="z4">立即购买</div>
+				</div>
+			</div>
+			<div class="kua5-1">
+				<div><img src="img/f6.png"></div>
+				<div>
+					<h4 class="z1">小米电视4A 50英寸</h4>
+					<p class="z2">千元4800万四摄</p>
+					<div class="z3">￥1699</div>
+					<div class="z4">立即购买</div>
+				</div>
+			</div>
+		</div>
+		<div class="xi1">
+			更多小米电视产品>
+		</div>
+		<div class="kua4">
+			<div><img src="img/m1.jpg"></div>
+			<div><img src="img/m2.jpg"></div>
+		</div>
+		<div class="kua6">
+			<div><img src="img/g1.jpg"></div>
+			<div>
+				<h5>米家直流变频落地扇1X</h5>
+				<p style="font-size: 0.12rem;color: #747474;">模拟自然风算法 支持AI语音</p>
+				<span class="tp">￥299</span>
+			</div>
+		</div>
+		<div class="kua7">
+			<div>
+				<h5>小爱音箱万能遥控板</h5>
+				<p style="font-size: 0.12rem;color: #747474;">传统家电秒变智能</p>
+				<span class="tp">￥149</span>
+			</div>
+			<div><img src="img/g2.jpg"></div>
+		</div>
+		<div class="kua6">
+			<div><img src="img/g1.jpg"></div>
+			<div>
+				<h5>米家照片打印机</h5>
+				<p style="font-size: 0.12rem;color: #747474;">手机即拍即印</p>
+				<span class="tp">￥499</span>
+			</div>
+		</div>
+		<div class="xi1">
+			更多米家智能产品>
+		</div>
+		<div class="kua8">
+			<div><img src="img/p1.webp"></div>
+			<div><img src="img/p2.webp"></div>
+		</div>
+		<div class="kua8">
+			<div><img src="img/p3.webp"></div>
+			<div><img src="img/p4.webp"></div>
+		</div>
+		<div class="kua8">
+			<div><img src="img/p5.webp"></div>
+			<div><img src="img/p6.webp"></div>
+		</div>
+		<div class="kua4">
+			<div><img src="img/l1.webp"></div>
+		</div>
+		<div class="jie">
+			<img src="img/liao.png">
+		</div>
+		<div class="kon"></div>
+	</body>
+	<script src="js/sy.js" type="text/javascript" charset="utf-8"></script>
+</html>

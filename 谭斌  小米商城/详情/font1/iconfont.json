@@ -1,0 +1,37 @@
+{
+  "id": "2097342",
+  "name": "1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7190048",
+      "name": "框",
+      "font_class": "weibiaoti-",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "12234752",
+      "name": "阴影",
+      "font_class": "yinying",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "13231106",
+      "name": "阴影",
+      "font_class": "yinying1",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "13682798",
+      "name": "语音",
+      "font_class": "yuyin",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    }
+  ]
+}
