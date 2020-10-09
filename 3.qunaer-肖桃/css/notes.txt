@@ -1,8 +1,0 @@
-index.css——首页
-mine.css——我的页面
-detail.css——详情页
-register.css——注册页
-login.css——登录页
-reset.css——重置样式
-common.css——公共样式
-all.min.css——fontawesome图标字体
