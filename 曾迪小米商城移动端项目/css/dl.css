@@ -1,0 +1,137 @@
+* {
+	padding: 0;
+	margin: 0;
+	/*所有的盒子都使用怪异模型*/
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 0.16rem;
+	/*16px*/
+	background: #F2F2F2;
+}
+.gd{
+	width: 0.24rem;
+	height: 0.24rem;
+	position: absolute;
+	right: 1%;
+	top: 1%;
+}
+.gd img{
+	width: 100%;
+}
+.tb{
+	width: 4.14rem;
+	height: 1.27rem;
+	margin: auto;
+	text-align: center;
+	margin-top: 15%;
+	font-size: 0.2rem;
+	
+}
+.tb1{
+	padding-bottom: 0.10rem;
+}
+.p{
+	margin: 0.1rem auto;
+}
+.inpu{
+	width: 3.47rem;
+	height: 1.08rem;
+	display: flex;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+.inpu div{
+		width: 3.47rem;
+		height: 0.54rem;
+		border-bottom: 2px solid #D3D3D3;
+		line-height: 0.54rem;
+}
+input{
+	border: none;
+	background: #F2F2F2;
+	font-size: 0.2rem;
+}
+.inpu div:nth-child(1) input{
+	width: 3.47rem;
+	height: 0.5rem;
+	outline:none
+}
+.inpu div:nth-child(2) input{
+	width: 3rem;
+	height: 0.5rem;
+	outline:none
+}
+.dl{
+	width: 3.47rem;
+	height: 0.47rem;
+	margin: 0.2rem auto;
+}
+.dl input{
+	width: 3.47rem;
+	height: 0.47rem;
+	border-radius: 0.7rem;
+	background: #FF6700;
+	color: #FFFFFF;
+	font-weight: 600;
+	outline: none;
+}
+.zc{
+	width: 3.47rem;
+	height: 0.47rem;
+	margin: 0 auto;
+}
+.zc input{
+	width: 3.47rem;
+	height: 0.47rem;
+	border-radius: 0.7rem;
+	background: #E6E6E6;
+	font-weight: 600;
+	outline: none;
+}
+.lj{
+	width: 3.47rem;
+	height: 0.47rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	line-height: 0.47rem;
+	color:#999999 ;
+}
+.qt{
+	margin: 0 auto;
+	margin-top: 0.4rem;
+	width: 3.47rem;
+	height: 0.16rem;
+	text-align: center;
+	font-size: 0.12rem;
+	color:#999999 ;
+}
+.tub{
+	margin: 0.2rem auto;
+	width: 3.47rem;
+	height: 0.43rem;
+	display: flex;
+	justify-content: center;
+}
+.tub span{
+	display: block;
+	padding:0.08rem;
+	font-size: 0.3rem;
+}
+.di{
+	margin: 0 auto;
+	margin-top: 0.6rem;
+	width: 3.47rem;
+	height: 0.2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.di span{
+	font-size: 0.12rem;
+	display: block;
+	padding:  0.08rem;
+	color: #999999;
+}

@@ -1,0 +1,122 @@
+* {
+	padding: 0;
+	margin: 0;
+	/*所有的盒子都使用怪异模型*/
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 0.16rem;
+	/*16px*/
+	background: #FFFFFF;
+}
+.gd{
+	width: 0.24rem;
+	height: 0.24rem;
+	position: absolute;
+	right: 1%;
+	top: 1%;
+}
+.gd img{
+	width: 100%;
+}
+.dz{
+	font-size: 0.3rem;
+	margin:0 auto;
+	margin-top: 10%;
+	width: 4.14rem;
+	height: 0.4rem;
+	text-align: center;
+	line-height: 0.5rem;
+	font-weight: 100;
+}
+.dq{
+	display: flex;
+	width: 3.6rem;
+	height: 0.53rem;
+	border-radius: 0.7rem;
+	background: #F0F0F0;
+	margin: 0 auto;
+	margin-top: 0.35rem;
+	line-height: 0.53rem;
+}
+.dq p{
+	margin-left: 6%;
+	display: block;
+	width: 3rem;
+	height: 0.53rem;
+}
+.dq1{
+	font-size: 0.12rem;
+	width: 3.3rem;
+	height: 0.16rem;
+	margin: 0.08rem auto;
+	color: #969896;
+}
+
+.dq2{
+	display: flex;
+	width: 3.6rem;
+	height: 0.53rem;
+	border-radius: 0.7rem;
+	background: #F0F0F0;
+	margin: 0 auto;
+	margin-top: 0.3rem;
+	line-height: 0.53rem;
+}
+.dq2 p{
+	margin-left:40%;
+	display: block;
+	width: 0.6rem;
+	height: 0.53rem;
+}
+.dq2 input{
+	margin-left: 0.1rem;
+	width: 2.4rem;
+	height: 0.53rem;
+	background: #F0F0F0;
+	border: none;
+	font-size: 0.2rem;
+}
+.ljzc{
+	width: 3.6rem;
+	height: 0.53rem;
+	margin: 0 auto;
+	margin-top: 0.3rem;
+}
+.ljzc input{
+	width: 3.6rem;
+	height: 0.53rem;
+	margin: 0 auto;
+	background: #F87300;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 0.7rem;
+	font-size: 0.2rem;
+	font-weight: 600;
+}
+.de{
+	font-size: 0.12rem;
+	width: 3.3rem;
+	height: 0.16rem;
+	margin: 0.3rem auto;
+	color: #969896;
+}
+.de a{
+	color: #969896;
+}
+.di{
+	margin: 0 auto;
+	margin-top: 2.8rem;
+	width: 3.47rem;
+	height: 0.2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.di span{
+	font-size: 0.12rem;
+	display: block;
+	padding:  0.08rem;
+	color: #999999;
+}

@@ -1,0 +1,134 @@
+* {
+	padding: 0;
+	margin: 0;
+	/*所有的盒子都使用怪异模型*/
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 0.16rem;
+	/*16px*/
+	background: #F2F2F2;
+}
+
+.gro{
+	background: #F37D0F;
+	width: 4.14rem;
+	height: 0.92rem;
+	
+	 
+}
+.din{
+	width: 4.14rem;
+	height: 0.92rem;
+	background: url(../img/bg.63c8e19851.png);
+	 display: flex;
+	  align-items: center;
+	  justify-content: center;
+}
+.din1{
+	width: 4.14rem;
+	height: 0.6rem;
+	line-height: 0.55rem;
+}
+.din1 div{
+	float: left;
+	margin-left: 0.15rem;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+.dan{
+	width: 4.14rem;
+	height: 0.45rem;
+	background: #FFFFFF;
+	line-height:0.45rem ;
+	
+}
+.dan div:nth-child(1){
+	float: left;
+	margin-left: 5%;
+}
+.dan div:nth-child(2){
+	
+	font-size: 0.13rem;
+	float: right;
+	margin-right: 5%;
+}
+li{
+	list-style: none;
+}
+.dan1{
+	background: #FFFFFF;
+	margin-top: 0;
+	text-align: center;
+	border-top: 1px solid #666666;
+	width: 4.14rem;
+	height: 0.97rem;
+	display: flex;
+	justify-content: space-around;
+	 align-items: center;
+	 font-size: 0.12rem;
+}
+.du{
+	width: 4.14rem;
+	height: 1.21rem;
+	background: #FFFFFF;
+	margin-top: 2%;
+}
+.du li{
+	width: 4.14rem;
+	height: 0.59rem;
+	display: flex;
+}
+.wad{
+	line-height:0.59rem ;
+	text-align: center;
+	width: 1rem;
+}
+.wid{
+	line-height:0.59rem ;
+	width: 3.14rem;
+	height: 0.59rem;
+	
+}
+.wid span{
+	float: right;
+	margin-right: 2%;
+}
+.sz{
+	width: 4.14rem;
+	height: 0.59rem;
+	background: #FFFFFF;
+	margin-top: 2%;
+}
+.sz li{
+	width: 4.14rem;
+	height: 0.59rem;
+	display: flex;
+}
+.kon{
+	width: 4.14rem;
+	height: 0.7rem;
+}
+.dib {
+	background: #FFFFFF;
+	width: 4.14rem;
+	height: 0.52rem;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	font-size: 0.14rem;
+	color: #747474;
+}
+.dib img{
+	width: 40%;
+}
+.dib div{
+	width: 0.8rem;
+	text-align: center;
+}
+.dib a{
+	color: #747474;
+	text-decoration:none;
+}
