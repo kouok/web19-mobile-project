@@ -1,0 +1,151 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	padding: 0 0.2rem;
+}
+/*logo*/
+.head{
+	padding: 0.3rem 0 0.1rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.18rem;
+}
+/*右上角问号*/
+.help{
+	width: 0.24rem;
+	height: 0.24rem;
+	position: absolute;
+	right: 0.15rem;
+	top: 0.10rem;
+	line-height: 0.24rem;
+	text-align: center;
+}
+.help img{
+	display: block;
+	width: 0.24rem;
+	height: 0.24rem;
+	/*vertical-align: middle;*/
+}
+/*登录方式*/
+#hide{
+	display: none;
+}
+.tishi1,.tishi2{
+	color: red;
+	font-size: 0.14rem;
+	margin-top: 0.1rem;
+}
+.ipt{
+	font-size: 0.16rem;
+	color: #9B9B9B;
+	border-bottom: 1px solid #ccc;
+}
+.ipt input{
+	font-size:0.18rem;
+	color: #9B9B9B;
+	width: 2.25rem;
+	height: 0.54rem;
+	padding: 0.16rem 0;
+}
+.ipt span{
+	margin-right: 0.1rem;
+}
+.ipt span::after{
+	content: "";
+	display: inline-block;
+	width: 0.08rem;
+	height: 0.08rem;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	transform: rotate(135deg);
+}
+.ipt a{
+	display: inline-block;
+	padding: 0.17rem 0.1rem;
+	font-size: 0.14rem;
+	color: #1B8BFF;
+	float: right;
+}
+.btn{
+	height: 0.47rem;
+	font-size: 0.18rem;
+	font-weight: bold;
+	margin-top:  0.2rem;
+	line-height: 0.47rem;
+}
+.btn a,.btn input{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	border-radius: 0.3rem;
+	font-size: 0.18rem;
+	font-weight: bold;
+}
+.btn .a1{
+	background-color: #FF6700;
+	color: #fff;
+}
+.btn .a2{
+	background-color: #F0F0F0;
+	color: #000;
+}
+/* 收不到验证码*/
+.no{
+	text-align: center;
+	margin-top: 0.2rem;
+	height: 0.21rem;
+	line-height: 0.21rem;
+}
+.no a{
+	font-size: 0.16rem;
+	color: #9B9B9B;
+	display: block;
+}
+/*其他登录方式*/
+.other{
+	font-size: 0.12rem;
+	line-height: 0.14rem;
+	text-align: center;
+	margin-top: 0.4rem;
+	color: #B0B0B0;
+}
+.other .line{
+	display: inline-block;
+	width: 1.2rem;
+	height: 0.01rem;
+	border-top: 1px solid #ccc;
+	vertical-align: middle;
+}
+.ways{
+	height: 0.3rem;
+	line-height: 0.3rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 0.2rem;
+}
+.ways a{
+	display: inline-block;
+	height: 0.3rem;
+	margin:0 0.1rem;
+}
+.ways a img{
+	float: left; 
+}
+/*底部*/
+footer{
+	margin-top: 0.7rem;
+	font-size: 0.14rem;
+	color: #9B9B9B;
+	height: 0.9rem;
+}
+
+footer ul li{
+	float: left;
+	margin: 0 0.05rem;
+}
