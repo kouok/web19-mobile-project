@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/dl.css" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<title></title>
+		<script type="text/javascript">
+			var width = window.innerWidth;
+			//4.14是根据设计图的大小除以100
+			var bili = width / 4.14;
+			document.documentElement.style.fontSize = bili + "px";
+			// 此时  100px=1rem
+			// 将所有在设计图量出的尺寸都除以100即可转为对应的rem
+		</script>
+	</head>
+	<body>
+		<div class="gd"><img src="img/help.png"></div>
+		<header class="tb">
+			<div class="tb1"><img src="img/milogo@2x.png"></div>
+			<p>小米账号登录</p>
+		</header>
+		<form>
+			<div class="inpu">
+				<div>
+					<input type="text" name="firstname" placeholder="邮箱/手机号码/小米">
+				</div>
+				<div>
+					<input type="password" name="pwd" placeholder="ID密码">
+					<span class="iconfont icon-yanjing" style="color: #999999;"></span>
+				</div>
+			</div>
+			<div class="dl">
+				<input type="submit" value="登录">
+			</div>
+			<div class="zc">
+				<input type="submit" value="手机短信登录/注册">
+			</div>
+			<div class="lj">
+				<div><a href="../注册/注册.html">立即注册</a></div> / <div><a>忘记密码？</a></div>
+			</div>
+		</form>
+		<div class="qt">
+			<p>其他登录方式</p>
+		</div>
+		<div class="tub">
+			<span class="iconfont icon-weibo" style="color: #FF8B8B;"></span>
+			<span class="iconfont icon-zhifubao1" style="color: #05C9FA"></span>
+			<span class="iconfont icon-weixin" style="color: #3CCF30;"></span>
+			<span class="iconfont icon-iconpingguo01" style="color: #000000;"></span>
+		</div>
+		<div class="di">
+			<span style="color: #000000;">简体</span>
+			<span>|</span>
+			<span>繁体</span>
+			<span>|</span>
+			<span>English</span>
+			<span>|</span>
+			<span>常见问题</span>
+			<span>|</span>
+			<span>隐私政策</span>
+			
+		</div>
+	</body>
+</html>

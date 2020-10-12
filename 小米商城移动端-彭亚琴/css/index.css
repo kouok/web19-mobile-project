@@ -1,0 +1,392 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #F2F2F2;
+	font-size: 0.16rem;
+}
+/*头部*/
+
+.header .top{
+	display: flex;
+	height: 0.43rem;
+	align-items: center;
+}
+/*logo*/
+.header .top .logo{
+	width: 0.52rem;
+	text-align: center;
+}
+.header .top .logo img{
+	height: 0.16rem;
+	width: 0.26rem;
+}
+/*搜索框*/
+.header .top .search{
+	display: flex;
+	flex-grow: 1;
+	height: 0.33rem;
+	background-color: #fff;
+	border: 1px solid #E5E5E5;
+}
+.header .top .search span{
+	display: inline-block;
+	width: 0.31rem;
+	height: 0.31rem;
+	line-height: 0.31rem;
+	text-align: center;
+}
+.header .top .search span img{
+	vertical-align: middle;
+	width: 0.15rem;
+	height: 0.15rem;
+}
+.header .top .search input{
+	flex-grow: 1;
+	border: 0;
+	height: 0.31rem;
+	font-size: 0.16rem;
+	color: #B2B2B2;
+}
+/*小图标*/
+.header .top a{
+	width: 0.52rem;
+	height: 0.31rem;
+	text-align: center;
+	line-height: 0.31rem;
+}
+.header .top a img{
+	width: 0.20rem;
+	height: 0.20rem;
+	vertical-align: middle;
+}
+/*导航栏*/
+.nav{
+	height: 0.3rem;
+	line-height: 0.3rem;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.nav ul{
+	flex-grow: 1;
+}
+.nav .oul li{
+	float: left;
+	height: 0.29rem;
+	color: #747474;
+	margin: 0 0.13rem;
+	font-size: 0.13rem;
+	border-bottom: 2px solid #F2F2F2;
+}
+.nav .oul .orange{
+	color: #ED5B00;
+	border-color: #ED5B00;
+}
+/*向下按钮*/
+.down{
+	width: 0.36rem;
+	height: 0.28rem;
+	text-align: center;
+	line-height: 0.28rem;
+	z-index: 99;
+	transition:all 0.1s linear;
+}
+.down img{
+	vertical-align: middle;
+}
+/*隐藏的菜单*/
+.hide{
+	display: none;
+	width: 100%;
+	font-size: 0.13rem;
+	padding:0 0.13rem;
+	position: absolute;
+	top: 0;
+	background-color: #F2F2F2;
+	z-index: 2;
+}
+.hide .all{
+	padding-top: 0.13rem;
+}
+.hide .list{
+	margin-top: 0.10rem;
+}
+.hide .list span{
+	background-color: #fff;
+	color: #3C3C3C;
+	display: inline-block;
+	border-radius: 0.04rem;
+	width: 0.76rem;
+	height: 0.29rem;
+	border: 1px solid #E5E5E5;
+	line-height: 0.27rem;
+	text-align: center;
+	margin: 0 0.1rem 0.12rem 0;
+}
+.hide .list .red{
+	color: #FF8331;
+	background-color: #FDE0D5;
+	border-color: #FF6700;
+}
+.hide .list span:nth-child(4){
+	margin-right: 0;
+}
+/*轮播图*/
+.slideBox{
+	position:relative;
+	overflow:hidden; 
+	height:1.87rem;
+}
+.slideBox .hd{ 
+	position:absolute;
+	bottom:0.1rem; 
+	left:0; 
+	z-index:1; 
+	width: 100%;
+	height:0.13rem; 
+	text-align: center;
+	line-height:0.13rem;
+}
+.slideBox .hd li{ 
+	display:inline-block;
+	width:0.08rem; 
+	height:0.08rem; 
+	-webkit-border-radius:50%; 
+	-moz-border-radius:50%; 
+	border-radius:50%; 
+	background:#333; 
+	text-indent:-9999px; 
+	overflow:hidden; 
+	margin:0 0.05rem; 
+	background-color: #ccc;  
+}
+.slideBox .hd li.on{ 
+	background:#fff;  
+}
+.slideBox .bd{ 
+	position:relative; 
+	z-index:0; 
+}
+.slideBox .bd li{ 
+	height: 1.87rem;
+	position:relative; 
+}
+.slideBox .bd li img{ 
+	height: 1.87rem;
+	width:100%;/* 图片宽度100%，达到自适应效果 */
+}
+.slideBox .bd li a{ 
+	display: inline-block;
+	height: 1.87rem;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);  
+}  /* 去掉链接触摸高亮 */
+/*导航二*/
+.nav1{
+	display: flex;
+}
+.nav1 a{
+	display: inline-block;
+	height: 0.79rem;
+}
+.nav1 a img{
+	height: 0,79rem;
+	width:0.75rem;
+}
+/*广告1*/
+.add1{
+	height: 2.64rem;
+	margin-top: 0.1rem;
+}
+.add1 a{
+	display: block;
+}
+.add1 a:nth-child(1){
+	float: left;
+}
+.add1 a:nth-child(2),.add1 a:nth-child(3){
+	float: right;
+}
+.add1 a img:nth-child(1){
+	width: 1.82rem;
+}
+.add1 a img:nth-child(2),.add1 a img:nth-child(3){
+	width: 1.82rem;
+	height: 1.25rem;
+}
+/*banner1*/
+.banner{
+	margin-top: 0.1rem;
+}
+.banner a{
+	display: inline-block;
+}
+.banner a img{
+	height: 1.45rem;
+}
+/* 产品类型*/
+.div1{
+	height: 2.29rem;	
+}
+.div1 a{
+	display: inline-block;
+
+}
+.div1 a img{
+	height: 2.29rem;
+}
+.product{
+	background-color: #fff;
+	padding: 0.06rem;
+}
+.product .cp{
+	float: left;
+	width: 1.79rem;
+}
+.product .cp2{
+	float: right;
+}
+.product .cp img{
+	width: 1.79rem;
+	height: 1.45rem;
+}
+.product .price{
+	background-color: #fff;
+	padding: 0.1rem 0.14rem;
+	text-align: center;
+}
+.product .price .name{
+	font-size: 0.14rem;
+}
+.product .price .trait{
+	font-size: 0.12rem;
+	margin-top: 0.03rem;
+	color: #757575;
+}
+.product .price .money{
+	font-size: 0.14rem;
+	color: #EA625B;
+}
+.product .price .money span{
+	font-size: 0.12rem;
+	color: #757575;
+	text-decoration: line-through;
+}
+.product .price .btn{
+	margin: 0 0.25rem;
+	width: 1rem;
+	height: 0.3rem;
+	text-align: center;
+	line-height: 0.3rem;
+	background-color: #EA625B;
+	border-radius: 0.05rem;
+}
+.product .price .btn a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 0.14rem;
+	color: #fff;
+}
+.ti{
+	height: 0.52rem;
+	line-height: 0.52rem;
+	text-align: center;
+	font-size: 0.14rem;
+	background-color: #fff;
+	color: #626262;
+}
+.product2{
+	background-color: #fff;
+}
+.product2 .left{
+	float: left;
+}
+.product2 .left img{
+	width: 1.87rem;
+	height: 1.87rem;
+}
+.product2 .right{
+	float: left;
+	width: 1.87rem;
+	height: 1.87rem;
+	padding: 0.33rem 0.06rem 0 0.16rem;
+}
+.product2 .right .name{
+	font-size: 0.14rem;
+}
+.product2 .right .trait{
+	font-size: 0.12rem;
+	margin-top: 0.03rem;
+	color: #757575;
+}
+.product2 .right .money{
+	font-size: 0.14rem;
+	margin-top: 0.08rem;
+	color: #EA625B;
+}
+/*底部*/
+.footer{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.six a{
+	display: inline-block;
+}
+.six a img{
+	height: 2.5rem;
+	width: 1.86rem;
+}
+.ti1{
+	margin-bottom: 0.6rem;
+}
+/*定位底部导航*/
+.mynav{
+	position: fixed;
+	bottom: 0;
+	height: 0.52rem;
+	background-color: #fff;
+	display: flex;
+	width: 3.75rem;
+}
+.mynav a{
+	width: 100%;
+	display: flex;
+	flex-flow: 1;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	color: #9B9B9B;
+	text-decoration: none;
+	font-size: 0.12rem;
+}
+.mynav .color{
+	color: #FF6700;
+}
+.mynav a img{
+	width: 0.2rem;
+	height: 0.2rem;
+	margin-bottom: 0.03rem;
+	margin-left: 0.27rem;
+}
+/*右边回到顶部*/
+.go{
+	position: fixed;
+	bottom: 0.8rem;
+	right:0.20rem;
+	text-align: center;
+	display: none;
+}
+.go a{
+	display:block;
+}
+.go .redbag img{
+	width: 0.58rem;
+	height: 0.58rem;
+}
+.go .gotop img{
+	width: 0.36rem;
+	height: 0.36rem;
+}

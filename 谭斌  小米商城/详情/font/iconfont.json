@@ -1,0 +1,37 @@
+{
+  "id": "2068583",
+  "name": "icon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2907947",
+      "name": "小米(1)",
+      "font_class": "xiaomi",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "6982818",
+      "name": "箭头 左 小",
+      "font_class": "jiantou2",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "10128646",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "11769663",
+      "name": "人像",
+      "font_class": "renxiang",
+      "unicode": "e802",
+      "unicode_decimal": 59394
+    }
+  ]
+}

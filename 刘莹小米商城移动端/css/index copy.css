@@ -1,0 +1,126 @@
+/* 通用样式 */
+
+
+/* *,
+::before,
+::after { */
+
+
+/* font-size: 14px;
+    margin: 0;
+    padding: 0; */
+
+
+/* 点击高亮效果 */
+
+
+/* 手指点击 清除默认的 高亮效果 透明 */
+
+
+/* -webkit-tap-highlight-color: transparent; */
+
+
+/* 盒子模型 */
+
+
+/* 样式输入完毕 在后面tab */
+
+
+/* -webkit-box-sizing: border-box;
+    box-sizing: border-box; */
+
+
+/* 统一设置文字  sans-serif 移动端 的默认字体 */
+
+
+/* font-family: '微软雅黑', sans-serif; */
+
+
+/* } */
+
+
+/* 清除浮动 */
+
+
+/* .clearfix::before,
+.clearfix::after {
+    content: '';
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+} */
+
+
+/* 最外层的容器 */
+
+.jd_container {
+    width: 100%;
+    /* min-height: 800px; */
+    background-color: #eee;
+}
+
+
+/* 轮播图 */
+
+.jd_banner {
+    width: 100%;
+    /* 100px */
+    overflow: hidden;
+    /* 为了 索引 能够定位 所以 添加 positition */
+    position: relative;
+}
+
+.jd_banner .banner_images {
+    /* 10倍宽度 为了 在横向 放10张图片 */
+    width: 500%;
+    /* 1000px */
+    /* 默认 移动个一个 屏幕的宽度 注意是负数 */
+    /* -webkit-transform: translateX(-10%);
+    transform: translateX(-10%); */
+}
+
+.jd_banner .banner_images li {
+    float: left;
+    width: 20%;
+    /* 100px */
+}
+
+.jd_banner .banner_images li a {
+    display: block;
+    width: 100%;
+}
+
+.jd_banner .banner_images li a img {
+    display: block;
+    width: 100%;
+}
+
+
+/* 轮播图里面的 索引标签 */
+
+.jd_banner .banner_index {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -44px;
+}
+
+.jd_banner .banner_index li {
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 5px;
+}
+
+
+/* 如果 li标签 有.current class 会使用 下列样式
+	注意 .current 不能 空格
+ */
+
+.jd_banner .banner_index li.current {
+    background-color: black;
+}

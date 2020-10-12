@@ -1,0 +1,150 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #F5F5F5;
+}
+/*头部*/
+.header{
+	height: 0.80rem;
+	padding: 0.16rem 0;
+	background-image: url("../images/my/bg.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-size: 0.12rem;
+	background-color: #F37D0F;
+}
+.header a{
+	display: block;
+	color: #fff;
+}
+.header a img{
+	float: left;
+	width: 0.44rem;
+	height: 0.44rem;
+	margin:0 0.08rem 0 0.16rem;
+}
+.header a span{
+	float: left;
+	margin: 0.13rem 0;
+}
+
+/*订单*/
+.order{
+	background-color: #fff;
+	height: 0.41rem;
+	line-height: 0.41rem;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+}
+.order .myorder{
+	font-size: 0.14rem;
+	padding-left: 0.16rem;
+}
+.order .allorder{
+	font-size: 0.12rem;
+	padding-right: 0.16rem;
+}
+.order .allorder a{
+	color: #212121;
+}
+.order .allorder a::after{
+	display: inline-block;
+	content: "";
+	width:0.08rem;
+	height: 0.08rem;
+	border-left: 1px solid #838383;
+    border-top: 1px solid #838383;
+    transform:rotate(135deg);
+}
+/*物流*/
+.new{
+	background-color: #fff;
+	height: 0.87rem;
+	display: flex;
+	font-size: 0.12rem;
+	justify-content: space-around;
+}
+.new div{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.new div .iconfont{
+	font-size: 0.25rem;
+	color: #B6B6B6;
+}
+/*相关设置*/
+.oul{
+	background-color: #fff;
+	margin-top: 0.1rem;
+}
+.oul li{
+	height: 0.54rem;
+	line-height: 0.54rem;
+}
+.oul li div{
+	float: left;
+	width: 0.55rem; 
+}
+.oul li div img{
+	width: 0.25rem;
+	height: 0.25rem;
+	float: left;
+	margin: 0.15rem;
+}
+.oul li a{
+	float: right;
+	padding-right: 0.29rem;
+	font-size: 0.14rem;
+	width: 3.1rem;
+	border-bottom: 1px solid #ccc;	
+	color: black;
+}
+.oul li a::after{
+	display: inline-block;
+	content: "";
+	width:0.08rem;
+	height: 0.08rem;
+	border-left: 1px solid #838383;
+    border-top: 1px solid #838383;
+    transform:rotate(135deg);
+    float: right;
+    margin-top: 0.21rem;
+}
+.oul1{
+	margin-bottom: 0.6rem;
+}
+/*定位底部导航*/
+.mynav{
+	position: fixed;
+	bottom: 0;
+	height: 0.52rem;
+	background-color: #fff;
+	display: flex;
+	width: 3.75rem;
+}
+.mynav a{
+	width: 100%;
+	display: flex;
+	flex-flow: 1;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	color: #9B9B9B;
+	text-decoration: none;
+	font-size: 0.12rem;
+}
+.mynav .color{
+	color: #FF6700;
+}
+.mynav a img{
+	width: 0.2rem;
+	height: 0.2rem;
+	margin-bottom: 0.03rem;
+	margin-left: 0.27rem;
+}

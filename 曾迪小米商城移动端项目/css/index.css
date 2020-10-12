@@ -1,0 +1,311 @@
+/* 头部 */
+.header{
+    background-color: #F2F2F2;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.height{
+    height:0.746rem;
+
+}
+.headerBox{
+    height: 0.43rem;
+    line-height: 0.43rem;
+    display: flex;
+    align-items: center;
+}
+.headerBox>span{
+    margin: 0 0.1rem;
+
+}
+.headerBox .iconfont{
+    font-size: 0.3rem;
+    color:#FF6B00;
+}
+.serch{
+    border: 1px solid #e5e5e5;
+    /* text-align: left; */
+    width:2.71rem;
+    height:0.33rem;
+    color: rgba(0,0,0,.3);
+    background-color: #fff;
+    border-radius:0.01rem;
+    line-height:0.33rem;
+    font-size: 0.16rem;
+    /* box-sizing: border-box; */
+    display: flex;
+    align-items: center;
+}
+.nav{
+    font-size: 0.13rem;
+    overflow: hidden;
+    position: relative;
+}
+.navlist{
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+   
+}
+.on1{
+    color: rgb(237, 91, 0) !important;
+    /* border-color: rgb(237, 91, 0) !important; */
+    display: inline-block;
+    line-height:0.296rem;
+    border-bottom: 2px solid rgba(237,91,0) !important;
+}
+.navlist li{
+    float: left;
+    padding:0 0.13rem;
+} 
+.navlist li a{
+    color: rgb(116, 116, 116);
+    line-height:0.3rem;
+    display: inline-block;
+}
+.nav-arr{
+    position: absolute;
+    right:0rem;
+    top: 0;
+    width:0.35rem;
+    height: 0.28rem;
+    line-height:0.3rem;
+    background-color: #f2f2f2;
+    -webkit-box-shadow: -15px 0 15px 0 #f2f2f2;
+    box-shadow: -15px 0 15px 0 #f2f2f2;
+    z-index: 99;
+}
+.nav-arr .iconfont{
+    font-size: 0.2rem;
+    
+}
+/* .rotate{
+    transform-origin:;
+    animation: dong 2s 1 alternate; 
+    transform:rotate(180deg)
+} */
+.nav-arr i{
+    transition: transform .2s linear,-webkit-transform .2s linear;
+}
+.nav-item{
+    padding-right: 0.39rem;
+    display: inline-block;
+}
+.nav-layer{
+     background-color: #f2f2f2;
+    font-size: .13rem;
+    text-align: left;
+    padding: 0 0.13rem;
+    /* -webkit-transition: max-height .3s ease-in-out;
+    transition: max-height .3s ease-in-out; */
+    overflow: hidden; 
+    display: none;
+}
+.nav-layer div:nth-child(1){
+    padding-top:0.13rem ;
+    color: #525252;
+    font-size: 0.14rem;
+}
+.nav-none{
+    margin-top:0.17rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-none>span{
+    color: #525252;
+    margin-right:0.1rem;
+    margin-bottom: 0.12rem;
+    display: inline-block;
+    width: 0.77rem;
+    height:0.27rem;
+    text-align: center;
+    line-height: .27rem;
+    border: 1px solid #e5e5e5;
+    border-radius:0.04rem;
+    font-size:0.12rem;
+}
+.on{
+    background-color: #fde0d5;
+    border-color: #ff6700;
+    color: #ff6700;
+}
+/* 轮播图 */
+/* .section{
+
+} */
+
+/* 内容2 */
+.hd{
+    display: flex;
+}
+.hd a{
+    flex-grow:1;
+}
+.hd a img{
+    width: 100%;
+}
+.gt{
+    height: 0.08rem;
+    border-bottom: 0.083rem solid rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
+}
+/* 内容3 */
+.section3{
+    display: flex;
+}
+.section3>div{
+    flex: 1;
+}
+.section3>div img{
+    width: 100%;
+}
+.mt2{
+   margin-top: 0.02rem;
+}
+/* 内容四 */
+.section4 img{
+    width: 100%;
+}
+/* 内容五 */
+.section5{
+    display: flex;
+    padding: 0.03rem 0.062rem;
+}
+.section5>a{
+    flex-grow: 1;
+
+}
+.section5>a img{
+    width: 100%;
+}
+.spjs{
+   
+    line-height: 0.2rem;
+    padding:0.1rem 0.14rem;
+    text-align: center;
+}
+.spjs>h4{
+    font-size:0.14rem;
+    color: #212121;
+}
+.xl{
+    font-size:0.12rem;
+    color: rgba(0,0,0,.54)
+}
+.price{
+    font-size:0.14rem;
+    color: #ea625b;
+}
+.spjs>div{
+    text-align: center;
+    font-size:0.12rem;
+    color:#fff;
+    background: #ea625b;
+    border-radius: 0.05rem;
+    height:0.3rem;
+    width:1.04rem;
+    margin: 0 0.22rem;
+    line-height: 0.3rem;
+}
+.mr5{
+    margin-right: 0.05rem;
+}
+.xm{
+    height: 0.52rem;
+    line-height:0.52rem;
+    font-size: 0.14rem;
+    text-align: center;
+    color: #666666;
+}
+/* 小米电视 */
+.xmds img{
+    width: 100%;
+}
+.bor-top{
+    border-top: 0.02rem solid #e7e7e7;
+}
+/* 小米家电 */
+.xmjd{
+    display: flex;
+}
+.xmjd>a{
+    flex:1;
+    width: 1.86rem;
+}
+.xmjd img{
+    height: 1.83rem;
+}
+.jd{
+    font-size: 0.14rem;
+    line-height: 0.2rem;
+    padding:0.1rem 0.14rem;
+    /* text-align: center; */
+}
+.jd>h4{
+    font-size: 0.15rem;
+    overflow: hidden;
+    color: #212121;
+    white-space:nowrap;
+}
+.jd>p{
+    font-size: 0.12rem;
+    color: #ADADAD;
+}
+.price-none{
+    font-size: 0.12rem;
+    color: #7C7C7C;
+    text-decoration: line-through;
+    margin: 0 0.05rem;
+}
+/* 小米智能 */
+.xmzn{
+    display: flex;
+    margin-top: 0.05rem;
+}
+.xmzn>a{
+    flex-grow: 1;
+}
+/*小米产品*/
+.flex{
+    display: flex;
+}
+.flex>a{
+    flex-grow: 1;
+}
+.mr2{
+    margin-right: 0.02rem;
+}
+.mt2{
+    margin-top: 0.02rem;
+}
+/* 底部 */
+.ft12{
+    font-size: 0.12rem;
+    text-align: center;
+    line-height: 0.2rem;
+    height: 0.52rem;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    left:0;
+  bottom: 0;
+   width: 100%;
+}
+.ft12 a{
+    color: #B5B5B5;
+}
+.ft12 img{
+    width: 0.2rem;
+    height: 0.2rem;
+}
+.slideBox{ position:relative; overflow:hidden; margin:10px auto;  max-width:560px;/* 设置焦点图最大宽度 */ }
+.slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:0; right:39%;; z-index:1; display: flex;}
+.slideBox .hd ul{display: flex; line-height:5px;}
+.slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;z-index: 9;}
+.slideBox .hd li.on{ background:#fff;  }
+.slideBox .bd{ position:relative; z-index:0; }
+.slideBox .bd li{ position:relative; text-align:center;  }
+.slideBox .bd li img{ background:url(images/loading.gif) center center no-repeat;  vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+.slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(images/focusBg.png) repeat-x; color:#fff;  text-align:center;  }
