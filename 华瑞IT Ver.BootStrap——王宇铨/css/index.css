@@ -1,0 +1,52 @@
+
+
+/*顶部导航*/
+header{
+	height: 4.6rem;
+}
+/*#navBarBox{
+	box-shadow: 0 0 5px 5px #484f4d;
+}*/
+header nav a.h2{
+	font-size: 2rem;
+}
+header .navFixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+/*轮播图*/
+.banner{
+	background: url(../images/home-bg.jpg) no-repeat;
+	background-size: auto 100%;
+}
+.banner .bannerBG{
+	background-color: rgba(0,0,0,.6);
+	overflow: hidden;
+}
+
+
+/*联系我们*/
+#contact{
+	background: url(../images/contact-bg.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.contactBG{
+	background-color: rgba(0,0,0,.4);
+}
+#contact .icon-emizhifeiji{
+	font-size: 2rem;
+}
+
+
+
+/*@media screen and (min-width:768px) and (max-width:1024px){
+
+    #carouselExampleIndicators{ 
+       width: 70%;
+       background-color: red;
+    }
+}*/
